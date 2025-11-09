@@ -1,0 +1,8 @@
+{% load i18n admin_urls static unfold %}
+
+
+<div class="js-inline-admin-formset inline-group" id="{{ inline_admin_formset.formset.prefix }}-group" data-inline-type="tabular" data-inline-formset="{{ inline_admin_formset.inline_formset_data }}" {% if inline_admin_formset.opts.tab %}x-show="activeTab == '{{ inline_admin_formset.formset.prefix|slugify }}'"{% else %}x-show="activeTab == 'general'"{% endif %}>
+
+    {% component "unfold/components/table.html" with table=inline_admin_formset.formset.custom_context_data.supplier_summary striped=1 %}{% endcomponent %}
+
+</div>
