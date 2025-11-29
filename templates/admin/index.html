@@ -115,6 +115,12 @@
             </div>
         </div>
 
+        <!--
+        {% tab_list "dashboard" %}
+        -->
+        {% component "unfold/components/dashboard_inventory.html" with component_class="InventoryDashboard" %}{% endcomponent %}
+
+
         <!-- 
         <div class="grid gap-4 grid-cols-2 lg:grid-cols-4 my-4">
             {% component "unfold/components/card.html" %}

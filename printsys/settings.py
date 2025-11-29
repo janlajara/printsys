@@ -33,6 +33,7 @@ ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS","127.0.0.1").split(",")
 
 INSTALLED_APPS = [
     "unfold",
+    "unfold.contrib.forms",
     "unfold.contrib.inlines",
     'django.contrib.admin',
     'django.contrib.auth',
@@ -174,6 +175,19 @@ UNFOLD = {
         ],
     },
     "TABS": [
+        {
+            "page": "dashboard",
+            "items": [
+                {
+                    "title": "Inventory",
+                    "link": "#inventory",
+                },
+                {
+                    "title": "Quotation",
+                    "link": "#quotation" #reverse_lazy("admin:core_user_changelist"),
+                }
+            ]
+        },
         {
             "models": [
                 "core.user", "core.role"

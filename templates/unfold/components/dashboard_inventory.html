@@ -1,0 +1,24 @@
+{% load unfold %}
+
+
+
+{% component "unfold/components/flex.html" with class="my-4 gap-4 grid" %}
+
+    {% component "unfold/components/card.html" with title="Total Deposits vs Withdrawals"  %}
+        {% component "unfold/components/chart/bar.html" with data=stock_movement_per_day_bar_chart_data %}{% endcomponent %}    
+    {% endcomponent %}
+
+{% endcomponent %}
+
+
+{% component "unfold/components/flex.html" with class="my-4 gap-4 grid md:grid-cols-1" %}
+
+    {% component "unfold/components/card.html" with title="Stock Movement Summary" %}
+        {% component "unfold/components/table.html" with table=stock_movement_summary_table_data card_included=1 striped=1 %}{% endcomponent %}
+    {% endcomponent %}
+
+    {% component "unfold/components/card.html" with title="Stock Movement History" %}
+        {% component "unfold/components/table.html" with table=stock_movement_history_table_data card_included=1 striped=1 %}{% endcomponent %}
+    {% endcomponent %}
+
+{% endcomponent %}

@@ -1,4 +1,5 @@
-import inflect
+import inflect, json
+from datetime import date, timedelta, datetime
 
 from django.contrib import admin
 from django import forms
@@ -6,10 +7,11 @@ from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.shortcuts import render
 from django.contrib import messages
+from django.contrib.postgres.fields import ArrayField
 from django.core.exceptions import ValidationError
 from django.utils import timezone
 from django.utils.html import format_html
-from core.utils import format_currency
+from core.utils import format_currency, to_link, pluralize_uom
 
 from unfold.decorators import action
 from unfold.admin import ModelAdmin
@@ -21,7 +23,11 @@ from unfold.widgets import (
     UnfoldBooleanSwitchWidget, UnfoldAdminTextareaWidget,
     UnfoldAdminSplitDateTimeWidget, 
 )
+from unfold.contrib.forms.widgets import ArrayWidget
+from unfold.components import BaseComponent, register_component
 
+
+from core.admin import KeyValueFieldWidget
 from .models import Item, ItemCategory, StockMovement, Supplier, StockMovementPurpose
 
 p = inflect.engine()
@@ -29,6 +35,7 @@ p = inflect.engine()
 class WithdrawForm(forms.Form):
     timestamp = forms.SplitDateTimeField(required=False, initial=timezone.now, widget=UnfoldAdminSplitDateTimeWidget)
     quantity = forms.IntegerField(min_value=1, widget=UnfoldAdminIntegerFieldWidget)
+    current_quantity = forms.CharField(disabled=True, required=False)
     unit_of_measure = forms.ChoiceField(widget=UnfoldAdminSelectWidget)
     purpose = forms.ModelChoiceField(
         queryset=StockMovementPurpose.objects.filter(is_active=True),
@@ -43,6 +50,8 @@ class WithdrawForm(forms.Form):
                 (item.individual_uom, item.individual_uom),
                 (item.pack_uom, item.pack_uom)
             ]
+            self.fields['current_quantity'].initial = pluralize_uom(item.current_quantity, item.individual_uom) \
+                if item.current_quantity else ""
 
 class DepositForm(WithdrawForm):
     supplier = forms.ModelChoiceField(
@@ -77,7 +86,7 @@ class StockMovementInline(TabularInline):
         style = "color: var(--color-green-400)" if obj.movement_type == StockMovement.DEPOSIT else "color: var(--color-red-400)"
         unit_of_measure = obj.item.pack_uom if obj.is_packed else obj.item.individual_uom
         if obj.quantity:
-            quantity = f"{obj.quantity} {p.plural(unit_of_measure, obj.quantity)}"
+            quantity = pluralize_uom(obj.quantity, unit_of_measure)
             return format_html('<span style="{};">{}</span>', style, quantity)
         else:
             return "-"
@@ -96,35 +105,43 @@ class ItemSupplierInline(NonrelatedTabularInline):
         pass
 
     def get_formset(self, request, obj=None, **kwargs):
-
-        def to_link(supplier_id, supplier_name):
-            url = reverse_lazy(
-                'admin:inventory_supplier_change',
-                args=[supplier_id]
-            )
-            return format_html('<a href="{}" class="hover:text-primary-600 dark:hover:text-primary-500 text-primary-600 dark:text-primary-500">{}</a>', url, supplier_name)
-
         formset = super().get_formset(request, obj, **kwargs)
-
-        table_data = {
-            "headers": ["Supplier", f"Total Provided ({p.plural(obj.individual_uom)})", f"Price per {obj.individual_uom}"],
-            "rows": [
-                [to_link(x['supplier__id'], x["supplier__name"]), x["total"], format_currency(x['average_price']) if x['average_price'] else ""] for x in obj.suppliers_summary()
-            ]
-        }
 
         # Attach extra context as a property of the formset class
         formset.custom_context_data = {
-            'supplier_summary': table_data,
-        }
+            'supplier_summary': {
+                "headers": ["Supplier", f"Total Provided ({p.plural(obj.individual_uom)})", f"Price per {obj.individual_uom}"],
+                "rows": [
+                    [to_link('admin:inventory_supplier_change', x['supplier__id'], x["supplier__name"]), x["total"], format_currency(x['average_price']) if x['average_price'] else ""] for x in obj.suppliers_summary()
+                ]
+            },
+        } if obj else {}
         return formset
+
+
+class ItemAdminForm(forms.ModelForm):
+    class Meta:
+        model = Item
+        fields = "__all__"
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        instance = kwargs.get('instance')
+
+        category_pk = instance.category.pk if instance and instance.category else None
+        attribute_keys = {x['pk']: x['attributes'] for x in list(ItemCategory.objects.all().values("pk", "attributes"))}
+        default_keys = attribute_keys.get(category_pk, {})
+        self.fields['attributes'].widget = KeyValueFieldWidget(
+            default_keys=default_keys, keys_map=attribute_keys
+        )
 
 
 @admin.register(Item)
 class ItemAdmin(ModelAdmin):
-    change_form_template = "item/change_form.html"
+    form = ItemAdminForm
+    #change_form_template = "item/change_form.html"
 
-    inlines = [StockMovementInline, ItemSupplierInline]
     actions_detail = ["deposit", "withdraw"]
     list_display_links = ["category", "name", "description"]
     list_display = ["category", "name", "description", "uom_display", "current_stock"]
@@ -132,14 +149,22 @@ class ItemAdmin(ModelAdmin):
     ordering = ["category", "name"]
     search_fields = ['name', 'description']
 
-    fieldsets = (
-        (
-            None, { "fields": ["current_stock"] },
-        ),
-        (
-            None, { "fields": ["name", "description", "category", "individual_uom", "pack_uom", "pack_quantity"] }
-        )
-    )
+    def get_inlines(self, request, obj):
+        if obj:
+            return [StockMovementInline, ItemSupplierInline]
+        return []
+
+    def get_fieldsets(self, request, obj=None):
+        fieldsets = [
+            (
+                None, { "fields": ["name", "category", "attributes", "individual_uom", "pack_uom", "pack_quantity"] }
+            )
+        ]
+        if obj:
+            fieldsets.insert(0, (
+                None, { "fields": ["current_stock"] },
+            ))
+        return fieldsets
 
     def uom_display(self, obj):
         if obj:
@@ -242,6 +267,8 @@ class ItemAdmin(ModelAdmin):
                 "form": form,
                 "object": item,
                 "title": "Withdraw",
+                "current_individual_quantity": item.current_quantity,
+                "current_pack_quantity": item.current_quantity / item.pack_quantity if item.pack_quantity > 0 else item.current_quantity,
                 **self.admin_site.each_context(request),
             },
         )
@@ -257,9 +284,101 @@ class SupplierAdmin(ModelAdmin):
 
 @admin.register(ItemCategory)
 class ItemCategoryAdmin(ModelAdmin):
+    formfield_overrides = {
+        ArrayField: {
+            "widget": ArrayWidget,
+        }
+    }
+    
     list_display = ["name", "description"]
 
 
 @admin.register(StockMovementPurpose)
 class StockMovementPurposeAdmin(ModelAdmin):
     list_display = ["name", "description", "is_active"]
+
+
+@register_component
+class InventoryDashboard(BaseComponent):
+
+    def get_stock_movement_per_day_bar_chart(self, start_date, end_date):
+        stock_movement_per_day = StockMovement.get_movement_by_day(start_date, end_date)
+        current = start_date
+        labels = []
+        raw_data_dict = {item['day']: {**item} for item in stock_movement_per_day }
+
+        withdrawal_dataset = {
+            "data": [],
+            "backgroundColor": "var(--color-red-400)"
+        }
+        deposit_dataset = {
+            "data": [],
+            "backgroundColor": "var(--color-green-400)"
+        }
+
+        while current <= end_date:
+            x = raw_data_dict.get(current, {})
+            deposit_dataset["data"].append(x.get('total_deposit', 0))
+            withdrawal_dataset["data"].append(x.get('total_withdraw', 0) * -1)
+            labels.append(str(current))
+            current += timedelta(days=1)
+
+        return {
+            "labels": labels,
+            "datasets": [withdrawal_dataset, deposit_dataset]
+        }
+
+    def get_stock_movement_summary_table(self, start_date, end_date):
+        stock_movement_summary = StockMovement.objects.none()
+        if start_date and end_date:
+            stock_movement_summary = StockMovement.get_summary(start_date, end_date)
+
+        table_data = {
+            "headers": ["Item", "Total Deposited", "Total Withdrawn", "Net Quantity"],
+            "rows": [
+                [to_link("admin:inventory_item_change", x["item__id"], x["item__name"]), 
+                 pluralize_uom(x['total_deposit'], x['item__individual_uom']), 
+                 pluralize_uom(x['total_withdraw'], x['item__individual_uom']), 
+                 pluralize_uom(x['net_quantity'], x['item__individual_uom'])] for x in stock_movement_summary
+            ]
+        } 
+        return table_data
+    
+    def get_stock_movement_history_table(self, start_date, end_date):
+        stock_movement_history = StockMovement.objects.none()
+        if start_date and end_date:
+            stock_movement_history = StockMovement.get_movement_history(start_date, end_date)
+        
+        table_data = {
+            "headers": ["Timestamp", "Item", "Quantity", "Purpose", "Remarks"],
+            "rows": [
+                [
+                    x['timestamp'],
+                    to_link("admin:inventory_item_change", x["item__id"], x["item__name"]),
+                    pluralize_uom(x['quantity'], x['uom']),
+                    x['purpose__name'] or "",
+                    x['remarks']
+                ] for x in stock_movement_history
+            ]
+        }
+        return table_data
+
+    def get_context_data(self, **kwargs):
+        request = self.request
+        start_date = request.session.get('dashboard_start_date', None)
+        end_date = request.session.get('dashboard_end_date', None)
+
+        d1 = datetime.fromisoformat(start_date).date() if start_date else date.today() - timedelta(days=30)
+        d2 = datetime.fromisoformat(end_date).date() if end_date else date.today()
+
+        stock_movement_per_day_bar_chart_data = self.get_stock_movement_per_day_bar_chart(d1, d2)
+        stock_movement_summary_table_data = self.get_stock_movement_summary_table(d1, d2)
+        stock_movement_history_table_data = self.get_stock_movement_history_table(d1, d2)
+
+        context = super().get_context_data(**kwargs)
+        context.update({
+            "stock_movement_summary_table_data": stock_movement_summary_table_data,
+            "stock_movement_history_table_data": stock_movement_history_table_data,
+            "stock_movement_per_day_bar_chart_data": json.dumps(stock_movement_per_day_bar_chart_data)
+        })
+        return context

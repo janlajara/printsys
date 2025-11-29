@@ -1,7 +1,9 @@
 from django.db import models
-from django.db.models import Sum, F, Case, When, IntegerField, DecimalField, Avg, Min, Max
+from django.db.models import Sum, F, Case, When, IntegerField, DecimalField, CharField, Avg, Count, Q
+from django.db.models.functions import TruncDate
 from django.utils import timezone
 from django.core.exceptions import ValidationError
+from django.contrib.postgres.fields import ArrayField
 from django.contrib.auth import get_user_model
 
 User = get_user_model()
@@ -70,6 +72,15 @@ class Supplier(models.Model):
 class ItemCategory(models.Model):
     name = models.CharField(max_length=255, unique=True)
     description = models.TextField(blank=True)
+    attributes = ArrayField(
+        models.CharField(max_length=50),
+        blank=True,
+        default=list,
+    )
+
+    class Meta:
+        verbose_name = "Item category"
+        verbose_name_plural = "Item categories"
 
     def __str__(self):
         return self.name
@@ -80,6 +91,7 @@ class Item(models.Model):
     description = models.TextField(blank=True)
     category = models.ForeignKey(ItemCategory, on_delete=models.SET_NULL, 
                                  related_name='items', null=True, blank=True)
+    attributes = models.JSONField(default=dict, null=True, blank=True)
 
     # Units of measure
     individual_uom = models.CharField(
@@ -216,6 +228,44 @@ class StockMovementPurpose(models.Model):
 
 class StockMovement(models.Model):
 
+    class Query:
+        TOTAL_WITHDRAW = Count("id", filter=Q(movement_type="WITHDRAW"))
+        """
+        Sum(
+            Case(
+                When(
+                    movement_type="WITHDRAW",
+                    then=F('quantity')
+                    * Case(
+                        When(is_packed=True, then=F('item__pack_quantity')),
+                        default=1,
+                        output_field=IntegerField(),
+                    ),
+                ),
+                default=0,
+                output_field=IntegerField(),
+            )
+        )
+        """
+        TOTAL_DEPOSIT = Count("id", filter=Q(movement_type="DEPOSIT"))
+        """
+        Sum(
+            Case(
+                When(
+                    movement_type='DEPOSIT',
+                    then=F('quantity')
+                    * Case(
+                        When(is_packed=True, then=F('item__pack_quantity')),
+                        default=1,
+                        output_field=IntegerField(),
+                    ),
+                ),
+                default=0,
+                output_field=IntegerField(),
+            )
+        )
+        """
+
     DEPOSIT = 'DEPOSIT'
     WITHDRAW = 'WITHDRAW'
     MOVEMENT_TYPES = [
@@ -271,3 +321,55 @@ class StockMovement(models.Model):
         if self.is_packed:
             return self.quantity * self.item.pack_quantity
         return self.quantity
+    
+    @classmethod
+    def get_movement_history(cls, start_date, end_date):
+        movement_history = (
+            StockMovement.objects
+                .filter(timestamp__date__range=[start_date, end_date])
+                .annotate(
+                    uom=Case(
+                        When(is_packed=True, then=F('item__pack_uom')),
+                        default=F('item__individual_uom'),
+                        output_field=CharField(),
+                    )
+                )
+                .values( 'timestamp', 'item__id', 'item__name', 'quantity', 'uom', 'purpose__name', 'remarks')
+        )
+        return movement_history
+    
+    @classmethod
+    def get_movement_by_day(cls, start_date, end_date):
+        movement_by_day = (
+            StockMovement.objects
+                .filter(timestamp__date__range=[start_date, end_date])
+                .annotate(
+                    day=TruncDate('timestamp'), # truncate to date only
+                )
+                .values('day')
+                .annotate(
+                    total_deposit=StockMovement.Query.TOTAL_DEPOSIT,
+                    total_withdraw=StockMovement.Query.TOTAL_WITHDRAW,)
+                .order_by('day'),  # sort by day ascending
+        )[0]
+        return movement_by_day
+    
+    @classmethod
+    def get_summary(cls, start_date, end_date):
+        """
+        Returns aggregated total deposits and withdrawals per item
+        within the given date range.
+        """
+        return (
+            cls.objects
+            .filter(timestamp__date__range=[start_date, end_date])
+            .values('item__id', 'item__name', 'item__individual_uom')
+            .annotate(
+                total_deposit=StockMovement.Query.TOTAL_DEPOSIT,
+                total_withdraw=StockMovement.Query.TOTAL_WITHDRAW,
+            )
+            .annotate(
+                net_quantity=F('total_deposit') - F('total_withdraw')
+            )
+            .order_by('item__name')
+        )

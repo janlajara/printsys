@@ -1,0 +1,8 @@
+{% load i18n unfold %}
+
+{% for key, value in widget_items %}
+    <div class="flex flex-row gap-2 max-w-2xl pb-1">
+        <span style="min-width: 120px">{{key}}: </span>
+        <input type="{{ widget.type }}" name="kvfield-{{ widget.name }}_{{key}}"{% if value != None %} value="{{ value|stringformat:'s' }}"{% endif %}{% include "django/forms/widgets/attrs.html" %}>
+    </div>
+{% endfor %}
