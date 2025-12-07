@@ -26,7 +26,7 @@ class KeyValueFieldWidget(Input):
     input_type = "text"
     template_name = "forms/widgets/key_value_pair.html"
 
-    def __init__(self, default_keys=[], keys_map={}, attrs: dict | None = None) -> None:
+    def __init__(self, default_keys=[], attrs: dict | None = None) -> None:
         super().__init__(
             attrs={
                 **(attrs or {}),
@@ -36,13 +36,12 @@ class KeyValueFieldWidget(Input):
             }
         )
         self.default_keys = default_keys
-        self.keys_map = keys_map
 
     def get_context(self, name, value, attrs):
         context = super().get_context(name, value, attrs)
         import json
-        parsed_value = json.loads(value)
-        final_value = {key: parsed_value.get(key, "") for key in self.default_keys}
+        parsed_value = json.loads(value) or {}
+        final_value = {key: parsed_value.get(key, "") or "" for key in self.default_keys}
         context['widget_items'] = final_value.items()
         return context
     
@@ -51,4 +50,5 @@ class KeyValueFieldWidget(Input):
         for key, value in data.items():
             if key.startswith(f"kvfield-{name}_"):
                 final_value[key.replace(f"kvfield-{name}_", "")] = value
-        return final_value
+        import json
+        return json.dumps(final_value) if final_value else super().value_from_datadict(data, files, name)

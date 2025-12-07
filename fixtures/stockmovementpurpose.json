@@ -1,0 +1,47 @@
+[
+    {
+        "model": "inventory.stockmovementpurpose",
+        "pk": 1,
+        "fields": {
+            "name": "Initial Value",
+            "description": "Represents the initial stock value when setting up inventory.",
+            "is_active": true
+        }
+    },
+    {
+        "model": "inventory.stockmovementpurpose",
+        "pk": 2,
+        "fields": {
+            "name": "Correction",
+            "description": "Used to correct discrepancies in stock quantities.",
+            "is_active": true
+        }
+    },
+    {
+        "model": "inventory.stockmovementpurpose",
+        "pk": 3,
+        "fields": {
+            "name": "Job Order",
+            "description": "Stock movement related to production or job orders.",
+            "is_active": true
+        }
+    },
+    {
+        "model": "inventory.stockmovementpurpose",
+        "pk": 4,
+        "fields": {
+            "name": "Purchase Order",
+            "description": "Stock received from purchase orders.",
+            "is_active": true
+        }
+    },
+    {
+        "model": "inventory.stockmovementpurpose",
+        "pk": 5,
+        "fields": {
+            "name": "Others",
+            "description": "Any other stock movement purpose not listed.",
+            "is_active": true
+        }
+    }
+]

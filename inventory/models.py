@@ -1,5 +1,8 @@
 from django.db import models
-from django.db.models import Sum, F, Case, When, IntegerField, DecimalField, CharField, Avg, Count, Q
+from django.db.models import (
+    Sum, F, Case, When, IntegerField, DecimalField, 
+    CharField, Avg, Count, Q, Subquery, OuterRef
+)
 from django.db.models.functions import TruncDate
 from django.utils import timezone
 from django.core.exceptions import ValidationError
@@ -87,7 +90,7 @@ class ItemCategory(models.Model):
 
 
 class Item(models.Model):
-    name = models.CharField(max_length=255, unique=True)
+    name = models.CharField(max_length=255)
     description = models.TextField(blank=True)
     category = models.ForeignKey(ItemCategory, on_delete=models.SET_NULL, 
                                  related_name='items', null=True, blank=True)
@@ -105,10 +108,14 @@ class Item(models.Model):
     )
 
     # Conversion rate: number of individual units per pack
-    pack_quantity = models.PositiveIntegerField(default=1)
+    pack_quantity = models.PositiveIntegerField(default=1, help_text="Number of individual units per pack")
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        self.description = " ".join([f"{self.name}", *self.attributes.values()])
+        super().save(*args, **kwargs)
 
     @property
     def current_quantity(self):
@@ -149,6 +156,17 @@ class Item(models.Model):
         """
         Returns a breakdown of how much each supplier has provided for this item.
         """
+        latest_price_sq = (
+            self.movements
+            .filter(
+                movement_type='DEPOSIT',
+                supplier=OuterRef('supplier__id'), # match the supplier of the group
+                unit_price__isnull=False,          # ensure price exists
+            )
+            .order_by('-timestamp')                # newest record first
+            .values('unit_price')[:1]
+        )
+        
         summary = (
             self.movements.filter(movement_type='DEPOSIT', supplier__isnull=False)
             .values('supplier__name', 'supplier__id')
@@ -160,13 +178,7 @@ class Item(models.Model):
                         output_field=IntegerField(),
                     )
                 ),
-                average_price=Avg(
-                    Case(
-                        When(is_packed=True, then=F('unit_price') / F('item__pack_quantity')),
-                        default=F('unit_price'),
-                        output_field=DecimalField(),
-                    )
-                )
+                latest_price=Subquery(latest_price_sq)
             )
             .order_by('-total')
         )

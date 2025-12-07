@@ -1,0 +1,155 @@
+[
+    {
+        "model": "inventory.itemcategory",
+        "pk": 1,
+        "fields": {
+            "name": "Paper",
+            "description": "Standard paper products with multiple attributes",
+            "attributes": ["Brand", "Size", "Color", "Texture", "Thickness"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 2,
+        "fields": {
+            "name": "Sticker Paper",
+            "description": "Adhesive paper sticker stock designed for print production",
+            "attributes": ["Brand", "Size", "Color", "Texture", "Thickness"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 3,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Used for multi-part form printing",
+            "attributes": ["Brand", "Size", "Color", "Texture", "Thickness"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 4,
+        "fields": {
+            "name": "Coated Paper",
+            "description": "Coated paper for high-quality, smooth-surface printing",
+            "attributes": ["Brand", "Size", "Color", "Texture", "Thickness"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 5,
+        "fields": {
+            "name": "Specialty Paper",
+            "description": "Paper designed for specialized applications",
+            "attributes": ["Brand", "Size", "Color", "Texture", "Thickness"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 6,
+        "fields": {
+            "name": "Paperboard",
+            "description": "Thicker paper products for packaging and crafts",
+            "attributes": ["Brand", "Size", "Color", "Texture", "Thickness"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 7,
+        "fields": {
+            "name": "Machines and Parts",
+            "description": "Equipment and spare parts",
+            "attributes": ["Brand", "Size"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 8,
+        "fields": {
+            "name": "Office Supplies",
+            "description": "Everyday office consumables",
+            "attributes": ["Brand", "Color", "Size"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 9,
+        "fields": {
+            "name": "Maintenance Materials",
+            "description": "Materials for maintaining equipment",
+            "attributes": ["Brand", "Color", "Size"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 10,
+        "fields": {
+            "name": "Ink",
+            "description": "Printing inks in various colors",
+            "attributes": ["Brand", "Color", "Size"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 11,
+        "fields": {
+            "name": "Films and Plates",
+            "description": "Materials used in printing processes",
+            "attributes": ["Brand", "Size"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 12,
+        "fields": {
+            "name": "Finishing Materials",
+            "description": "Materials for finishing printed products",
+            "attributes": ["Brand", "Color", "Thickness", "Size"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 13,
+        "fields": {
+            "name": "Machine Consumables",
+            "description": "Consumable parts used in machines",
+            "attributes": ["Brand", "Size"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 14,
+        "fields": {
+            "name": "Chemicals",
+            "description": "Chemical products for industrial use",
+            "attributes": ["Brand", "Size"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 15,
+        "fields": {
+            "name": "Envelope",
+            "description": "Print-ready paper envelopes for mailing and document storage",
+            "attributes": ["Brand", "Color", "Size"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 16,
+        "fields": {
+            "name": "Folder",
+            "description": "Paperboard folders for document organization and storage.",
+            "attributes": ["Brand", "Color", "Size"]
+        }
+    },
+    {
+        "model": "inventory.itemcategory",
+        "pk": 17,
+        "fields": {
+            "name": "Others",
+            "description": "Miscellaneous items",
+            "attributes": ["Brand", "Color", "Thickness", "Size"]
+        }
+    }
+]

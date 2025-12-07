@@ -1,0 +1,6755 @@
+[
+    {
+        "model": "inventory.item",
+        "pk": 1,
+        "fields": {
+            "name": "SORMZ Roller",
+            "description": "SORMZ Roller 60x735",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "60x735"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 2,
+        "fields": {
+            "name": "SORMZ Roller",
+            "description": "SORMZ Roller 66x735",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "66x735"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 3,
+        "fields": {
+            "name": "SORMZ Roller",
+            "description": "SORMZ Roller 66x745",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "66x745"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 4,
+        "fields": {
+            "name": "SORMZ Roller",
+            "description": "SORMZ Roller 63x745",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "63x745"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 5,
+        "fields": {
+            "name": "SORMZ Roller",
+            "description": "SORMZ Roller 72x745",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "72x745"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 6,
+        "fields": {
+            "name": "Minerva Roller",
+            "description": "Minerva Roller 10x15",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "10x15"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 7,
+        "fields": {
+            "name": "KORS Roller",
+            "description": "KORS Roller 51x720",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "51x720"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 8,
+        "fields": {
+            "name": "KORS Roller",
+            "description": "KORS Roller 53x720",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "53x720"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 9,
+        "fields": {
+            "name": "KORS Roller",
+            "description": "KORS Roller 55x720",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "55x720"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 10,
+        "fields": {
+            "name": "KORS Roller",
+            "description": "KORS Roller 57x720",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "57x720"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 11,
+        "fields": {
+            "name": "KORS Roller",
+            "description": "KORS Roller 49x740",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "49x740"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 12,
+        "fields": {
+            "name": "GTO Roller",
+            "description": "GTO Roller 45x510",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "45x510"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 13,
+        "fields": {
+            "name": "GTO Roller",
+            "description": "GTO Roller 47x510",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "47x510"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 14,
+        "fields": {
+            "name": "GTO Roller",
+            "description": "GTO Roller 49x510",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "49x510"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 15,
+        "fields": {
+            "name": "GTO Roller",
+            "description": "GTO Roller 49x515",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "49x515"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 16,
+        "fields": {
+            "name": "GTO Roller",
+            "description": "GTO Roller 51x510",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "51x510"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 17,
+        "fields": {
+            "name": "GTO Roller",
+            "description": "GTO Roller 60x570",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "60x570"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 18,
+        "fields": {
+            "name": "Cut-sized Paper",
+            "description": "Cut-sized Paper Cactus 8.5x11in White",
+            "category": 1,
+            "attributes": {
+                "Brand": "Cactus",
+                "Size": "8.5x11in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 19,
+        "fields": {
+            "name": "Cut-sized Paper",
+            "description": "Cut-sized Paper Cactus 8.5x13in White",
+            "category": 1,
+            "attributes": {
+                "Brand": "Cactus",
+                "Size": "8.5x13in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 20,
+        "fields": {
+            "name": "Cut-sized Paper",
+            "description": "Cut-sized Paper Cactus 11x17in White",
+            "category": 1,
+            "attributes": {
+                "Brand": "Cactus",
+                "Size": "11x17in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 21,
+        "fields": {
+            "name": "Cut-sized Paper",
+            "description": "Cut-sized Paper Cactus (A3)16.5x 8.75 White",
+            "category": 1,
+            "attributes": {
+                "Brand": "Cactus",
+                "Size": "(A3)16.5x 8.75",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 22,
+        "fields": {
+            "name": "Cut-sized Paper",
+            "description": "Cut-sized Paper Cactus A4 White",
+            "category": 1,
+            "attributes": {
+                "Brand": "Cactus",
+                "Size": "A4",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 23,
+        "fields": {
+            "name": "Cut-sized Paper",
+            "description": "Cut-sized Paper Mimeo 8.5x11in White Wove",
+            "category": 1,
+            "attributes": {
+                "Brand": "Mimeo",
+                "Size": "8.5x11in",
+                "Color": "White",
+                "Texture": "Wove",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 24,
+        "fields": {
+            "name": "Cut-sized Paper",
+            "description": "Cut-sized Paper Mimeo 8.5x13in White Wove",
+            "category": 1,
+            "attributes": {
+                "Brand": "Mimeo",
+                "Size": "8.5x13in",
+                "Color": "White",
+                "Texture": "Wove",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 25,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 22x34in White CB",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "22x34in",
+                "Color": "White",
+                "Texture": "CB",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 26,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 22x34in Blue CFB",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "22x34in",
+                "Color": "Blue",
+                "Texture": "CFB",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 27,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 22x34in Green CFB",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "22x34in",
+                "Color": "Green",
+                "Texture": "CFB",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 28,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 22x34in Pink CFB",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "22x34in",
+                "Color": "Pink",
+                "Texture": "CFB",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 29,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 22x34in White CFB",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "22x34in",
+                "Color": "White",
+                "Texture": "CFB",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 30,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 22x34in Yellow CFB",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "22x34in",
+                "Color": "Yellow",
+                "Texture": "CFB",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 31,
+        "fields": {
+            "name": "KORS Roller",
+            "description": "KORS Roller 51x718",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": "51x718"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 32,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 28x34in White CB",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "28x34in",
+                "Color": "White",
+                "Texture": "CB",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 33,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 28x34in Blue CFB",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "28x34in",
+                "Color": "Blue",
+                "Texture": "CFB",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 34,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 28x34in Green CFB",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "28x34in",
+                "Color": "Green",
+                "Texture": "CFB",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 35,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 28x34in Pink CFB",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "28x34in",
+                "Color": "Pink",
+                "Texture": "CFB",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 36,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 28x34in White CFB",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "28x34in",
+                "Color": "White",
+                "Texture": "CFB",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 37,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 28x34in Yellow CFB",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "28x34in",
+                "Color": "Yellow",
+                "Texture": "CFB",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 38,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 28x34in Blue CF",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "28x34in",
+                "Color": "Blue",
+                "Texture": "CF",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 39,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 28x34in Green CF",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "28x34in",
+                "Color": "Green",
+                "Texture": "CF",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 40,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 28x34in Pink CF",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "28x34in",
+                "Color": "Pink",
+                "Texture": "CF",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 41,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 28x34in White CF",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "28x34in",
+                "Color": "White",
+                "Texture": "CF",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 42,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 28x34in Yellow CF",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "28x34in",
+                "Color": "Yellow",
+                "Texture": "CF",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 43,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 22x34in White #40",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#40"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 44,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 22x34in White #50",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#50"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 45,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 22x34in White #60",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#60"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 46,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 22x34in White #70",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#70"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 47,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 22x34in White #80",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#80"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 48,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 28x34in White #40",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "28x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#40"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 49,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 28x34in White #50",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "28x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#50"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 50,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 28x34in White #60",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "28x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#60"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 51,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 28x34in White #70",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "28x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#70"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 52,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 28x34in White #80",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "28x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#80"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 53,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 25x38in White #40",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#40"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 54,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 25x38in White #50",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#50"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 55,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 25x38in White #60",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#60"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 56,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 25x38in White #70",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#70"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 57,
+        "fields": {
+            "name": "Book Paper",
+            "description": "Book Paper Triplex 25x38in White #80",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": "#80"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 58,
+        "fields": {
+            "name": "Coated 2-Sides",
+            "description": "Coated 2-Sides Triplex 25x38in White Gloss #60",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "Gloss",
+                "Thickness": "#60"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 59,
+        "fields": {
+            "name": "Coated 2-Sides",
+            "description": "Coated 2-Sides Triplex 25x38in White Gloss #70",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "Gloss",
+                "Thickness": "#70"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 60,
+        "fields": {
+            "name": "Coated 2-Sides",
+            "description": "Coated 2-Sides Triplex 25x38in White Gloss #80",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "Gloss",
+                "Thickness": "#80"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 61,
+        "fields": {
+            "name": "Coated 2-Sides",
+            "description": "Coated 2-Sides Triplex 25x38in White Gloss #100",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "Gloss",
+                "Thickness": "#100"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 62,
+        "fields": {
+            "name": "Coated 2-Sides",
+            "description": "Coated 2-Sides Triplex 25x38in White Gloss #120",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "Gloss",
+                "Thickness": "#120"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 63,
+        "fields": {
+            "name": "Coated 2-Sides",
+            "description": "Coated 2-Sides Triplex 25x38in White Gloss #140",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "Gloss",
+                "Thickness": "#140"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 64,
+        "fields": {
+            "name": "Coated 2-Sides",
+            "description": "Coated 2-Sides Triplex 25x38in White Gloss #160",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "Gloss",
+                "Thickness": "#160"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 65,
+        "fields": {
+            "name": "Coated 2-Sides",
+            "description": "Coated 2-Sides Triplex 25x38in White Gloss #170",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "Gloss",
+                "Thickness": "#170"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 66,
+        "fields": {
+            "name": "Coated 2-Sides",
+            "description": "Coated 2-Sides Triplex 25x38in White Gloss #180",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "Gloss",
+                "Thickness": "#180"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 67,
+        "fields": {
+            "name": "Coated 2-Sides",
+            "description": "Coated 2-Sides Triplex 25x38in White Gloss #200",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "Gloss",
+                "Thickness": "#200"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 68,
+        "fields": {
+            "name": "Coated 2-Sides",
+            "description": "Coated 2-Sides Triplex 25x38in White Gloss #220",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "25x38in",
+                "Color": "White",
+                "Texture": "Gloss",
+                "Thickness": "#220"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 69,
+        "fields": {
+            "name": "Onionskin Paper",
+            "description": "Onionskin Paper OTC 22x34in Blue",
+            "category": 1,
+            "attributes": {
+                "Brand": "OTC",
+                "Size": "22x34in",
+                "Color": "Blue",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 70,
+        "fields": {
+            "name": "Onionskin Paper",
+            "description": "Onionskin Paper OTC 22x34in Green",
+            "category": 1,
+            "attributes": {
+                "Brand": "OTC",
+                "Size": "22x34in",
+                "Color": "Green",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 71,
+        "fields": {
+            "name": "Onionskin Paper",
+            "description": "Onionskin Paper OTC 22x34in Pink",
+            "category": 1,
+            "attributes": {
+                "Brand": "OTC",
+                "Size": "22x34in",
+                "Color": "Pink",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 72,
+        "fields": {
+            "name": "Onionskin Paper",
+            "description": "Onionskin Paper OTC 22x34in Yellow",
+            "category": 1,
+            "attributes": {
+                "Brand": "OTC",
+                "Size": "22x34in",
+                "Color": "Yellow",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 73,
+        "fields": {
+            "name": "Onionskin Paper",
+            "description": "Onionskin Paper OTC 22x34in White",
+            "category": 1,
+            "attributes": {
+                "Brand": "OTC",
+                "Size": "22x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 74,
+        "fields": {
+            "name": "Onionskin Paper",
+            "description": "Onionskin Paper OTC 28x34in Blue",
+            "category": 1,
+            "attributes": {
+                "Brand": "OTC",
+                "Size": "28x34in",
+                "Color": "Blue",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 75,
+        "fields": {
+            "name": "Onionskin Paper",
+            "description": "Onionskin Paper OTC 28x34in Green",
+            "category": 1,
+            "attributes": {
+                "Brand": "OTC",
+                "Size": "28x34in",
+                "Color": "Green",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 76,
+        "fields": {
+            "name": "Onionskin Paper",
+            "description": "Onionskin Paper OTC 28x34in Pink",
+            "category": 1,
+            "attributes": {
+                "Brand": "OTC",
+                "Size": "28x34in",
+                "Color": "Pink",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 77,
+        "fields": {
+            "name": "Onionskin Paper",
+            "description": "Onionskin Paper OTC 28x34in Yellow",
+            "category": 1,
+            "attributes": {
+                "Brand": "OTC",
+                "Size": "28x34in",
+                "Color": "Yellow",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 78,
+        "fields": {
+            "name": "Bristol",
+            "description": "Bristol Triplex 22.5x28.5in White Vellum #74",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22.5x28.5in",
+                "Color": "White",
+                "Texture": "Vellum",
+                "Thickness": "#74"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 79,
+        "fields": {
+            "name": "Bristol",
+            "description": "Bristol Triplex 22.5x28.5in Blue Vellum #74",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22.5x28.5in",
+                "Color": "Blue",
+                "Texture": "Vellum",
+                "Thickness": "#74"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 80,
+        "fields": {
+            "name": "Bristol",
+            "description": "Bristol Triplex 22.5x28.5in Green Vellum #74",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22.5x28.5in",
+                "Color": "Green",
+                "Texture": "Vellum",
+                "Thickness": "#74"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 81,
+        "fields": {
+            "name": "Bristol",
+            "description": "Bristol Triplex 22.5x28.5in Golden Rod Vellum #74",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22.5x28.5in",
+                "Color": "Golden Rod",
+                "Texture": "Vellum",
+                "Thickness": "#74"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 82,
+        "fields": {
+            "name": "Bristol",
+            "description": "Bristol Triplex 22.5x28.5in Orange Vellum #74",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22.5x28.5in",
+                "Color": "Orange",
+                "Texture": "Vellum",
+                "Thickness": "#74"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 83,
+        "fields": {
+            "name": "Bristol",
+            "description": "Bristol Triplex 22.5x28.5in Pink Vellum #74",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22.5x28.5in",
+                "Color": "Pink",
+                "Texture": "Vellum",
+                "Thickness": "#74"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 84,
+        "fields": {
+            "name": "Bristol",
+            "description": "Bristol Triplex 22.5x28.5in Red Vellum #74",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22.5x28.5in",
+                "Color": "Red",
+                "Texture": "Vellum",
+                "Thickness": "#74"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 85,
+        "fields": {
+            "name": "Bristol",
+            "description": "Bristol Triplex 22.5x28.5in Yellow Vellum #74",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22.5x28.5in",
+                "Color": "Yellow",
+                "Texture": "Vellum",
+                "Thickness": "#74"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 86,
+        "fields": {
+            "name": "Bristol",
+            "description": "Bristol Triplex 22.5x28.5in Blue Vellum #100",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22.5x28.5in",
+                "Color": "Blue",
+                "Texture": "Vellum",
+                "Thickness": "#100"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 87,
+        "fields": {
+            "name": "Bond Paper",
+            "description": "Bond Paper TIPCO 22x34in Blue",
+            "category": 1,
+            "attributes": {
+                "Brand": "TIPCO",
+                "Size": "22x34in",
+                "Color": "Blue",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 88,
+        "fields": {
+            "name": "Bond Paper",
+            "description": "Bond Paper TIPCO 22x34in Green",
+            "category": 1,
+            "attributes": {
+                "Brand": "TIPCO",
+                "Size": "22x34in",
+                "Color": "Green",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 89,
+        "fields": {
+            "name": "Bond Paper",
+            "description": "Bond Paper TIPCO 22x34in Pink",
+            "category": 1,
+            "attributes": {
+                "Brand": "TIPCO",
+                "Size": "22x34in",
+                "Color": "Pink",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 90,
+        "fields": {
+            "name": "Bond Paper",
+            "description": "Bond Paper TIPCO 22x34in White",
+            "category": 1,
+            "attributes": {
+                "Brand": "TIPCO",
+                "Size": "22x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 91,
+        "fields": {
+            "name": "Bond Paper",
+            "description": "Bond Paper TIPCO 22x34in Yellow",
+            "category": 1,
+            "attributes": {
+                "Brand": "TIPCO",
+                "Size": "22x34in",
+                "Color": "Yellow",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 92,
+        "fields": {
+            "name": "Bond Paper",
+            "description": "Bond Paper TIPCO 28x34in Blue",
+            "category": 1,
+            "attributes": {
+                "Brand": "TIPCO",
+                "Size": "28x34in",
+                "Color": "Blue",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 93,
+        "fields": {
+            "name": "Bond Paper",
+            "description": "Bond Paper TIPCO 28x34in Green",
+            "category": 1,
+            "attributes": {
+                "Brand": "TIPCO",
+                "Size": "28x34in",
+                "Color": "Green",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 94,
+        "fields": {
+            "name": "Bond Paper",
+            "description": "Bond Paper TIPCO 28x34in Pink",
+            "category": 1,
+            "attributes": {
+                "Brand": "TIPCO",
+                "Size": "28x34in",
+                "Color": "Pink",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 95,
+        "fields": {
+            "name": "Bond Paper",
+            "description": "Bond Paper TIPCO 28x34in White",
+            "category": 1,
+            "attributes": {
+                "Brand": "TIPCO",
+                "Size": "28x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 96,
+        "fields": {
+            "name": "Bond Paper",
+            "description": "Bond Paper TIPCO 28x34in Yellow",
+            "category": 1,
+            "attributes": {
+                "Brand": "TIPCO",
+                "Size": "28x34in",
+                "Color": "Yellow",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 97,
+        "fields": {
+            "name": "Bond Paper",
+            "description": "Bond Paper TIPCO 8.5x13in White",
+            "category": 1,
+            "attributes": {
+                "Brand": "TIPCO",
+                "Size": "8.5x13in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 98,
+        "fields": {
+            "name": "Newsprint Paper",
+            "description": "Newsprint Paper Triplex Newsprint 22x34in White",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex Newsprint",
+                "Size": "22x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 99,
+        "fields": {
+            "name": "Newsprint Paper",
+            "description": "Newsprint Paper Triplex Newsprint 24x36in White",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex Newsprint",
+                "Size": "24x36in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 100,
+        "fields": {
+            "name": "Newsprint Paper",
+            "description": "Newsprint Paper Triplex Newsprint 18x24in White",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex Newsprint",
+                "Size": "18x24in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 101,
+        "fields": {
+            "name": "Newsprint Paper",
+            "description": "Newsprint Paper Triplex Newsprint 450x450 White",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex Newsprint",
+                "Size": "450x450",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 102,
+        "fields": {
+            "name": "Newsprint Paper",
+            "description": "Newsprint Paper Triplex Newsprint 28x34in White",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex Newsprint",
+                "Size": "28x34in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 103,
+        "fields": {
+            "name": "Newsprint Paper",
+            "description": "Newsprint Paper Triplex Newsprint 8.5x11in White",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex Newsprint",
+                "Size": "8.5x11in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 104,
+        "fields": {
+            "name": "Newsprint Paper",
+            "description": "Newsprint Paper Triplex Newsprint 8.5x13in White",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex Newsprint",
+                "Size": "8.5x13in",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 105,
+        "fields": {
+            "name": "Kraft Paper",
+            "description": "Kraft Paper Triplex 36x48in Brown #80",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "36x48in",
+                "Color": "Brown",
+                "Texture": "",
+                "Thickness": "#80"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 106,
+        "fields": {
+            "name": "Kraft Paper",
+            "description": "Kraft Paper Triplex 18x23in Brown #150",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "18x23in",
+                "Color": "Brown",
+                "Texture": "",
+                "Thickness": "#150"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 107,
+        "fields": {
+            "name": "Kraft Paper",
+            "description": "Kraft Paper Triplex 23x28in Brown #150",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "23x28in",
+                "Color": "Brown",
+                "Texture": "",
+                "Thickness": "#150"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 108,
+        "fields": {
+            "name": "Kraft Paper",
+            "description": "Kraft Paper Triplex kraft 36x48in Brown #150",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex kraft",
+                "Size": "36x48in",
+                "Color": "Brown",
+                "Texture": "",
+                "Thickness": "#150"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 109,
+        "fields": {
+            "name": "Foldcote S/W",
+            "description": "Foldcote S/W Triplex 31x43in #10",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "31x43in",
+                "Color": "",
+                "Texture": "",
+                "Thickness": "#10"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 110,
+        "fields": {
+            "name": "Foldcote S/W",
+            "description": "Foldcote S/W Triplex 31x43in #12",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "31x43in",
+                "Color": "",
+                "Texture": "",
+                "Thickness": "#12"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 111,
+        "fields": {
+            "name": "Foldcote S/W",
+            "description": "Foldcote S/W Triplex 31x43in #15",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "31x43in",
+                "Color": "",
+                "Texture": "",
+                "Thickness": "#15"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 112,
+        "fields": {
+            "name": "Foldcote S/W",
+            "description": "Foldcote S/W Triplex 31x43in #18",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "31x43in",
+                "Color": "",
+                "Texture": "",
+                "Thickness": "#18"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 113,
+        "fields": {
+            "name": "Foldcote S/W",
+            "description": "Foldcote S/W Triplex 31x43in #20",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "31x43in",
+                "Color": "",
+                "Texture": "",
+                "Thickness": "#20"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 114,
+        "fields": {
+            "name": "Tag",
+            "description": "Tag Triplex 31x45in White U.S. #14",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "31x45in",
+                "Color": "White U.S.",
+                "Texture": "",
+                "Thickness": "#14"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 115,
+        "fields": {
+            "name": "Chip",
+            "description": "Chip Triplex 26x38in Gray #120",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "26x38in",
+                "Color": "Gray",
+                "Texture": "",
+                "Thickness": "#120"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 116,
+        "fields": {
+            "name": "Kromekote",
+            "description": "Kromekote Triplex 26x40in White Gloss 189gsm",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "26x40in",
+                "Color": "White",
+                "Texture": "Gloss",
+                "Thickness": "189gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 117,
+        "fields": {
+            "name": "Carolina",
+            "description": "Carolina Triplex 26x40in White Smooth 240gsm",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "26x40in",
+                "Color": "White",
+                "Texture": "Smooth",
+                "Thickness": "240gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 100
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 118,
+        "fields": {
+            "name": "Windowed",
+            "description": "Windowed Trojan White 9.5x4.75in",
+            "category": 15,
+            "attributes": {
+                "Brand": "Trojan",
+                "Color": "White",
+                "Size": "9.5x4.75in"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 119,
+        "fields": {
+            "name": "Windowless",
+            "description": "Windowless Trojan White 9.5x4.75in",
+            "category": 15,
+            "attributes": {
+                "Brand": "Trojan",
+                "Color": "White",
+                "Size": "9.5x4.75in"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 120,
+        "fields": {
+            "name": "Baronial",
+            "description": "Baronial Trojan White 9.5x4.25in",
+            "category": 15,
+            "attributes": {
+                "Brand": "Trojan",
+                "Color": "White",
+                "Size": "9.5x4.25in"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 121,
+        "fields": {
+            "name": "Kraft",
+            "description": "Kraft Trojan Golden Brown 9x15in",
+            "category": 15,
+            "attributes": {
+                "Brand": "Trojan",
+                "Color": "Golden Brown",
+                "Size": "9x15in"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 122,
+        "fields": {
+            "name": "Kraft",
+            "description": "Kraft Trojan Documentary Golden Brown 9x12in",
+            "category": 15,
+            "attributes": {
+                "Brand": "Trojan Documentary",
+                "Color": "Golden Brown",
+                "Size": "9x12in"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 123,
+        "fields": {
+            "name": "Long",
+            "description": "Long Bigyield White 8.5x13",
+            "category": 16,
+            "attributes": {
+                "Brand": "Bigyield",
+                "Color": "White",
+                "Size": "8.5x13"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "bundle",
+            "pack_quantity": 100
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 124,
+        "fields": {
+            "name": "Short",
+            "description": "Short Bigyield White 8.5x11",
+            "category": 16,
+            "attributes": {
+                "Brand": "Bigyield",
+                "Color": "White",
+                "Size": "8.5x11"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "bundle",
+            "pack_quantity": 100
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 125,
+        "fields": {
+            "name": "Card",
+            "description": "Card Triplex 22.5x28.5in White Vellum #100",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22.5x28.5in",
+                "Color": "White",
+                "Texture": "Vellum",
+                "Thickness": "#100"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 126,
+        "fields": {
+            "name": "Card",
+            "description": "Card Triplex 22.5x28.5in White Vellum #120",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "22.5x28.5in",
+                "Color": "White",
+                "Texture": "Vellum",
+                "Thickness": "#120"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 127,
+        "fields": {
+            "name": "Book B/B",
+            "description": "Book B/B Yunitrade 15.5x10.5in White Uncoated",
+            "category": 2,
+            "attributes": {
+                "Brand": "Yunitrade",
+                "Size": "15.5x10.5in",
+                "Color": "White",
+                "Texture": "Uncoated",
+                "Thickness": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "bundle",
+            "pack_quantity": 1000
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 128,
+        "fields": {
+            "name": "Book B/B",
+            "description": "Book B/B Yunitrade A4 White Uncoated",
+            "category": 2,
+            "attributes": {
+                "Brand": "Yunitrade",
+                "Size": "A4",
+                "Color": "White",
+                "Texture": "Uncoated",
+                "Thickness": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "bundle",
+            "pack_quantity": 1000
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 129,
+        "fields": {
+            "name": "Book B/B",
+            "description": "Book B/B Yunitrade 10x21 White Uncoated",
+            "category": 2,
+            "attributes": {
+                "Brand": "Yunitrade",
+                "Size": "10x21",
+                "Color": "White",
+                "Texture": "Uncoated",
+                "Thickness": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "bundle",
+            "pack_quantity": 1000
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 130,
+        "fields": {
+            "name": "Book Y/B",
+            "description": "Book Y/B Yunitrade A4 White Uncoated",
+            "category": 2,
+            "attributes": {
+                "Brand": "Yunitrade",
+                "Size": "A4",
+                "Color": "White",
+                "Texture": "Uncoated",
+                "Thickness": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "bundle",
+            "pack_quantity": 1000
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 131,
+        "fields": {
+            "name": "Book Y/B",
+            "description": "Book Y/B Yunitrade 9x12in White Uncoated",
+            "category": 2,
+            "attributes": {
+                "Brand": "Yunitrade",
+                "Size": "9x12in",
+                "Color": "White",
+                "Texture": "Uncoated",
+                "Thickness": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "bundle",
+            "pack_quantity": 1000
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 132,
+        "fields": {
+            "name": "Book Y/B",
+            "description": "Book Y/B Yunitrade 24x36in White Uncoated",
+            "category": 2,
+            "attributes": {
+                "Brand": "Yunitrade",
+                "Size": "24x36in",
+                "Color": "White",
+                "Texture": "Uncoated",
+                "Thickness": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "bundle",
+            "pack_quantity": 100
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 133,
+        "fields": {
+            "name": "Book W/B",
+            "description": "Book W/B Yunitrade 24x36in White Uncoated",
+            "category": 2,
+            "attributes": {
+                "Brand": "Yunitrade",
+                "Size": "24x36in",
+                "Color": "White",
+                "Texture": "Uncoated",
+                "Thickness": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "bundle",
+            "pack_quantity": 100
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 134,
+        "fields": {
+            "name": "Satin Y/B",
+            "description": "Satin Y/B Yunitrade 24x36in White Gloss",
+            "category": 2,
+            "attributes": {
+                "Brand": "Yunitrade",
+                "Size": "24x36in",
+                "Color": "White",
+                "Texture": "Gloss",
+                "Thickness": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "bundle",
+            "pack_quantity": 100
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 135,
+        "fields": {
+            "name": "Neon",
+            "description": "Neon Yunitrade 24x36in Green Uncoated",
+            "category": 2,
+            "attributes": {
+                "Brand": "Yunitrade",
+                "Size": "24x36in",
+                "Color": "Green",
+                "Texture": "Uncoated",
+                "Thickness": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "bundle",
+            "pack_quantity": 100
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 136,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper Astrobright Lemon 89gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "Astrobright",
+                "Size": "",
+                "Color": "Lemon",
+                "Texture": "",
+                "Thickness": "89gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 137,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper Astrobright Green 89gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "Astrobright",
+                "Size": "",
+                "Color": "Green",
+                "Texture": "",
+                "Thickness": "89gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 138,
+        "fields": {
+            "name": "Coated 2-Sides",
+            "description": "Coated 2-Sides triplex 25x38 white gloss 220",
+            "category": 1,
+            "attributes": {
+                "Brand": "triplex",
+                "Size": "25x38",
+                "Color": "white",
+                "Texture": "gloss",
+                "Thickness": "220"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 200
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 139,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 22x34in Blue CF",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "22x34in",
+                "Color": "Blue",
+                "Texture": "CF",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 140,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 22x34in Green CF",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "22x34in",
+                "Color": "Green",
+                "Texture": "CF",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 141,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 22x34in Pink CF",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "22x34in",
+                "Color": "Pink",
+                "Texture": "CF",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 142,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 22x34in White CF",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "22x34in",
+                "Color": "White",
+                "Texture": "CF",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 143,
+        "fields": {
+            "name": "Carbonless Paper",
+            "description": "Carbonless Paper Goldmark 22x34in Yellow CF",
+            "category": 3,
+            "attributes": {
+                "Brand": "Goldmark",
+                "Size": "22x34in",
+                "Color": "Yellow",
+                "Texture": "CF",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 144,
+        "fields": {
+            "name": "Tag",
+            "description": "Tag Triplex 28x34in White CF 125gsm",
+            "category": 6,
+            "attributes": {
+                "Brand": "Triplex",
+                "Size": "28x34in",
+                "Color": "White",
+                "Texture": "CF",
+                "Thickness": "125gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 250
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 145,
+        "fields": {
+            "name": "Windowless",
+            "description": "Windowless Trojan White 9.5x4.25in",
+            "category": 15,
+            "attributes": {
+                "Brand": "Trojan",
+                "Color": "White",
+                "Size": "9.5x4.25in"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 146,
+        "fields": {
+            "name": "Gum Solution",
+            "description": "Gum Solution",
+            "category": 14,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 147,
+        "fields": {
+            "name": "Fountain Solution",
+            "description": "Fountain Solution DYNA 200 FA Liters",
+            "category": 14,
+            "attributes": {
+                "Brand": "DYNA 200 FA",
+                "Size": "Liters"
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 148,
+        "fields": {
+            "name": "Phosporic Acid",
+            "description": "Phosporic Acid",
+            "category": 14,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 149,
+        "fields": {
+            "name": "Lacquer Thinner",
+            "description": "Lacquer Thinner",
+            "category": 14,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 150,
+        "fields": {
+            "name": "Motor Oil",
+            "description": "Motor Oil",
+            "category": 14,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 151,
+        "fields": {
+            "name": "Ink Reducer",
+            "description": "Ink Reducer",
+            "category": 14,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 152,
+        "fields": {
+            "name": "Singer Oil",
+            "description": "Singer Oil",
+            "category": 14,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 153,
+        "fields": {
+            "name": "Glycerine",
+            "description": "Glycerine",
+            "category": 14,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 154,
+        "fields": {
+            "name": "Mineral Oil",
+            "description": "Mineral Oil",
+            "category": 14,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 155,
+        "fields": {
+            "name": "Cyanoacrylate Adhesive",
+            "description": "Cyanoacrylate Adhesive Pacmac",
+            "category": 14,
+            "attributes": {
+                "Brand": "Pacmac",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 156,
+        "fields": {
+            "name": "Laundry Bar",
+            "description": "Laundry Bar",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 157,
+        "fields": {
+            "name": "Laundry Powder",
+            "description": "Laundry Powder",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 158,
+        "fields": {
+            "name": "All-Purpose Cleanser",
+            "description": "All-Purpose Cleanser ajax/zim",
+            "category": 9,
+            "attributes": {
+                "Brand": "ajax/zim",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 159,
+        "fields": {
+            "name": "Cotton Balls",
+            "description": "Cotton Balls",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "pack",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 160,
+        "fields": {
+            "name": "Cotton Rags",
+            "description": "Cotton Rags",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 161,
+        "fields": {
+            "name": "Floor Wax",
+            "description": "Floor Wax",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 162,
+        "fields": {
+            "name": "Garbage Bag",
+            "description": "Garbage Bag S",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "S"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "pack",
+            "pack_quantity": 100
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 163,
+        "fields": {
+            "name": "Garbage Bag",
+            "description": "Garbage Bag XL",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "XL"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "pack",
+            "pack_quantity": 100
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 164,
+        "fields": {
+            "name": "Mophead Refill",
+            "description": "Mophead Refill",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 165,
+        "fields": {
+            "name": "Alcohol",
+            "description": "Alcohol 500ml",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "500ml"
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 166,
+        "fields": {
+            "name": "Industrial Sponge",
+            "description": "Industrial Sponge Viscovita",
+            "category": 9,
+            "attributes": {
+                "Brand": "Viscovita",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 167,
+        "fields": {
+            "name": "Padding Cement",
+            "description": "Padding Cement Stikwel Red 4kg",
+            "category": 12,
+            "attributes": {
+                "Brand": "Stikwel",
+                "Color": "Red",
+                "Thickness": "",
+                "Size": "4kg"
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 168,
+        "fields": {
+            "name": "Flap Glue",
+            "description": "Flap Glue",
+            "category": 12,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Thickness": "",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 169,
+        "fields": {
+            "name": "Magnetic Wire",
+            "description": "Magnetic Wire #31",
+            "category": 12,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Thickness": "",
+                "Size": "#31"
+            },
+            "individual_uom": "roll",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 170,
+        "fields": {
+            "name": "Metal Eyelet",
+            "description": "Metal Eyelet",
+            "category": 12,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Thickness": "",
+                "Size": ""
+            },
+            "individual_uom": "box",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 171,
+        "fields": {
+            "name": "Nylon String",
+            "description": "Nylon String",
+            "category": 12,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Thickness": "",
+                "Size": ""
+            },
+            "individual_uom": "roll",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 172,
+        "fields": {
+            "name": "Plastic",
+            "description": "Plastic 7x10",
+            "category": 12,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Thickness": "",
+                "Size": "7x10"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 173,
+        "fields": {
+            "name": "Plastic",
+            "description": "Plastic 10x15/10x14",
+            "category": 12,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Thickness": "",
+                "Size": "10x15/10x14"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 174,
+        "fields": {
+            "name": "Gummed Tape",
+            "description": "Gummed Tape kraft brown 2 inches",
+            "category": 12,
+            "attributes": {
+                "Brand": "kraft",
+                "Color": "brown",
+                "Thickness": "",
+                "Size": "2 inches"
+            },
+            "individual_uom": "roll",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 175,
+        "fields": {
+            "name": "Laminating Film",
+            "description": "Laminating Film 125microns",
+            "category": 12,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Thickness": "125microns",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 176,
+        "fields": {
+            "name": "Laminating Film",
+            "description": "Laminating Film 250microns",
+            "category": 12,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Thickness": "250microns",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 177,
+        "fields": {
+            "name": "Permanent Marker Ink Refill",
+            "description": "Permanent Marker Ink Refill Black",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "Black",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 178,
+        "fields": {
+            "name": "Akinto",
+            "description": "Akinto Black",
+            "category": 10,
+            "attributes": {
+                "Brand": "",
+                "Color": "Black",
+                "Size": ""
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 179,
+        "fields": {
+            "name": "Mimeo",
+            "description": "Mimeo Daito",
+            "category": 10,
+            "attributes": {
+                "Brand": "Daito",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 180,
+        "fields": {
+            "name": "Offset",
+            "description": "Offset Druckmeister Magenta 1kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Druckmeister",
+                "Color": "Magenta",
+                "Size": "1kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 181,
+        "fields": {
+            "name": "Offset",
+            "description": "Offset Druckmeister Cyan 1kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Druckmeister",
+                "Color": "Cyan",
+                "Size": "1kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 182,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Jet Speed Magenta 2kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Jet Speed",
+                "Color": "Magenta",
+                "Size": "2kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 183,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Jet Speed O/S Red 2KG",
+            "category": 10,
+            "attributes": {
+                "Brand": "Jet Speed O/S",
+                "Color": "Red",
+                "Size": "2KG"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 184,
+        "fields": {
+            "name": "Offset",
+            "description": "Offset Kolora carbo Black 1kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Kolora carbo",
+                "Color": "Black",
+                "Size": "1kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 185,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Jet Speed Black 2kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Jet Speed",
+                "Color": "Black",
+                "Size": "2kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 186,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Wico Job Black 1kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Wico",
+                "Color": "Job Black",
+                "Size": "1kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 187,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Wico Bright Red 1kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Wico",
+                "Color": "Bright Red",
+                "Size": "1kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 188,
+        "fields": {
+            "name": "Offset Mixing White",
+            "description": "Offset Mixing White Kolora 3kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Kolora",
+                "Color": "",
+                "Size": "3kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 189,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Nippon Speed Cyan 1kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Nippon Speed",
+                "Color": "Cyan",
+                "Size": "1kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 190,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Nippon Speed Cyan 2.5kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Nippon Speed",
+                "Color": "Cyan",
+                "Size": "2.5kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 191,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Nippon Speed Magenta 2.5kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Nippon Speed",
+                "Color": "Magenta",
+                "Size": "2.5kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 192,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Nippon Speed Yellow 2.5kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Nippon Speed",
+                "Color": "Yellow",
+                "Size": "2.5kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 193,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Nippon Speed Black 2.5kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Nippon Speed",
+                "Color": "Black",
+                "Size": "2.5kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 194,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Imperial Reflex Blue 2kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Imperial",
+                "Color": "Reflex Blue",
+                "Size": "2kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 195,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Imperial Warm Red 2kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Imperial",
+                "Color": "Warm Red",
+                "Size": "2kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 196,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Unipak Gold",
+            "category": 10,
+            "attributes": {
+                "Brand": "Unipak",
+                "Color": "Gold",
+                "Size": ""
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 197,
+        "fields": {
+            "name": "Continuous",
+            "description": "Continuous Black",
+            "category": 10,
+            "attributes": {
+                "Brand": "",
+                "Color": "Black",
+                "Size": ""
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 198,
+        "fields": {
+            "name": "Continuous",
+            "description": "Continuous Blue/cyan",
+            "category": 10,
+            "attributes": {
+                "Brand": "",
+                "Color": "Blue/cyan",
+                "Size": ""
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 199,
+        "fields": {
+            "name": "Continuous",
+            "description": "Continuous Magenta",
+            "category": 10,
+            "attributes": {
+                "Brand": "",
+                "Color": "Magenta",
+                "Size": ""
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 200,
+        "fields": {
+            "name": "Continuous",
+            "description": "Continuous Yellow",
+            "category": 10,
+            "attributes": {
+                "Brand": "",
+                "Color": "Yellow",
+                "Size": ""
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 201,
+        "fields": {
+            "name": "Cartridge",
+            "description": "Cartridge HP678",
+            "category": 10,
+            "attributes": {
+                "Brand": "HP678",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 202,
+        "fields": {
+            "name": "Plate Cleaner",
+            "description": "Plate Cleaner",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 203,
+        "fields": {
+            "name": "Swell Blanket Repair",
+            "description": "Swell Blanket Repair",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 204,
+        "fields": {
+            "name": "Spray Powder",
+            "description": "Spray Powder",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 205,
+        "fields": {
+            "name": "Blanket Cleaner",
+            "description": "Blanket Cleaner",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 206,
+        "fields": {
+            "name": "Miscible Blanket",
+            "description": "Miscible Blanket SORMZ 740x660",
+            "category": 13,
+            "attributes": {
+                "Brand": "SORMZ",
+                "Size": "740x660"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 207,
+        "fields": {
+            "name": "Miscible Blanket",
+            "description": "Miscible Blanket GTO 518x445",
+            "category": 13,
+            "attributes": {
+                "Brand": "GTO",
+                "Size": "518x445"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 208,
+        "fields": {
+            "name": "Miscible Blanket",
+            "description": "Miscible Blanket KORS 740x660",
+            "category": 13,
+            "attributes": {
+                "Brand": "KORS",
+                "Size": "740x660"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 209,
+        "fields": {
+            "name": "Molleton Cloth",
+            "description": "Molleton Cloth GTO",
+            "category": 13,
+            "attributes": {
+                "Brand": "GTO",
+                "Size": ""
+            },
+            "individual_uom": "strip",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 210,
+        "fields": {
+            "name": "Molleton Cloth",
+            "description": "Molleton Cloth SORMZ #6",
+            "category": 13,
+            "attributes": {
+                "Brand": "SORMZ",
+                "Size": "#6"
+            },
+            "individual_uom": "strip",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 211,
+        "fields": {
+            "name": "Molleton Cloth",
+            "description": "Molleton Cloth KORS #7",
+            "category": 13,
+            "attributes": {
+                "Brand": "KORS",
+                "Size": "#7"
+            },
+            "individual_uom": "strip",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 212,
+        "fields": {
+            "name": "Molleton Cloth",
+            "description": "Molleton Cloth KORS #8",
+            "category": 13,
+            "attributes": {
+                "Brand": "KORS",
+                "Size": "#8"
+            },
+            "individual_uom": "strip",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 213,
+        "fields": {
+            "name": "Molleton Cloth",
+            "description": "Molleton Cloth sormz #5",
+            "category": 13,
+            "attributes": {
+                "Brand": "sormz",
+                "Size": "#5"
+            },
+            "individual_uom": "strip",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 214,
+        "fields": {
+            "name": "Washer Blade",
+            "description": "Washer Blade GTO",
+            "category": 13,
+            "attributes": {
+                "Brand": "GTO",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 215,
+        "fields": {
+            "name": "Washer Blade",
+            "description": "Washer Blade KORS",
+            "category": 13,
+            "attributes": {
+                "Brand": "KORS",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 216,
+        "fields": {
+            "name": "Washer Blade",
+            "description": "Washer Blade SORMZ",
+            "category": 13,
+            "attributes": {
+                "Brand": "SORMZ",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 217,
+        "fields": {
+            "name": "Roller Wash",
+            "description": "Roller Wash 20L",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": "20L"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 218,
+        "fields": {
+            "name": "Roller Cleaning Paste",
+            "description": "Roller Cleaning Paste Hydromarc",
+            "category": 13,
+            "attributes": {
+                "Brand": "Hydromarc",
+                "Size": ""
+            },
+            "individual_uom": "container",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 219,
+        "fields": {
+            "name": "Master Roll",
+            "description": "Master Roll Akinto",
+            "category": 13,
+            "attributes": {
+                "Brand": "Akinto",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 220,
+        "fields": {
+            "name": "Developer Filter",
+            "description": "Developer Filter",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 221,
+        "fields": {
+            "name": "Plate Replenisher",
+            "description": "Plate Replenisher 20l",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": "20l"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 222,
+        "fields": {
+            "name": "Plate Finisher",
+            "description": "Plate Finisher 5l",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": "5l"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 223,
+        "fields": {
+            "name": "Plate Developer",
+            "description": "Plate Developer 20l",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": "20l"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 224,
+        "fields": {
+            "name": "Molleton Cloth",
+            "description": "Molleton Cloth Processor #9",
+            "category": 13,
+            "attributes": {
+                "Brand": "Processor",
+                "Size": "#9"
+            },
+            "individual_uom": "strip",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 225,
+        "fields": {
+            "name": "Cutting Stick",
+            "description": "Cutting Stick Polar 45in",
+            "category": 13,
+            "attributes": {
+                "Brand": "Polar",
+                "Size": "45in"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 226,
+        "fields": {
+            "name": "Cutting Stick",
+            "description": "Cutting Stick Senator 32in",
+            "category": 13,
+            "attributes": {
+                "Brand": "Senator",
+                "Size": "32in"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 227,
+        "fields": {
+            "name": "Hairline",
+            "description": "Hairline 2pts",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": "2pts"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 228,
+        "fields": {
+            "name": "Offset Strip",
+            "description": "Offset Strip",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 229,
+        "fields": {
+            "name": "Offset Score",
+            "description": "Offset Score",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 230,
+        "fields": {
+            "name": "Perforating Rule",
+            "description": "Perforating Rule",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 231,
+        "fields": {
+            "name": "Slug",
+            "description": "Slug 2pts",
+            "category": 13,
+            "attributes": {
+                "Brand": "",
+                "Size": "2pts"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 232,
+        "fields": {
+            "name": "NSK Wheel Bearing",
+            "description": "NSK Wheel Bearing GTO",
+            "category": 13,
+            "attributes": {
+                "Brand": "GTO",
+                "Size": ""
+            },
+            "individual_uom": "box",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 233,
+        "fields": {
+            "name": "Ribbon Cartridge",
+            "description": "Ribbon Cartridge LX300",
+            "category": 13,
+            "attributes": {
+                "Brand": "LX300",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 234,
+        "fields": {
+            "name": "Ribbon Cartridge",
+            "description": "Ribbon Cartridge LQ300",
+            "category": 13,
+            "attributes": {
+                "Brand": "LQ300",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 235,
+        "fields": {
+            "name": "Ribbon Cartridge",
+            "description": "Ribbon Cartridge LQ310",
+            "category": 13,
+            "attributes": {
+                "Brand": "LQ310",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 236,
+        "fields": {
+            "name": "Toner",
+            "description": "Toner Laserjet 1505 36A",
+            "category": 13,
+            "attributes": {
+                "Brand": "Laserjet 1505 36A",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 237,
+        "fields": {
+            "name": "Candle",
+            "description": "Candle",
+            "category": 17,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Thickness": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 238,
+        "fields": {
+            "name": "ID Holder",
+            "description": "ID Holder",
+            "category": 17,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Thickness": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 239,
+        "fields": {
+            "name": "Gawgaw",
+            "description": "Gawgaw Liwayway",
+            "category": 17,
+            "attributes": {
+                "Brand": "Liwayway",
+                "Color": "",
+                "Thickness": "",
+                "Size": ""
+            },
+            "individual_uom": "pack",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 240,
+        "fields": {
+            "name": "Facemask",
+            "description": "Facemask",
+            "category": 17,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Thickness": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 241,
+        "fields": {
+            "name": "Ballpen",
+            "description": "Ballpen Black",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "Black",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 242,
+        "fields": {
+            "name": "Ballpen",
+            "description": "Ballpen Red",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "Red",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 243,
+        "fields": {
+            "name": "Calling Card Case",
+            "description": "Calling Card Case",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 244,
+        "fields": {
+            "name": "Correction Tape",
+            "description": "Correction Tape",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 245,
+        "fields": {
+            "name": "Cutter Blade",
+            "description": "Cutter Blade Small",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "Small"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 246,
+        "fields": {
+            "name": "Cutter with Handle",
+            "description": "Cutter with Handle Small",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "Small"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 247,
+        "fields": {
+            "name": "Double-sided Tape",
+            "description": "Double-sided Tape 1/2in",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "1/2in"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 248,
+        "fields": {
+            "name": "Cellulose Tape",
+            "description": "Cellulose Tape Evercell",
+            "category": 8,
+            "attributes": {
+                "Brand": "Evercell",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 249,
+        "fields": {
+            "name": "Masking Tape",
+            "description": "Masking Tape 1/2in",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "1/2in"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 250,
+        "fields": {
+            "name": "Packaging Tape",
+            "description": "Packaging Tape Tan",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "Tan",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 251,
+        "fields": {
+            "name": "Packaging Tape",
+            "description": "Packaging Tape Clear",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "Clear",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 252,
+        "fields": {
+            "name": "Paper Clip",
+            "description": "Paper Clip Small",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "Small"
+            },
+            "individual_uom": "box",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 253,
+        "fields": {
+            "name": "Paper Clip",
+            "description": "Paper Clip Big",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "Big"
+            },
+            "individual_uom": "box",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 254,
+        "fields": {
+            "name": "Paper Eraser",
+            "description": "Paper Eraser",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "box",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 255,
+        "fields": {
+            "name": "Paper Fastener",
+            "description": "Paper Fastener",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "box",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 256,
+        "fields": {
+            "name": "Permanent Marker",
+            "description": "Permanent Marker",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 257,
+        "fields": {
+            "name": "Pencil",
+            "description": "Pencil",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "box",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 258,
+        "fields": {
+            "name": "Ribbon",
+            "description": "Ribbon Red",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "Red",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 259,
+        "fields": {
+            "name": "Scotch Tape",
+            "description": "Scotch Tape",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 260,
+        "fields": {
+            "name": "Stamp Pad Ink",
+            "description": "Stamp Pad Ink Blue",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "Blue",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 261,
+        "fields": {
+            "name": "Staple Wire",
+            "description": "Staple Wire #10 Small",
+            "category": 8,
+            "attributes": {
+                "Brand": "#10",
+                "Color": "",
+                "Size": "Small"
+            },
+            "individual_uom": "box",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 262,
+        "fields": {
+            "name": "Staple Wire",
+            "description": "Staple Wire #10 Big",
+            "category": 8,
+            "attributes": {
+                "Brand": "#10",
+                "Color": "",
+                "Size": "Big"
+            },
+            "individual_uom": "box",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 263,
+        "fields": {
+            "name": "Staple Wire",
+            "description": "Staple Wire #13",
+            "category": 8,
+            "attributes": {
+                "Brand": "#13",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "box",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 264,
+        "fields": {
+            "name": "Staple Wire",
+            "description": "Staple Wire #15",
+            "category": 8,
+            "attributes": {
+                "Brand": "#15",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "box",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 265,
+        "fields": {
+            "name": "Staple Wire",
+            "description": "Staple Wire #17",
+            "category": 8,
+            "attributes": {
+                "Brand": "#17",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "box",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 266,
+        "fields": {
+            "name": "Staple Wire",
+            "description": "Staple Wire #35",
+            "category": 8,
+            "attributes": {
+                "Brand": "#35",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "box",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 267,
+        "fields": {
+            "name": "Ring Binder",
+            "description": "Ring Binder small",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "small"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 268,
+        "fields": {
+            "name": "Stone Eraser",
+            "description": "Stone Eraser",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 269,
+        "fields": {
+            "name": "Thermal Paper",
+            "description": "Thermal Paper",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 270,
+        "fields": {
+            "name": "Type Writer Ribbon Refill",
+            "description": "Type Writer Ribbon Refill",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 271,
+        "fields": {
+            "name": "Board Marker",
+            "description": "Board Marker wyte",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "wyte",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 272,
+        "fields": {
+            "name": "Tape",
+            "description": "Tape 3M Red",
+            "category": 8,
+            "attributes": {
+                "Brand": "3M",
+                "Color": "Red",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 273,
+        "fields": {
+            "name": "Glue",
+            "description": "Glue White",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "White",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 274,
+        "fields": {
+            "name": "CD",
+            "description": "CD",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 275,
+        "fields": {
+            "name": "DVDR",
+            "description": "DVDR",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 276,
+        "fields": {
+            "name": "Logbook",
+            "description": "Logbook",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 277,
+        "fields": {
+            "name": "PVC",
+            "description": "PVC 30ml",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "30ml"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 278,
+        "fields": {
+            "name": "Ink",
+            "description": "Ink Imperial Green 2kg",
+            "category": 10,
+            "attributes": {
+                "Brand": "Imperial",
+                "Color": "Green",
+                "Size": "2kg"
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 279,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper Catalina Orange 75gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "Catalina",
+                "Size": "",
+                "Color": "Orange",
+                "Texture": "",
+                "Thickness": "75gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 280,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper Burano 27x39 Light Green 90gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "Burano",
+                "Size": "27x39",
+                "Color": "Light Green",
+                "Texture": "",
+                "Thickness": "90gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 281,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper Burano 27x39 Violet 90gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "Burano",
+                "Size": "27x39",
+                "Color": "Violet",
+                "Texture": "",
+                "Thickness": "90gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 282,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper Burano 27x39 Bright Yellow 90gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "Burano",
+                "Size": "27x39",
+                "Color": "Bright Yellow",
+                "Texture": "",
+                "Thickness": "90gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 283,
+        "fields": {
+            "name": "Photopaper",
+            "description": "Photopaper Fortune Sources 50x30 Glossy",
+            "category": 5,
+            "attributes": {
+                "Brand": "Fortune Sources",
+                "Size": "50x30",
+                "Color": "",
+                "Texture": "Glossy",
+                "Thickness": ""
+            },
+            "individual_uom": "roll",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 284,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper Athenea 27.5x39.3 Blanco Diamante Laid 90gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "Athenea",
+                "Size": "27.5x39.3",
+                "Color": "Blanco Diamante",
+                "Texture": "Laid",
+                "Thickness": "90gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 285,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper Galacia 27.5x39.3 White Parchment",
+            "category": 5,
+            "attributes": {
+                "Brand": "Galacia",
+                "Size": "27.5x39.3",
+                "Color": "White",
+                "Texture": "Parchment",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 286,
+        "fields": {
+            "name": "Newsprint Paper",
+            "description": "Newsprint Paper Triplex newsprint 34x32.5 White",
+            "category": 1,
+            "attributes": {
+                "Brand": "Triplex newsprint",
+                "Size": "34x32.5",
+                "Color": "White",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 287,
+        "fields": {
+            "name": "burano salmon",
+            "description": "burano salmon Versa Fine 27.5x39.3 Colored Salmon 90gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "Versa Fine",
+                "Size": "27.5x39.3",
+                "Color": "Colored Salmon",
+                "Texture": "",
+                "Thickness": "90gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 288,
+        "fields": {
+            "name": "catalina cyber green",
+            "description": "catalina cyber green versa fine 22.5x35.4 cyber green 75gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "versa fine",
+                "Size": "22.5x35.4",
+                "Color": "cyber green",
+                "Texture": "75gsm",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 289,
+        "fields": {
+            "name": "matte coated #160",
+            "description": "matte coated #160 triplex 25x38",
+            "category": 5,
+            "attributes": {
+                "Brand": "triplex",
+                "Size": "25x38",
+                "Color": "",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 290,
+        "fields": {
+            "name": "satin W/B",
+            "description": "satin W/B yunitrade 24x36 white glossy",
+            "category": 2,
+            "attributes": {
+                "Brand": "yunitrade",
+                "Size": "24x36",
+                "Color": "white",
+                "Texture": "",
+                "Thickness": "glossy"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 291,
+        "fields": {
+            "name": "kraft envelope",
+            "description": "kraft envelope trojan brown 10x15",
+            "category": 15,
+            "attributes": {
+                "Brand": "trojan",
+                "Color": "brown",
+                "Size": "10x15"
+            },
+            "individual_uom": "pcs",
+            "pack_uom": "box",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 292,
+        "fields": {
+            "name": "Bevania splendorgel",
+            "description": "Bevania splendorgel prestige 28x39.3 white 270gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "prestige",
+                "Size": "28x39.3",
+                "Color": "white",
+                "Texture": "",
+                "Thickness": "270gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 293,
+        "fields": {
+            "name": "burano colored",
+            "description": "burano colored 27.5x39.3 fire red 250gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "",
+                "Size": "27.5x39.3",
+                "Color": "fire red",
+                "Texture": "",
+                "Thickness": "250gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 294,
+        "fields": {
+            "name": "zonrox bleach",
+            "description": "zonrox bleach",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 295,
+        "fields": {
+            "name": "athenea laid",
+            "description": "athenea laid 27.5x39.3 natural white 90gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "",
+                "Size": "27.5x39.3",
+                "Color": "natural white",
+                "Texture": "",
+                "Thickness": "90gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 296,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper burano 27.5x39.3 gold 200gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "burano",
+                "Size": "27.5x39.3",
+                "Color": "gold",
+                "Texture": "",
+                "Thickness": "200gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 297,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper burano 27.5x39.3 sky blue 200gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "burano",
+                "Size": "27.5x39.3",
+                "Color": "sky blue",
+                "Texture": "",
+                "Thickness": "200gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 298,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper burano 27.5x39.3 spring green 200gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "burano",
+                "Size": "27.5x39.3",
+                "Color": "spring green",
+                "Texture": "",
+                "Thickness": "200gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 299,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper burano 27.5x39.3 yellow 200gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "burano",
+                "Size": "27.5x39.3",
+                "Color": "yellow",
+                "Texture": "",
+                "Thickness": "200gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 300,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper burano 27.5x39.3 lila 200gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "burano",
+                "Size": "27.5x39.3",
+                "Color": "lila",
+                "Texture": "",
+                "Thickness": "200gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 301,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper burano 27.5x39.3 green 200gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "burano",
+                "Size": "27.5x39.3",
+                "Color": "green",
+                "Texture": "",
+                "Thickness": "200gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 302,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper burano 27.5x39.3 orange 200gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "burano",
+                "Size": "27.5x39.3",
+                "Color": "orange",
+                "Texture": "",
+                "Thickness": "200gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 303,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper burano 27.5x39.3 pink 200gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "burano",
+                "Size": "27.5x39.3",
+                "Color": "pink",
+                "Texture": "",
+                "Thickness": "200gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 304,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper burano 27.5x39.3 light green 200gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "burano",
+                "Size": "27.5x39.3",
+                "Color": "light green",
+                "Texture": "",
+                "Thickness": "200gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 305,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper burano 27.5x39.3 shocking pink 200gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "burano",
+                "Size": "27.5x39.3",
+                "Color": "shocking pink",
+                "Texture": "",
+                "Thickness": "200gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 306,
+        "fields": {
+            "name": "Special Paper",
+            "description": "Special Paper burano 27.5x39.3 blue 200gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "burano",
+                "Size": "27.5x39.3",
+                "Color": "blue",
+                "Texture": "",
+                "Thickness": "200gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 307,
+        "fields": {
+            "name": "Newsprint Paper",
+            "description": "Newsprint Paper Papermart Newsprint 22x35.5 white",
+            "category": 1,
+            "attributes": {
+                "Brand": "Papermart Newsprint",
+                "Size": "22x35.5",
+                "Color": "white",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 308,
+        "fields": {
+            "name": "Floor Cleaner",
+            "description": "Floor Cleaner",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "pieces",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 309,
+        "fields": {
+            "name": "Liquid Handsoap",
+            "description": "Liquid Handsoap",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 310,
+        "fields": {
+            "name": "clip binder",
+            "description": "clip binder",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 311,
+        "fields": {
+            "name": "Stabilo marker",
+            "description": "Stabilo marker",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 312,
+        "fields": {
+            "name": "Vinyl sticker",
+            "description": "Vinyl sticker 50x50mm white glossy 80microns",
+            "category": 2,
+            "attributes": {
+                "Brand": "",
+                "Size": "50x50mm",
+                "Color": "white",
+                "Texture": "glossy",
+                "Thickness": "80microns"
+            },
+            "individual_uom": "roll",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 313,
+        "fields": {
+            "name": "Plastic Cover",
+            "description": "Plastic Cover",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 314,
+        "fields": {
+            "name": "white foam tape",
+            "description": "white foam tape",
+            "category": 12,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Thickness": "",
+                "Size": ""
+            },
+            "individual_uom": "pieces",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 315,
+        "fields": {
+            "name": "reflective sticker",
+            "description": "reflective sticker 225microns",
+            "category": 2,
+            "attributes": {
+                "Brand": "",
+                "Size": "",
+                "Color": "",
+                "Texture": "",
+                "Thickness": "225microns"
+            },
+            "individual_uom": "roll",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 316,
+        "fields": {
+            "name": "burano",
+            "description": "burano 37.5x39.3 light blue 200gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "",
+                "Size": "37.5x39.3",
+                "Color": "light blue",
+                "Texture": "",
+                "Thickness": "200gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 317,
+        "fields": {
+            "name": "Color Plus",
+            "description": "Color Plus 25.59x35.43 Amarillio Medio 80gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "",
+                "Size": "25.59x35.43",
+                "Color": "Amarillio Medio",
+                "Texture": "",
+                "Thickness": "80gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 318,
+        "fields": {
+            "name": "Color Plus",
+            "description": "Color Plus 25.59x35.43 Rosa 80gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "",
+                "Size": "25.59x35.43",
+                "Color": "Rosa",
+                "Texture": "",
+                "Thickness": "80gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 319,
+        "fields": {
+            "name": "Color Plus",
+            "description": "Color Plus 25.59x35.43 Azul 80gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "",
+                "Size": "25.59x35.43",
+                "Color": "Azul",
+                "Texture": "",
+                "Thickness": "80gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 320,
+        "fields": {
+            "name": "Newsprint Paper",
+            "description": "Newsprint Paper Newsprint 36x18 Triplex white",
+            "category": 1,
+            "attributes": {
+                "Brand": "Newsprint",
+                "Size": "36x18",
+                "Color": "Triplex white",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 480
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 321,
+        "fields": {
+            "name": "CTP Plate",
+            "description": "CTP Plate GTO 400x510",
+            "category": 11,
+            "attributes": {
+                "Brand": "GTO",
+                "Size": "400x510"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 50
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 322,
+        "fields": {
+            "name": "Dishwashing Liquid",
+            "description": "Dishwashing Liquid",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 323,
+        "fields": {
+            "name": "wipe out Cleaner",
+            "description": "wipe out Cleaner",
+            "category": 14,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 324,
+        "fields": {
+            "name": "HP toner",
+            "description": "HP toner 831B CZ689A CYAN",
+            "category": 10,
+            "attributes": {
+                "Brand": "831B CZ689A",
+                "Color": "CYAN",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 325,
+        "fields": {
+            "name": "HP TONER",
+            "description": "HP TONER 831B CZ691A YELLOW",
+            "category": 10,
+            "attributes": {
+                "Brand": "831B CZ691A",
+                "Color": "YELLOW",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 326,
+        "fields": {
+            "name": "HP Toner",
+            "description": "HP Toner 831B CZ690A MAgenta",
+            "category": 10,
+            "attributes": {
+                "Brand": "831B CZ690A",
+                "Color": "MAgenta",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 327,
+        "fields": {
+            "name": "HP Toner",
+            "description": "HP Toner 831B CZ688A Black",
+            "category": 10,
+            "attributes": {
+                "Brand": "831B CZ688A",
+                "Color": "Black",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 328,
+        "fields": {
+            "name": "venus linen",
+            "description": "venus linen 31x43 white 220gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "",
+                "Size": "31x43",
+                "Color": "white",
+                "Texture": "",
+                "Thickness": "220gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 329,
+        "fields": {
+            "name": "Gear oil",
+            "description": "Gear oil SAE-90 Liter",
+            "category": 14,
+            "attributes": {
+                "Brand": "SAE-90",
+                "Size": "Liter"
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 330,
+        "fields": {
+            "name": "CTP Plate",
+            "description": "CTP Plate Korse 620x745",
+            "category": 11,
+            "attributes": {
+                "Brand": "Korse",
+                "Size": "620x745"
+            },
+            "individual_uom": "pieces",
+            "pack_uom": "box",
+            "pack_quantity": 50
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 331,
+        "fields": {
+            "name": "acetate",
+            "description": "acetate",
+            "category": 11,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "roll",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 332,
+        "fields": {
+            "name": "SORMZ wheel bearing SORMZ",
+            "description": "SORMZ wheel bearing SORMZ NSK",
+            "category": 7,
+            "attributes": {
+                "Brand": "NSK",
+                "Size": ""
+            },
+            "individual_uom": "pieces",
+            "pack_uom": "1",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 333,
+        "fields": {
+            "name": "image pen remover",
+            "description": "image pen remover",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 334,
+        "fields": {
+            "name": "eska board",
+            "description": "eska board 26x38 1195gsm",
+            "category": 6,
+            "attributes": {
+                "Brand": "",
+                "Size": "26x38",
+                "Color": "",
+                "Texture": "",
+                "Thickness": "1195gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 100
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 335,
+        "fields": {
+            "name": "kraft",
+            "description": "kraft envelope trojan brown 7x10",
+            "category": 15,
+            "attributes": {
+                "Brand": "envelope trojan",
+                "Color": "brown",
+                "Size": "7x10"
+            },
+            "individual_uom": "pcs",
+            "pack_uom": "box",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 336,
+        "fields": {
+            "name": "chip",
+            "description": "chip triplex 26x38 gray #50",
+            "category": 6,
+            "attributes": {
+                "Brand": "triplex",
+                "Size": "26x38",
+                "Color": "gray",
+                "Texture": "",
+                "Thickness": "#50"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "bale",
+            "pack_quantity": 250
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 337,
+        "fields": {
+            "name": "Econotext",
+            "description": "Econotext Fancy soft white #100gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "Fancy",
+                "Size": "",
+                "Color": "soft white",
+                "Texture": "",
+                "Thickness": "#100gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 1000
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 338,
+        "fields": {
+            "name": "kraft",
+            "description": "kraft envelope brown 10x13",
+            "category": 15,
+            "attributes": {
+                "Brand": "envelope",
+                "Color": "brown",
+                "Size": "10x13"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 339,
+        "fields": {
+            "name": "Color plus",
+            "description": "Color plus 25.59x35.43 Rojo 80gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "",
+                "Size": "25.59x35.43",
+                "Color": "Rojo",
+                "Texture": "",
+                "Thickness": "80gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 340,
+        "fields": {
+            "name": "Edicion",
+            "description": "Edicion 26x40 Natural white 240gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "",
+                "Size": "26x40",
+                "Color": "Natural white",
+                "Texture": "",
+                "Thickness": "240gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 341,
+        "fields": {
+            "name": "Bevania splendorgel ivory",
+            "description": "Bevania splendorgel ivory 28x39.3 white 170gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "",
+                "Size": "28x39.3",
+                "Color": "white",
+                "Texture": "",
+                "Thickness": "170gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 342,
+        "fields": {
+            "name": "Century Cotton wove",
+            "description": "Century Cotton wove 28x39.75 premium white 220gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "",
+                "Size": "28x39.75",
+                "Color": "premium white",
+                "Texture": "",
+                "Thickness": "220gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 343,
+        "fields": {
+            "name": "kanebo",
+            "description": "kanebo chamois towel",
+            "category": 9,
+            "attributes": {
+                "Brand": "chamois towel",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "pieces",
+            "pack_uom": "pack",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 344,
+        "fields": {
+            "name": "matt coated",
+            "description": "matt coated triplexx 25x38 white #100",
+            "category": 5,
+            "attributes": {
+                "Brand": "triplexx",
+                "Size": "25x38",
+                "Color": "white",
+                "Texture": "",
+                "Thickness": "#100"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "ream",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 345,
+        "fields": {
+            "name": "Hydraulic oil",
+            "description": "Hydraulic oil S2MX 68 Tellus",
+            "category": 14,
+            "attributes": {
+                "Brand": "S2MX 68 Tellus",
+                "Size": ""
+            },
+            "individual_uom": "pieces",
+            "pack_uom": "pail",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 346,
+        "fields": {
+            "name": "Clearbook",
+            "description": "Clearbook long",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "long"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 347,
+        "fields": {
+            "name": "hexis ecotac matte sticker",
+            "description": "hexis ecotac matte sticker dark gray",
+            "category": 2,
+            "attributes": {
+                "Brand": "",
+                "Size": "",
+                "Color": "dark gray",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "roll",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 348,
+        "fields": {
+            "name": "hexis ecotac matte sticker",
+            "description": "hexis ecotac matte sticker light green",
+            "category": 2,
+            "attributes": {
+                "Brand": "",
+                "Size": "",
+                "Color": "light green",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "roll",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 349,
+        "fields": {
+            "name": "exceed blackboard sticker",
+            "description": "exceed blackboard sticker 50x30mm black",
+            "category": 2,
+            "attributes": {
+                "Brand": "",
+                "Size": "50x30mm",
+                "Color": "black",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "roll",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 350,
+        "fields": {
+            "name": "sako",
+            "description": "sako big",
+            "category": 17,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Thickness": "",
+                "Size": "big"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 351,
+        "fields": {
+            "name": "expandable folder",
+            "description": "expandable folder long",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "long"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 352,
+        "fields": {
+            "name": "Grasa",
+            "description": "Grasa",
+            "category": 14,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "can",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 353,
+        "fields": {
+            "name": "Finishing Materials",
+            "description": "Finishing Materials Duct tape cloth",
+            "category": 12,
+            "attributes": {
+                "Brand": "Duct tape cloth",
+                "Color": "",
+                "Thickness": "",
+                "Size": ""
+            },
+            "individual_uom": "roll",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 354,
+        "fields": {
+            "name": "Exceed vinyl",
+            "description": "Exceed vinyl 54x30 glossy",
+            "category": 2,
+            "attributes": {
+                "Brand": "",
+                "Size": "54x30",
+                "Color": "glossy",
+                "Texture": "",
+                "Thickness": ""
+            },
+            "individual_uom": "roll",
+            "pack_uom": "box",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 355,
+        "fields": {
+            "name": "kraft",
+            "description": "kraft trojan documentary golden brown 9x12",
+            "category": 15,
+            "attributes": {
+                "Brand": "trojan documentary",
+                "Color": "golden brown",
+                "Size": "9x12"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 356,
+        "fields": {
+            "name": "kraft",
+            "description": "kraft trojan catalog golden brown 9x12",
+            "category": 15,
+            "attributes": {
+                "Brand": "trojan catalog",
+                "Color": "golden brown",
+                "Size": "9x12"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 357,
+        "fields": {
+            "name": "sponge",
+            "description": "sponge scotch brite",
+            "category": 9,
+            "attributes": {
+                "Brand": "scotch brite",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "pack",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 358,
+        "fields": {
+            "name": "Parchment Paper",
+            "description": "Parchment Paper 25x38 #60",
+            "category": 5,
+            "attributes": {
+                "Brand": "",
+                "Size": "25x38",
+                "Color": "",
+                "Texture": "",
+                "Thickness": "#60"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "pack",
+            "pack_quantity": 1000
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 359,
+        "fields": {
+            "name": "Ring binder",
+            "description": "Ring binder Medium",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "Medium"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "pack",
+            "pack_quantity": 5
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 360,
+        "fields": {
+            "name": "imitlin",
+            "description": "imitlin 40x28.3 blu notte 125gsm",
+            "category": 5,
+            "attributes": {
+                "Brand": "",
+                "Size": "40x28.3",
+                "Color": "blu notte",
+                "Texture": "",
+                "Thickness": "125gsm"
+            },
+            "individual_uom": "sheet",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 361,
+        "fields": {
+            "name": "Mop with Handle",
+            "description": "Mop with Handle",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 362,
+        "fields": {
+            "name": "lighter gas refill",
+            "description": "lighter gas refill butane",
+            "category": 9,
+            "attributes": {
+                "Brand": "butane",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 363,
+        "fields": {
+            "name": "empty bottle sprayer",
+            "description": "empty bottle sprayer 500ml",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": "500ml"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 364,
+        "fields": {
+            "name": "HP Print head 831",
+            "description": "HP Print head 831 light cyan and light magenta",
+            "category": 10,
+            "attributes": {
+                "Brand": "",
+                "Color": "light cyan and light magenta",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "bottle",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 365,
+        "fields": {
+            "name": "HP Print head 831",
+            "description": "HP Print head 831 hp 831 CZ677A cyan and black",
+            "category": 10,
+            "attributes": {
+                "Brand": "hp 831 CZ677A",
+                "Color": "cyan and black",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "bottle",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 366,
+        "fields": {
+            "name": "HP Maintenance Cartridge",
+            "description": "HP Maintenance Cartridge CZ681A",
+            "category": 10,
+            "attributes": {
+                "Brand": "CZ681A",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 367,
+        "fields": {
+            "name": "walis tingting",
+            "description": "walis tingting",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 368,
+        "fields": {
+            "name": "latex optimizer",
+            "description": "latex optimizer hp831 CZ706A",
+            "category": 10,
+            "attributes": {
+                "Brand": "hp831 CZ706A",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 369,
+        "fields": {
+            "name": "stamp pad",
+            "description": "stamp pad",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 370,
+        "fields": {
+            "name": "stamp pad refill",
+            "description": "stamp pad refill ink red",
+            "category": 8,
+            "attributes": {
+                "Brand": "ink",
+                "Color": "red",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 371,
+        "fields": {
+            "name": "SORMZ P.U. Hose",
+            "description": "SORMZ P.U. Hose",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "meter",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 372,
+        "fields": {
+            "name": "oil",
+            "description": "oil WD-40",
+            "category": 14,
+            "attributes": {
+                "Brand": "WD-40",
+                "Size": ""
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 373,
+        "fields": {
+            "name": "oil",
+            "description": "oil Gear oil SAE 140 LITER",
+            "category": 14,
+            "attributes": {
+                "Brand": "Gear oil SAE 140",
+                "Size": "LITER"
+            },
+            "individual_uom": "bottle",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 374,
+        "fields": {
+            "name": "sand paper #1000",
+            "description": "sand paper #1000",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 375,
+        "fields": {
+            "name": "PLATE KORS",
+            "description": "PLATE KORS SWORD MAX 745X620",
+            "category": 11,
+            "attributes": {
+                "Brand": "SWORD MAX",
+                "Size": "745X620"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 50
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 376,
+        "fields": {
+            "name": "Alcohol IPA",
+            "description": "Alcohol IPA S-100 LITERS",
+            "category": 14,
+            "attributes": {
+                "Brand": "S-100",
+                "Size": "LITERS"
+            },
+            "individual_uom": "container",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 377,
+        "fields": {
+            "name": "HP 831 latex optimizer",
+            "description": "HP 831 latex optimizer CZ680A",
+            "category": 10,
+            "attributes": {
+                "Brand": "CZ680A",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 378,
+        "fields": {
+            "name": "documentary",
+            "description": "documentary trojan Golden kraft 10x15",
+            "category": 15,
+            "attributes": {
+                "Brand": "trojan",
+                "Color": "Golden kraft",
+                "Size": "10x15"
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 500
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 379,
+        "fields": {
+            "name": "sand paper",
+            "description": "sand paper",
+            "category": 9,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 380,
+        "fields": {
+            "name": "Arch file",
+            "description": "Arch file",
+            "category": 8,
+            "attributes": {
+                "Brand": "",
+                "Color": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "",
+            "pack_quantity": 1
+        }
+    },
+    {
+        "model": "inventory.item",
+        "pk": 381,
+        "fields": {
+            "name": "SORMZ HK 1210 needle bearing",
+            "description": "SORMZ HK 1210 needle bearing",
+            "category": 7,
+            "attributes": {
+                "Brand": "",
+                "Size": ""
+            },
+            "individual_uom": "piece",
+            "pack_uom": "box",
+            "pack_quantity": 1
+        }
+    }
+]

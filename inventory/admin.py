@@ -21,7 +21,7 @@ from unfold.widgets import (
     UnfoldAdminTextInputWidget, UnfoldAdminIntegerFieldWidget, 
     UnfoldAdminSelectWidget, UnfoldAdminSelect2Widget,
     UnfoldBooleanSwitchWidget, UnfoldAdminTextareaWidget,
-    UnfoldAdminSplitDateTimeWidget, 
+    UnfoldAdminSplitDateTimeWidget, UnfoldRelatedFieldWidgetWrapper
 )
 from unfold.contrib.forms.widgets import ArrayWidget
 from unfold.components import BaseComponent, register_component
@@ -46,12 +46,13 @@ class WithdrawForm(forms.Form):
     def __init__(self, *args, item=None, **kwargs):
         super().__init__(*args, **kwargs)
         if item:
-            self.fields['unit_of_measure'].choices = [
+            uom_choices = [
                 (item.individual_uom, item.individual_uom),
-                (item.pack_uom, item.pack_uom)
             ]
-            self.fields['current_quantity'].initial = pluralize_uom(item.current_quantity, item.individual_uom) \
-                if item.current_quantity else ""
+            if item.pack_uom:
+                uom_choices.append((item.pack_uom, item.pack_uom))
+            self.fields['unit_of_measure'].choices = uom_choices
+            self.fields['current_quantity'].initial = pluralize_uom(item.current_quantity or 0, item.individual_uom)
 
 class DepositForm(WithdrawForm):
     supplier = forms.ModelChoiceField(
@@ -60,6 +61,15 @@ class DepositForm(WithdrawForm):
     )
     unit_price = forms.DecimalField(decimal_places=2, required=False,
                                     widget=UnfoldAdminIntegerFieldWidget)
+    
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['supplier'].widget = UnfoldRelatedFieldWidgetWrapper(
+            self.fields['supplier'].widget,
+            StockMovement._meta.get_field('supplier').remote_field,
+            admin_site=admin.site,
+            can_add_related=True,
+        )
 
 
 class StockMovementInline(TabularInline):
@@ -68,11 +78,14 @@ class StockMovementInline(TabularInline):
     model = StockMovement
     tab = True
     hide_title = True
-    fields = ('timestamp', 'movement_type_display', 'quantity_display', 'unit_price_display', 'user', 'supplier', 'purpose', 'remarks')
-    readonly_fields = ('movement_type_display', 'quantity_display', 'unit_price_display', 'timestamp', 'user', 'supplier', 'purpose', 'remarks')
+    fields = ('timestamp', 'movement_type_display', 'quantity_display', 'unit_price_display', 'user', 'supplier', 'purpose_display', 'remarks')
+    readonly_fields = ('movement_type_display', 'quantity_display', 'unit_price_display', 'timestamp', 'user', 'supplier', 'purpose_display', 'remarks')
     can_delete = False
     ordering = ('-timestamp',)
     per_page = 10
+    extra = 0
+    min_num = 0
+    max_num = 0
 
     def unit_price_display(self, obj):
         return format_currency(obj.unit_price) if obj.unit_price else ""
@@ -92,6 +105,9 @@ class StockMovementInline(TabularInline):
             return "-"
     quantity_display.short_description = "Quantity"
 
+    def purpose_display(self, obj):
+        return obj.purpose.name
+
 
 class ItemSupplierInline(NonrelatedTabularInline):
     model = Supplier
@@ -110,9 +126,9 @@ class ItemSupplierInline(NonrelatedTabularInline):
         # Attach extra context as a property of the formset class
         formset.custom_context_data = {
             'supplier_summary': {
-                "headers": ["Supplier", f"Total Provided ({p.plural(obj.individual_uom)})", f"Price per {obj.individual_uom}"],
+                "headers": ["Supplier", f"Total Quantity Supplied ({p.plural(obj.individual_uom)})", f"Latest price per {obj.individual_uom}"],
                 "rows": [
-                    [to_link('admin:inventory_supplier_change', x['supplier__id'], x["supplier__name"]), x["total"], format_currency(x['average_price']) if x['average_price'] else ""] for x in obj.suppliers_summary()
+                    [to_link('admin:inventory_supplier_change', x['supplier__id'], x["supplier__name"]), x["total"], format_currency(x['latest_price']) if x['latest_price'] else ""] for x in obj.suppliers_summary()
                 ]
             },
         } if obj else {}
@@ -129,25 +145,54 @@ class ItemAdminForm(forms.ModelForm):
 
         instance = kwargs.get('instance')
 
+        # We dont want to allow these actions in this form
+        self.fields['category'].widget.can_add_related = False
+        self.fields['category'].widget.can_change_related = False
+        self.fields['category'].widget.can_delete_related = False
+        self.fields['category'].widget.can_view_related = False
+        
+        self.fields['category'].required = True
+
+        # Populate the attributes based on the selected category
         category_pk = instance.category.pk if instance and instance.category else None
-        attribute_keys = {x['pk']: x['attributes'] for x in list(ItemCategory.objects.all().values("pk", "attributes"))}
-        default_keys = attribute_keys.get(category_pk, {})
-        self.fields['attributes'].widget = KeyValueFieldWidget(
-            default_keys=default_keys, keys_map=attribute_keys
-        )
+        self.attribute_keys = {x['pk']: x['attributes'] for x in list(ItemCategory.objects.all().values("pk", "attributes"))}
+        default_keys = self.attribute_keys.get(category_pk, [])
+        self.fields['attributes'].widget = KeyValueFieldWidget(default_keys=default_keys)
+
+    def _create_kv_widget(self, default_keys):
+        return KeyValueFieldWidget(default_keys=default_keys)
+
+    def clean_attributes(self):
+        category = self.cleaned_data.get('category', None)
+        attributes = self.cleaned_data.get('attributes', None)
+
+        if category is None:
+            raise ValidationError("Please select a category first.")
+
+        required_attributes = self.attribute_keys.get(category.pk)
+        if category and required_attributes:
+            self.cleaned_data['attributes'] = required_attributes
+            self.fields['attributes'].widget.default_keys = required_attributes
+            if not attributes:
+                raise ValidationError("Please enter applicable attributes.")
+            if list(attributes.keys()) != required_attributes:
+                raise ValidationError("Mismatching attributes. Re-enter values if applicable.")
+        
+        return attributes
 
 
 @admin.register(Item)
 class ItemAdmin(ModelAdmin):
     form = ItemAdminForm
-    #change_form_template = "item/change_form.html"
+    change_form_template = "item/change_form.html"
 
     actions_detail = ["deposit", "withdraw"]
-    list_display_links = ["category", "name", "description"]
-    list_display = ["category", "name", "description", "uom_display", "current_stock"]
+    list_display_links = ["category", "description_display"]
+    list_display = ["category", "description_display", "uom_display", "current_stock"]
     list_filter = ["category"]
     ordering = ["category", "name"]
-    search_fields = ['name', 'description']
+    search_fields = ['description']
+    list_per_page = 20
 
     def get_inlines(self, request, obj):
         if obj:
@@ -165,6 +210,10 @@ class ItemAdmin(ModelAdmin):
                 None, { "fields": ["current_stock"] },
             ))
         return fieldsets
+
+    def description_display(self, obj):
+        return obj.description or obj.name
+    description_display.short_description = "Item"
 
     def uom_display(self, obj):
         if obj:
@@ -355,7 +404,7 @@ class InventoryDashboard(BaseComponent):
                 [
                     x['timestamp'],
                     to_link("admin:inventory_item_change", x["item__id"], x["item__name"]),
-                    pluralize_uom(x['quantity'], x['uom']),
+                    pluralize_uom(x['quantity'], x['uom'] or "pack"),
                     x['purpose__name'] or "",
                     x['remarks']
                 ] for x in stock_movement_history

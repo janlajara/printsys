@@ -37,4 +37,7 @@ def to_link(path_name, id, name):
 
 
 def pluralize_uom(quantity, unit_of_measure):
-    return f"{quantity} {p.plural(unit_of_measure, quantity)}"
+    if quantity and unit_of_measure:
+        return f"{quantity} {p.plural(unit_of_measure, quantity)}"
+    else:
+        return f"{quantity} {unit_of_measure}"

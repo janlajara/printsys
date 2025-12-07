@@ -1,0 +1,1039 @@
+ItemId,Group,Category,Type,Brand,Texture,Color,Thickness,Size,ItemCode,ItemName,MinStockQty,StandardUoM,IndUoM,PackUoM,PackQty
+1,Machine and Parts,SORMZ Machine/Parts,Roller,,,,,60x735,,#NAME?,,piece,piece,,
+2,Machine and Parts,SORMZ Machine/Parts,Roller,,,,,66x735,,#NAME?,,piece,piece,,
+3,Machine and Parts,SORMZ Machine/Parts,Roller,,,,,66x745,,#NAME?,,piece,piece,,
+4,Machine and Parts,SORMZ Machine/Parts,Roller,,,,,63x745,,#NAME?,,piece,piece,,
+5,Machine and Parts,SORMZ Machine/Parts,Roller,,,,,72x745,,#NAME?,,piece,piece,,
+6,Machine and Parts,Minerva Machine/Parts,Roller,,,,,10x15,,#NAME?,,piece,piece,,
+7,Machine and Parts,KORS Machine/Parts,Roller,,,,,51x720,,#NAME?,,piece,piece,,
+8,Machine and Parts,KORS Machine/Parts,Roller,,,,,53x720,,#NAME?,,piece,piece,,
+9,Machine and Parts,KORS Machine/Parts,Roller,,,,,55x720,,#NAME?,,piece,piece,,
+10,Machine and Parts,KORS Machine/Parts,Roller,,,,,57x720,,#NAME?,,piece,piece,,
+11,Machine and Parts,KORS Machine/Parts,Roller,,,,,49x740,,#NAME?,,piece,piece,,
+12,Machine and Parts,GTO Machine/Parts,Roller,,,,,45x510,,#NAME?,,piece,piece,,
+13,Machine and Parts,GTO Machine/Parts,Roller,,,,,47x510,,#NAME?,,piece,piece,,
+14,Machine and Parts,GTO Machine/Parts,Roller,,,,,49x510,,#NAME?,,piece,piece,,
+15,Machine and Parts,GTO Machine/Parts,Roller,,,,,49x515,,#NAME?,,piece,piece,,
+16,Machine and Parts,GTO Machine/Parts,Roller,,,,,51x510,,#NAME?,,piece,piece,,
+17,Machine and Parts,GTO Machine/Parts,Roller,,,,,60x570,,#NAME?,,piece,piece,,
+18,Paper,Cut-sized Paper,,Cactus,,White,,8.5x11in,PACUT Cactus-WHI-8.5x11in 500/R,#NAME?,,ream,sheet,ream,500
+19,Paper,Cut-sized Paper,,Cactus,,White,,8.5x13in,PACUT Cactus-WHI-8.5x13in 500/R,#NAME?,,ream,sheet,ream,500
+20,Paper,Cut-sized Paper,,Cactus,,White,,11x17in,PACUT Cactus-WHI-11x17in 500/R,#NAME?,,ream,sheet,ream,500
+21,Paper,Cut-sized Paper,,Cactus,,White,,(A3)16.5x 8.75,PACUT Cactus-WHI-(A3)16.5x 8.75 500/R,#NAME?,,ream,sheet,ream,500
+22,Paper,Cut-sized Paper,,Cactus,,White,,A4,PACUT Cactus-WHI-A4 500/R,#NAME?,,ream,sheet,ream,500
+23,Paper,Cut-sized Paper,,Mimeo,Wove,White,,8.5x11in,PACUT Mimeo-W1-WHI-8.5x11in 500/R,#NAME?,,ream,sheet,ream,500
+24,Paper,Cut-sized Paper,,Mimeo,Wove,White,,8.5x13in,PACUT Mimeo-W1-WHI-8.5x13in 500/R,#NAME?,,ream,sheet,ream,500
+25,Paper,Carbonless Paper,,Goldmark,CB,White,,22x34in,PACBP Goldmark-CB-WHI-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+26,Paper,Carbonless Paper,,Goldmark,CFB,Blue,,22x34in,PACBP Goldmark-CFB-BLU-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+27,Paper,Carbonless Paper,,Goldmark,CFB,Green,,22x34in,PACBP Goldmark-CFB-GRE-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+28,Paper,Carbonless Paper,,Goldmark,CFB,Pink,,22x34in,PACBP Goldmark-CFB-PIN-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+29,Paper,Carbonless Paper,,Goldmark,CFB,White,,22x34in,PACBP Goldmark-CFB-WHI-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+30,Paper,Carbonless Paper,,Goldmark,CFB,Yellow,,22x34in,PACBP Goldmark-CFB-YEL-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+31,Machine and Parts,KORS Machine/Parts,Roller,,,,,51x718,MPKRSROL -51x718 ,#NAME?,,piece,piece,,
+32,Hide,,,,,,,,NA,#NAME?,,NA,NA,,
+33,Hide,,,,,,,,NA,#NAME?,,NA,NA,,
+34,Hide,,,,,,,,NA,#NAME?,,NA,NA,,
+35,Hide,,,,,,,,NA,#NAME?,,NA,NA,,
+36,Paper,Carbonless Paper,,Goldmark,CB,White,,28x34in,PACBP Goldmark-CB-WHI-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+37,Paper,Carbonless Paper,,Goldmark,CFB,Blue,,28x34in,PACBP Goldmark-CFB-BLU-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+38,Paper,Carbonless Paper,,Goldmark,CFB,Green,,28x34in,PACBP Goldmark-CFB-GRE-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+39,Paper,Carbonless Paper,,Goldmark,CFB,Pink,,28x34in,PACBP Goldmark-CFB-PIN-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+40,Paper,Carbonless Paper,,Goldmark,CFB,White,,28x34in,PACBP Goldmark-CFB-WHI-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+41,Paper,Carbonless Paper,,Goldmark,CFB,Yellow,,28x34in,PACBP Goldmark-CFB-YEL-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+42,Paper,Carbonless Paper,,Goldmark,CF,Blue,,28x34in,PACBP Goldmark-CF-BLU-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+43,Paper,Carbonless Paper,,Goldmark,CF,Green,,28x34in,PACBP Goldmark-CF-GRE-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+44,Paper,Carbonless Paper,,Goldmark,CF,Pink,,28x34in,PACBP Goldmark-CF-PIN-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+45,Paper,Carbonless Paper,,Goldmark,CF,White,,28x34in,PACBP Goldmark-CF-WHI-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+46,Paper,Carbonless Paper,,Goldmark,CF,Yellow,,28x34in,PACBP Goldmark-CF-YEL-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+47,Paper,Book Paper,,Triplex,,White,#40,22x34in,PABKP Triplex-WHI-#40-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+48,Paper,Book Paper,,Triplex,,White,#50,22x34in,PABKP Triplex-WHI-#50-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+49,Paper,Book Paper,,Triplex,,White,#60,22x34in,PABKP Triplex-WHI-#60-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+50,Paper,Book Paper,,Triplex,,White,#70,22x34in,PABKP Triplex-WHI-#70-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+51,Paper,Book Paper,,Triplex,,White,#80,22x34in,PABKP Triplex-WHI-#80-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+52,Paper,Book Paper,,Triplex,,White,#40,28x34in,PABKP Triplex-WHI-#40-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+53,Paper,Book Paper,,Triplex,,White,#50,28x34in,PABKP Triplex-WHI-#50-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+54,Paper,Book Paper,,Triplex,,White,#60,28x34in,PABKP Triplex-WHI-#60-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+55,Paper,Book Paper,,Triplex,,White,#70,28x34in,PABKP Triplex-WHI-#70-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+56,Paper,Book Paper,,Triplex,,White,#80,28x34in,PABKP Triplex-WHI-#80-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+57,Paper,Book Paper,,Triplex,,White,#40,25x38in,PABKP Triplex-WHI-#40-25x38in 500/R,#NAME?,,ream,sheet,ream,500
+58,Paper,Book Paper,,Triplex,,White,#50,25x38in,PABKP Triplex-WHI-#50-25x38in 500/R,#NAME?,,ream,sheet,ream,500
+59,Paper,Book Paper,,Triplex,,White,#60,25x38in,PABKP Triplex-WHI-#60-25x38in 500/R,#NAME?,,ream,sheet,ream,500
+60,Paper,Book Paper,,Triplex,,White,#70,25x38in,PABKP Triplex-WHI-#70-25x38in 500/R,#NAME?,,ream,sheet,ream,500
+61,Paper,Book Paper,,Triplex,,White,#80,25x38in,PABKP Triplex-WHI-#80-25x38in 500/R,#NAME?,,ream,sheet,ream,500
+62,Paper,Coated 2-Sides,,Triplex,Gloss,White,#60,25x38in,PAC2S Triplex-G2-WHI-#60-25x38in 9999/R,#NAME?,,ream,sheet,ream,9999
+63,Paper,Coated 2-Sides,,Triplex,Gloss,White,#70,25x38in,PAC2S Triplex-G2-WHI-#70-25x38in 500/R,#NAME?,,ream,sheet,ream,500
+64,Paper,Coated 2-Sides,,Triplex,Gloss,White,#80,25x38in,PAC2S Triplex-G2-WHI-#80-25x38in 500/R,#NAME?,,ream,sheet,ream,500
+65,Paper,Coated 2-Sides,,Triplex,Gloss,White,#100,25x38in,PAC2S Triplex-G2-WHI-#100-25x38in 9999/R,#NAME?,,ream,sheet,ream,9999
+66,Paper,Coated 2-Sides,,Triplex,Gloss,White,#120,25x38in,PAC2S Triplex-G2-WHI-#120-25x38in 9999/R,#NAME?,,ream,sheet,ream,9999
+67,Paper,Coated 2-Sides,,Triplex,Gloss,White,#140,25x38in,PAC2S Triplex-G2-WHI-#140-25x38in 9999/R,#NAME?,,ream,sheet,ream,9999
+68,Paper,Coated 2-Sides,,Triplex,Gloss,White,#160,25x38in,PAC2S Triplex-G2-WHI-#160-25x38in 9999/R,#NAME?,,ream,sheet,ream,9999
+69,Paper,Coated 2-Sides,,Triplex,Gloss,White,#170,25x38in,PAC2S Triplex-G2-WHI-#170-25x38in 9999/R,#NAME?,,ream,sheet,ream,9999
+70,Paper,Coated 2-Sides,,Triplex,Gloss,White,#180,25x38in,PAC2S Triplex-G2-WHI-#180-25x38in 9999/R,#NAME?,,ream,sheet,ream,9999
+71,Paper,Coated 2-Sides,,Triplex,Gloss,White,#200,25x38in,PAC2S Triplex-G2-WHI-#200-25x38in 9999/R,#NAME?,,ream,sheet,ream,9999
+72,Paper,Coated 2-Sides,,Triplex,Gloss,White,#220,25x38in,PAC2S Triplex-G2-WHI-#220-25x38in 9999/R,#NAME?,,ream,sheet,ream,9999
+73,Paper,Onionskin Paper,,OTC,,Blue,,22x34in,PAONS OTC-BLU-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+74,Paper,Onionskin Paper,,OTC,,Green,,22x34in,PAONS OTC-GRE-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+75,Paper,Onionskin Paper,,OTC,,Pink,,22x34in,PAONS OTC-PIN-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+76,Paper,Onionskin Paper,,OTC,,Yellow,,22x34in,PAONS OTC-YEL-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+77,Paper,Onionskin Paper,,OTC,,White,,22x34in,PAONS OTC-WHI-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+78,Paper,Onionskin Paper,,OTC,,Blue,,28x34in,PAONS OTC-BLU-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+79,Paper,Onionskin Paper,,OTC,,Green,,28x34in,PAONS OTC-GRE-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+80,Paper,Onionskin Paper,,OTC,,Pink,,28x34in,PAONS OTC-PIN-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+81,Paper,Onionskin Paper,,OTC,,Yellow,,28x34in,PAONS OTC-YEL-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+82,Paper,Board,Bristol,Triplex,Vellum,White,#74,22.5x28.5in,PABRDBTL Triplex-V1-WHI-#74-22.5x28.5in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+83,Paper,Board,Bristol,Triplex,Vellum,Blue,#74,22.5x28.5in,PABRDBTL Triplex-V1-BLU-#74-22.5x28.5in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+84,Paper,Board,Bristol,Triplex,Vellum,Green,#74,22.5x28.5in,PABRDBTL Triplex-V1-GRE-#74-22.5x28.5in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+85,Paper,Board,Bristol,Triplex,Vellum,Golden Rod,#74,22.5x28.5in,PABRDBTL Triplex-V1-GOL-#74-22.5x28.5in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+86,Paper,Board,Bristol,Triplex,Vellum,Orange,#74,22.5x28.5in,PABRDBTL Triplex-V1-ORA-#74-22.5x28.5in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+87,Paper,Board,Bristol,Triplex,Vellum,Pink,#74,22.5x28.5in,PABRDBTL Triplex-V1-PIN-#74-22.5x28.5in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+88,Paper,Board,Bristol,Triplex,Vellum,Red,#74,22.5x28.5in,PABRDBTL Triplex-V1-RED-#74-22.5x28.5in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+89,Paper,Board,Bristol,Triplex,Vellum,Yellow,#74,22.5x28.5in,PABRDBTL Triplex-V1-YEL-#74-22.5x28.5in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+90,Paper,Board,Bristol,Triplex,Vellum,Blue,#100,22.5x28.5in,PABRDBTL Triplex-V1-BLU-#100-22.5x28.5in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+91,Paper,Bond Paper,,TIPCO,,Blue,,22x34in,PABND TIPCO-BLU-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+92,Paper,Bond Paper,,TIPCO,,Green,,22x34in,PABND TIPCO-GRE-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+93,Paper,Bond Paper,,TIPCO,,Pink,,22x34in,PABND TIPCO-PIN-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+94,Paper,Bond Paper,,TIPCO,,White,,22x34in,PABND TIPCO-WHI-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+95,Paper,Bond Paper,,TIPCO,,Yellow,,22x34in,PABND TIPCO-YEL-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+96,Paper,Bond Paper,,TIPCO,,Blue,,28x34in,PABND TIPCO-BLU-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+97,Paper,Bond Paper,,TIPCO,,Green,,28x34in,PABND TIPCO-GRE-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+98,Paper,Bond Paper,,TIPCO,,Pink,,28x34in,PABND TIPCO-PIN-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+99,Paper,Bond Paper,,TIPCO,,White,,28x34in,PABND TIPCO-WHI-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+100,Paper,Bond Paper,,TIPCO,,Yellow,,28x34in,PABND TIPCO-YEL-28x34in 500/R,#NAME?,,ream,sheet,ream,500
+101,Paper,Bond Paper,,TIPCO,,White,,8.5x13in,PABND TIPCO-WHI-8.5x13in 500/R,#NAME?,,ream,sheet,ream,500
+102,Paper,Newsprint Paper,,Triplex Newsprint,,White,,22x34in,PANWS Triplex Newsprint-WHI-22x34in 480/R,#NAME?,,ream,sheet,ream,480
+103,Paper,Newsprint Paper,,Triplex Newsprint,,White,,24x36in,PANWS Triplex Newsprint-WHI-24x36in 480/R,#NAME?,,ream,sheet,ream,480
+104,Paper,Newsprint Paper,,Triplex Newsprint,,White,,18x24in,PANWS Triplex Newsprint-WHI-18x24in 480/R,#NAME?,,ream,sheet,ream,480
+105,Paper,Newsprint Paper,,Triplex Newsprint,,White,,450x450,PANWS Triplex Newsprint-WHI-450x450 480/R,#NAME?,,ream,sheet,ream,480
+106,Paper,Newsprint Paper,,Triplex Newsprint,,White,,28x34in,PANWS Triplex Newsprint-WHI-28x34in 480/R,#NAME?,,ream,sheet,ream,480
+107,Paper,Newsprint Paper,,Triplex Newsprint,,White,,8.5x11in,PANWS Triplex Newsprint-WHI-8.5x11in 480/R,#NAME?,,ream,sheet,ream,480
+108,Paper,Newsprint Paper,,Triplex Newsprint,,White,,8.5x13in,PANWS Triplex Newsprint-WHI-8.5x13in 480/R,#NAME?,,ream,sheet,ream,480
+109,Paper,Kraft Paper,,Triplex,,Brown,#80,36x48in,PAKRF Triplex-BRO-#80-36x48in 480/R,#NAME?,,ream,sheet,ream,480
+110,Paper,Kraft Paper,,Triplex,,Brown,#150,18x23in,PAKRF Triplex-BRO-#150-18x23in 480/R,#NAME?,,ream,sheet,ream,480
+111,Paper,Kraft Paper,,Triplex,,Brown,#150,23x28in,PAKRF Triplex-BRO-#150-23x28in 480/R,#NAME?,,ream,sheet,ream,480
+112,Paper,Kraft Paper,,Triplex kraft,,Brown,#150,36x48in,PAKRF Triplex kraft-BRO-#150-36x48in 480/R,#NAME?,,ream,sheet,ream,480
+113,Paper,Board,Foldcote S/W,Triplex,,,#10,31x43in,PABRDFSW Triplex-#10-31x43in 9999/R,#NAME?,,ream,sheet,ream,9999
+114,Paper,Board,Foldcote S/W,Triplex,,,#12,31x43in,PABRDFSW Triplex-#12-31x43in 9999/R,#NAME?,,ream,sheet,ream,9999
+115,Paper,Board,Foldcote S/W,Triplex,,,#15,31x43in,PABRDFSW Triplex-#15-31x43in 9999/R,#NAME?,,ream,sheet,ream,9999
+116,Paper,Board,Foldcote S/W,Triplex,,,#18,31x43in,PABRDFSW Triplex-#18-31x43in 9999/R,#NAME?,,ream,sheet,ream,9999
+117,Paper,Board,Foldcote S/W,Triplex,,,#20,31x43in,PABRDFSW Triplex-#20-31x43in 9999/R,#NAME?,,ream,sheet,ream,9999
+118,Paper,Board,Tag,Triplex,,White U.S.,#14,31x45in,PABRDTAG Triplex-WHI-#14-31x45in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+119,Paper,Board,Chip,Triplex,,Gray,#120,26x38in,PABRDCHP Triplex-GRA-#120-26x38in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+120,Paper,Board,Kromekote,Triplex,Gloss,White,189gsm,26x40in,PABRDKMK Triplex-G2-WHI-189gsm-26x40in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+121,Paper,Board,Carolina,Triplex,Smooth,White,240gsm,26x40in,PABRDCRL Triplex-S3-WHI-240gsm-26x40in 100/R,#NAME?,,ream,sheet,ream,100
+122,Paper,Envelope,Windowed,Trojan,,White,103x,9.5x4.75in,PAENVWDW Trojan-WHI-103x-9.5x4.75in 500/B,#NAME?,,box,piece,box,500
+123,Paper,Envelope,Windowless,Trojan,,White,103x,9.5x4.75in,PAENVWDL Trojan-WHI-103x-9.5x4.75in 500/B,#NAME?,,box,piece,box,500
+124,Paper,Envelope,Baronial,Trojan,,White,,9.5x4.25in,PAENVBRL Trojan-WHI-9.5x4.25in 500/B,#NAME?,,box,piece,box,500
+125,Paper,Envelope,Kraft,Trojan,,Golden Brown,,9x15in,PAENVKRF Trojan-GOL-9x15in 500/B,#NAME?,,box,piece,box,500
+126,Paper,Envelope,Kraft,Trojan Documentary,,Golden Brown,#150,9x12in,PAENVKRF Trojan Documentary-GOL-#150-9x12in 500/B,#NAME?,,box,piece,box,500
+127,Paper,Folder,Long,Bigyield,,White,,8.5x13,PAFLDLNG Bigyield-WHI-8.5x13 100/B,#NAME?,,bundle,piece,bundle,100
+128,Paper,Folder,Short,Bigyield,,White,,8.5x11,PAFLDSRT Bigyield-WHI-8.5x11 100/B,#NAME?,,bundle,piece,bundle,100
+129,Paper,Board,Card,Triplex,Vellum,White,#100,22.5x28.5in,PABRDCRD Triplex-V1-WHI-#100-22.5x28.5in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+130,Paper,Board,Card,Triplex,Vellum,White,#120,22.5x28.5in,PABRDCRD Triplex-V1-WHI-#120-22.5x28.5in 9999/B,#NAME?,,bundle,sheet,bundle,9999
+131,Paper,Sticker,Book B/B,Yunitrade,Uncoated,White,,15.5x10.5in,PASTKBKB Yunitrade-UC-WHI-15.5x10.5in 1000/B,#NAME?,,bundle,piece,bundle,1000
+132,Paper,Sticker,Book B/B,Yunitrade,Uncoated,White,,A4,PASTKBKB Yunitrade-UC-WHI-A4 1000/B,#NAME?,,bundle,piece,bundle,1000
+133,Paper,Sticker,Book B/B,Yunitrade,Uncoated,White,,10x21,PASTKBKB Yunitrade-UC-WHI-10x21 1000/B,#NAME?,,bundle,piece,bundle,1000
+134,Paper,Sticker,Book Y/B,Yunitrade,Uncoated,White,,A4,PASTKBKY Yunitrade-UC-WHI-A4 1000/B,#NAME?,,bundle,piece,bundle,1000
+135,Paper,Sticker,Book Y/B,Yunitrade,Uncoated,White,,9x12in,PASTKBKY Yunitrade-UC-WHI-9x12in 1000/B,#NAME?,,bundle,piece,bundle,1000
+136,Paper,Sticker,Book Y/B,Yunitrade,Uncoated,White,,24x36in,PASTKBKY Yunitrade-UC-WHI-24x36in 100/B,#NAME?,,bundle,piece,bundle,100
+137,Paper,Sticker,Book W/B,Yunitrade,Uncoated,White,,24x36in,PASTKBKW Yunitrade-UC-WHI-24x36in 100/B,#NAME?,,bundle,piece,bundle,100
+138,Paper,Sticker,Satin Y/B,Yunitrade,Gloss,White,,24x36in,PASTKSTY Yunitrade-G2-WHI-24x36in 100/B,#NAME?,,bundle,piece,bundle,100
+139,Paper,Sticker,Neon,Yunitrade,Uncoated,Green,,24x36in,PASTKNEO Yunitrade-UC-GRE-24x36in 100/B,#NAME?,,bundle,piece,bundle,100
+140,Paper,Special Paper,,Astrobright,,Lemon,89gsm,,PASPL Astrobright-LEM-89gsm 9999/P,#NAME?,,pack,sheet,pack,9999
+141,Paper,Special Paper,,Astrobright,,Green,89gsm,,PASPL Astrobright-GRE-89gsm 9999/P,#NAME?,,pack,sheet,pack,9999
+142,Paper,Coated 2-Sides,,triplex,gloss,white,220,25x38,PAC2S triplex-G2-WHI-220-25x38 200/R,#NAME?,,ream,sheet,ream,200
+143,Hide,,,,,,,,,#NAME?,,NA,NA,,
+144,Hide,,,,,,,,,#NAME?,,NA,NA,,
+145,Hide,,,,,,,,,#NAME?,,NA,NA,,
+146,Hide,,,,,,,,,#NAME?,,NA,NA,,
+147,Hide,,,,,,,,,#NAME?,,NA,NA,,
+148,Hide,,,,,,,,,#NAME?,,NA,NA,,
+149,Hide,,,,,,,,,#NAME?,,NA,NA,,
+150,Hide,,,,,,,,,#NAME?,,NA,NA,,
+151,Hide,,,,,,,,,#NAME?,,NA,NA,,
+152,Hide,,,,,,,,,#NAME?,,NA,NA,,
+153,Hide,,,,,,,,,#NAME?,,NA,NA,,
+154,Hide,,,,,,,,,#NAME?,,NA,NA,,
+155,Hide,,,,,,,,,#NAME?,,NA,NA,,
+156,Hide,,,,,,,,,#NAME?,,NA,NA,,
+157,Hide,,,,,,,,,#NAME?,,NA,NA,,
+158,Hide,,,,,,,,,#NAME?,,NA,NA,,
+159,Hide,,,,,,,,,#NAME?,,NA,NA,,
+160,Hide,,,,,,,,,#NAME?,,NA,NA,,
+161,Hide,,,,,,,,,#NAME?,,NA,NA,,
+162,Hide,,,,,,,,,#NAME?,,NA,NA,,
+163,Hide,,,,,,,,,#NAME?,,NA,NA,,
+164,Hide,,,,,,,,,#NAME?,,NA,NA,,
+165,Paper,Carbonless Paper,,Goldmark,CF,Blue,,22x34in,PACBP Goldmark-CF-BLU-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+166,Paper,Carbonless Paper,,Goldmark,CF,Green,,22x34in,PACBP Goldmark-CF-GRE-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+167,Paper,Carbonless Paper,,Goldmark,CF,Pink,,22x34in,PACBP Goldmark-CF-PIN-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+168,Paper,Carbonless Paper,,Goldmark,CF,White,,22x34in,PACBP Goldmark-CF-WHI-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+169,Paper,Carbonless Paper,,Goldmark,CF,Yellow,,22x34in,PACBP Goldmark-CF-YEL-22x34in 500/R,#NAME?,,ream,sheet,ream,500
+170,Paper,Carbonless Board,Tag,Triplex,CF,White,125gsm,28x34in,PACBBTAG Triplex-CF-WHI-125gsm-28x34in 250/R,#NAME?,,ream,sheet,ream,250
+171,Paper,Envelope,Windowless,Trojan,,White,,9.5x4.25in,PAENVWDL Trojan-WHI-9.5x4.25in 500/B,#NAME?,,box,piece,box,500
+172,Consumables,Chemicals,Gum Solution,,,,,,COCHMGMS  ,#NAME?,,bottle,bottle,,
+173,Consumables,Chemicals,Fountain Solution,DYNA 200 FA,,,,Liters,COCHMFNS DYNA 200 FA-Liters ,#NAME?,,bottle,bottle,,
+174,Consumables,Chemicals,Phosporic Acid,,,,,,COCHMPHA  ,#NAME?,,bottle,bottle,,
+175,Consumables,Chemicals,Lacquer Thinner,,,,,,COCHMLCT  ,#NAME?,,bottle,bottle,,
+176,Consumables,Chemicals,Motor Oil,,,,,,COCHMMTO  ,#NAME?,,bottle,bottle,,
+177,Consumables,Chemicals,Ink Reducer,,,,,,COCHMINR  ,#NAME?,,bottle,bottle,,
+178,Consumables,Chemicals,Singer Oil,,,,,,COCHMSNO  ,#NAME?,,bottle,bottle,,
+179,Consumables,Chemicals,Glycerine,,,,,,COCHMGLY  ,#NAME?,,bottle,bottle,,
+180,Consumables,Chemicals,Mineral Oil,,,,,,COCHMMNO  ,#NAME?,,bottle,bottle,,
+181,Consumables,Chemicals,Cyanoacrylate Adhesive,Pacmac,,,,,COCHM Pacmac ,#NAME?,,bottle,bottle,,
+182,Consumables,Maintenance Materials,Laundry Bar,,,,,,COMNTLNB  ,#NAME?,,piece,piece,,
+183,Consumables,Maintenance Materials,Laundry Powder,,,,,,COMNTLNP  ,#NAME?,,piece,piece,,
+184,Consumables,Maintenance Materials,All-Purpose Cleanser,ajax/zim,,,,,COMNTAPC ajax/zim ,#NAME?,,piece,piece,,
+185,Consumables,Maintenance Materials,Cotton Balls,,,,,,COMNTCTB  ,#NAME?,,pack,pack,,
+186,Consumables,Maintenance Materials,Cotton Rags,,,,,,COMNTCTR  9999/P,#NAME?,,pack,piece,pack,9999
+187,Consumables,Maintenance Materials,Floor Wax,,,,,,COMNTFLW  ,#NAME?,,piece,piece,,
+188,Consumables,Maintenance Materials,Garbage Bag,,,,,S,COMNTGBG -S 100/P,#NAME?,,pack,piece,pack,100
+189,Consumables,Maintenance Materials,Garbage Bag,,,,,XL,COMNTGBG -XL 100/P,#NAME?,,pack,piece,pack,100
+190,Consumables,Maintenance Materials,Mophead Refill,,,,,,COMNTMHR  ,#NAME?,,piece,piece,,
+191,Consumables,Maintenance Materials,Alcohol,,,,,500ml,COMNTALC -500ml ,#NAME?,,bottle,bottle,,
+192,Consumables,Maintenance Materials,Industrial Sponge,Viscovita,,,,,COMNTISP Viscovita 99/B,#NAME?,,bundle,piece,bundle,99
+193,Consumables,Finishing Materials,Padding Cement,Stikwel,,Red,,4kg,COFINPDC Stikwel-RED-4kg ,#NAME?,,bottle,bottle,,
+194,Consumables,Finishing Materials,Flap Glue,,,,,,COFIN  ,#NAME?,,bottle,bottle,,
+195,Consumables,Finishing Materials,Magnetic Wire,,,,,#31,COFINMGW -#31 ,#NAME?,,roll,roll,,
+196,Consumables,Finishing Materials,Metal Eyelet,,,,,,COFINMTE  ,#NAME?,,box,box,,
+197,Consumables,Finishing Materials,Nylon String,,,,,,COFINNLS  999/B,#NAME?,,bundle,roll,bundle,999
+198,Consumables,Finishing Materials,Plastic,,,,,7x10,COFINPLS -7x10 ,#NAME?,,piece,piece,,
+199,Consumables,Finishing Materials,Plastic,,,,,10x15/10x14,COFINPLS -10x15/10x14 ,#NAME?,,piece,piece,,
+200,Consumables,Finishing Materials,Gummed Tape,kraft,,brown,,2 inches,COFINGMT kraft-BRO-2 inches 99/B,#NAME?,,bundle,roll,bundle,99
+201,Consumables,Finishing Materials,Laminating Film,,,,125microns,,COFINLMF -125microns ,#NAME?,,piece,piece,,
+202,Consumables,Finishing Materials,Laminating Film,,,,250microns,,COFINLMF -250microns ,#NAME?,,piece,piece,,
+203,Office Supplies,Stationary and Supplies,Permanent Marker Ink Refill,,,Black,,,OFSUP -BLA ,#NAME?,,bottle,bottle,,
+204,Consumables,Ink,Akinto,,,Black,,,COINK -BLA ,#NAME?,,can,can,,
+205,Consumables,Ink,Mimeo,Daito,,,,,COINK Daito ,#NAME?,,can,can,,
+206,Consumables,Ink,Offset,Druckmeister,,Magenta,,1kg,COINK Druckmeister-MAG-1kg ,#NAME?,,can,can,,
+207,Consumables,Ink,Offset,Druckmeister,,Cyan,,1kg,COINK Druckmeister-CYA-1kg ,#NAME?,,can,can,,
+208,Consumables,Ink,,Jet Speed,,Magenta,,2kg,COINK Jet Speed-MAG-2kg ,#NAME?,,can,can,,
+209,Consumables,Ink,, Jet Speed O/S,,Red,,2KG,COINK  Jet Speed O/S-RED-2KG ,#NAME?,,can,can,,
+210,Consumables,Ink,Offset,Kolora carbo,,Black,,1kg,COINK Kolora carbo-BLA-1kg ,#NAME?,,can,can,,
+211,Consumables,Ink,,Jet Speed,,Black,,2kg,COINK Jet Speed-BLA-2kg ,#NAME?,,can,can,,
+212,Consumables,Ink,,Wico,,Job Black,,1kg,COINK Wico-JOB-1kg ,#NAME?,,can,can,,
+213,Consumables,Ink,,Wico,,Bright Red,,1kg,COINK Wico-BRI-1kg ,#NAME?,,can,can,,
+214,Consumables,Ink,Offset Mixing White,Kolora,,,,3kg,COINK Kolora-3kg ,#NAME?,,can,can,,
+215,Consumables,Ink,,Nippon Speed,,Cyan,,1kg,COINK Nippon Speed-CYA-1kg ,#NAME?,,can,can,,
+216,Consumables,Ink,,Nippon Speed,,Cyan,,2.5kg,COINK Nippon Speed-CYA-2.5kg ,#NAME?,,can,can,,
+217,Consumables,Ink,,Nippon Speed,,Magenta,,2.5kg,COINK Nippon Speed-MAG-2.5kg ,#NAME?,,can,can,,
+218,Consumables,Ink,,Nippon Speed,,Yellow,,2.5kg,COINK Nippon Speed-YEL-2.5kg ,#NAME?,,can,can,,
+219,Consumables,Ink,,Nippon Speed,,Black,,2.5kg,COINK Nippon Speed-BLA-2.5kg ,#NAME?,,can,can,,
+220,Consumables,Ink,,Imperial,,Reflex Blue,,2kg,COINK Imperial-REF-2kg ,#NAME?,,can,can,,
+221,Consumables,Ink,,Imperial,,Warm Red,,2kg,COINK Imperial-WAR-2kg ,#NAME?,,can,can,,
+222,Consumables,Ink,,Unipak,,Gold,,,COINK Unipak-GOL ,#NAME?,,can,can,,
+223,Consumables,Ink,Continuous,,,Black,,,COINK -BLA ,#NAME?,,can,can,,
+224,Consumables,Ink,Continuous,,,Blue/cyan,,,COINK -BLU ,#NAME?,,can,can,,
+225,Consumables,Ink,Continuous,,,Magenta,,,COINK -MAG ,#NAME?,,can,can,,
+226,Consumables,Ink,Continuous,,,Yellow,,,COINK -YEL ,#NAME?,,can,can,,
+227,Consumables,Ink,Cartridge,HP678,,,,,COINK HP678 ,#NAME?,,can,can,,
+228,Consumables,Machine Consumables,Plate Cleaner,,,,,,COMCC  ,#NAME?,,bottle,bottle,,
+229,Consumables,Machine Consumables,Swell Blanket Repair,,,,,,COMCC  ,#NAME?,,bottle,bottle,,
+230,Consumables,Machine Consumables,Spray Powder,,,,,,COMCC  ,#NAME?,,piece,piece,,
+231,Consumables,Machine Consumables,Blanket Cleaner,,,,,,COMCC  ,#NAME?,,piece,piece,,
+232,Consumables,Machine Consumables,Miscible Blanket,SORMZ,,,,740x660,COMCC SORMZ-740x660 ,#NAME?,,piece,piece,,
+233,Consumables,Machine Consumables,Miscible Blanket,GTO,,,,518x445,COMCC GTO-518x445 ,#NAME?,,piece,piece,,
+234,Consumables,Machine Consumables,Miscible Blanket,KORS,,,,740x660,COMCC KORS-740x660 ,#NAME?,,piece,piece,,
+235,Consumables,Machine Consumables,Molleton Cloth,GTO,,,,,COMCC GTO 9999/R,#NAME?,,roll,strip,roll,9999
+236,Consumables,Machine Consumables,Molleton Cloth,SORMZ,,,,#6,COMCC SORMZ-#6 9999/R,#NAME?,,roll,strip,roll,9999
+237,Consumables,Machine Consumables,Molleton Cloth,KORS,,,,#7,COMCC KORS-#7 9999/R,#NAME?,,roll,strip,roll,9999
+238,Consumables,Machine Consumables,Molleton Cloth,KORS,,,,#8,COMCC KORS-#8 9999/R,#NAME?,,roll,strip,roll,9999
+239,Consumables,Machine Consumables,Molleton Cloth,sormz,,,,#5,COMCC sormz-#5 9999/R,#NAME?,,roll,strip,roll,9999
+240,Consumables,Machine Consumables,Washer Blade,GTO,,,,,COMCC GTO ,#NAME?,,piece,piece,,
+241,Consumables,Machine Consumables,Washer Blade,KORS,,,,,COMCC KORS ,#NAME?,,piece,piece,,
+242,Consumables,Machine Consumables,Washer Blade,SORMZ,,,,,COMCC SORMZ ,#NAME?,,piece,piece,,
+243,Consumables,Machine Consumables,Roller Wash,,,,,20L,COMCC -20L ,#NAME?,,piece,piece,,
+244,Consumables,Machine Consumables,Roller Cleaning Paste,Hydromarc,,,,,COMCC Hydromarc ,#NAME?,,container,container,,
+245,Consumables,Machine Consumables,Master Roll,Akinto,,,,,COMCC Akinto ,#NAME?,,piece,piece,,
+246,Consumables,Machine Consumables,Developer Filter,,,,,,COMCC  ,#NAME?,,piece,piece,,
+247,Consumables,Machine Consumables,Plate Replenisher,,,,,20l,COMCC -20l ,#NAME?,,piece,piece,,
+248,Consumables,Machine Consumables,Plate Finisher,,,,,5l,COMCC -5l ,#NAME?,,piece,piece,,
+249,Consumables,Machine Consumables,Plate Developer,,,,,20l,COMCC -20l ,#NAME?,,piece,piece,,
+250,Consumables,Machine Consumables,Molleton Cloth,Processor,,,,#9,COMCC Processor-#9 9999/R,#NAME?,,roll,strip,roll,9999
+251,Consumables,Machine Consumables,Cutting Stick,Polar,,,,45in,COMCC Polar-45in ,#NAME?,,piece,piece,,
+252,Consumables,Machine Consumables,Cutting Stick,Senator,,,,32in,COMCC Senator-32in ,#NAME?,,piece,piece,,
+253,Consumables,Machine Consumables,Hairline,,,,,2pts,COMCC -2pts 99/B,#NAME?,,bundle,piece,bundle,99
+254,Consumables,Machine Consumables,Offset Strip,,,,,,COMCC  99/B,#NAME?,,bundle,piece,bundle,99
+255,Consumables,Machine Consumables,Offset Score,,,,,,COMCC  99/B,#NAME?,,bundle,piece,bundle,99
+256,Consumables,Machine Consumables,Perforating Rule,,,,,,COMCC  99/B,#NAME?,,bundle,piece,bundle,99
+257,Consumables,Machine Consumables,Slug,,,,,2pts,COMCC -2pts 99/B,#NAME?,,bundle,piece,bundle,99
+258,Consumables,Machine Consumables,NSK Wheel Bearing,GTO,,,,,COMCC GTO ,#NAME?,,box,box,,
+259,Consumables,Machine Consumables,Ribbon Cartridge,LX300,,,,,COMCC LX300 ,#NAME?,,piece,piece,,
+260,Consumables,Machine Consumables,Ribbon Cartridge,LQ300,,,,,COMCC LQ300 ,#NAME?,,piece,piece,,
+261,Consumables,Machine Consumables,Ribbon Cartridge,LQ310,,,,,COMCC LQ310 ,#NAME?,,piece,piece,,
+262,Consumables,Machine Consumables,Toner,Laserjet 1505 36A,,,,,COMCC Laserjet 1505 36A ,#NAME?,,piece,piece,,
+263,Consumables,Others,Candle,,,,,,COOTH  999/B,#NAME?,,bundle,piece,bundle,999
+264,Consumables,Others,ID Holder,,,,,,COOTH  999/B,#NAME?,,bundle,piece,bundle,999
+265,Consumables,Others,Gawgaw,Liwayway,,,,,COOTH Liwayway ,#NAME?,,pack,pack,,
+266,Consumables,Others,Facemask,,,,,,COOTH  999/B,#NAME?,,bundle,piece,bundle,999
+267,Office Supplies,Stationary and Supplies,Ballpen,,,Black,,,OFSUP -BLA 999/B,#NAME?,,box,piece,box,999
+268,Office Supplies,Stationary and Supplies,Ballpen,,,Red,,,OFSUP -RED 999/B,#NAME?,,box,piece,box,999
+269,Office Supplies,Stationary and Supplies,Calling Card Case,,,,,,OFSUP  999/B,#NAME?,,bundle,piece,bundle,999
+270,Office Supplies,Stationary and Supplies,Correction Tape,,,,,,OFSUP  999/B,#NAME?,,bundle,piece,bundle,999
+271,Office Supplies,Stationary and Supplies,Cutter Blade,,,,,Small,OFSUP -Small 999/B,#NAME?,,bundle,piece,bundle,999
+272,Office Supplies,Stationary and Supplies,Cutter with Handle,,,,,Small,OFSUP -Small 999/B,#NAME?,,bundle,piece,bundle,999
+273,Office Supplies,Stationary and Supplies,Double-sided Tape,,,,,1/2in,OFSUP -1/2in 999/B,#NAME?,,bundle,piece,bundle,999
+274,Office Supplies,Stationary and Supplies,Cellulose Tape,Evercell,,,,,OFSUP Evercell 999/B,#NAME?,,bundle,piece,bundle,999
+275,Office Supplies,Stationary and Supplies,Masking Tape,,,,,1/2in,OFSUP -1/2in 999/B,#NAME?,,bundle,piece,bundle,999
+276,Office Supplies,Stationary and Supplies,Packaging Tape,,,Tan,,,OFSUP -TAN 999/B,#NAME?,,bundle,piece,bundle,999
+277,Office Supplies,Stationary and Supplies,Packaging Tape,,,Clear,,,OFSUP -CLE 999/B,#NAME?,,bundle,piece,bundle,999
+278,Office Supplies,Stationary and Supplies,Paper Clip,,,,,Small,OFSUP -Small ,#NAME?,,box,box,,
+279,Office Supplies,Stationary and Supplies,Paper Clip,,,,,Big,OFSUP -Big ,#NAME?,,box,box,,
+280,Office Supplies,Stationary and Supplies,Paper Eraser,,,,,,OFSUP  ,#NAME?,,box,box,,
+281,Office Supplies,Stationary and Supplies,Paper Fastener,,,,,,OFSUP  ,#NAME?,,box,box,,
+282,Office Supplies,Stationary and Supplies,Permanent Marker,,,,,,OFSUP  999/B,#NAME?,,box,piece,box,999
+283,Office Supplies,Stationary and Supplies,Pencil,,,,,,OFSUP  ,#NAME?,,box,box,,
+284,Office Supplies,Stationary and Supplies,Ribbon,,,Red,,,OFSUP -RED 999/B,#NAME?,,bundle,piece,bundle,999
+285,Office Supplies,Stationary and Supplies,Scotch Tape,,,,,,OFSUP  999/B,#NAME?,,bundle,piece,bundle,999
+286,Office Supplies,Stationary and Supplies,Stamp Pad Ink,,,Blue,,,OFSUP -BLU ,#NAME?,,bottle,bottle,,
+287,Office Supplies,Stationary and Supplies,Staple Wire,#10,,,,Small,OFSUP #10-Small ,#NAME?,,box,box,,
+288,Office Supplies,Stationary and Supplies,Staple Wire,#10,,,,Big,OFSUP #10-Big ,#NAME?,,box,box,,
+289,Office Supplies,Stationary and Supplies,Staple Wire,#13,,,,,OFSUP #13 ,#NAME?,,box,box,,
+290,Office Supplies,Stationary and Supplies,Staple Wire,#15,,,,,OFSUP #15 ,#NAME?,,box,box,,
+291,Office Supplies,Stationary and Supplies,Staple Wire,#17,,,,,OFSUP #17 ,#NAME?,,box,box,,
+292,Office Supplies,Stationary and Supplies,Staple Wire,#35,,,,,OFSUP #35 ,#NAME?,,box,box,,
+293,Office Supplies,Stationary and Supplies,Ring Binder,,,,,small,OFSUP -small 999/B,#NAME?,,bundle,piece,bundle,999
+294,Office Supplies,Stationary and Supplies,Stone Eraser,,,,,,OFSUP  99/B,#NAME?,,bundle,piece,bundle,99
+295,Office Supplies,Stationary and Supplies,Thermal Paper,,,,,,OFSUP  99/B,#NAME?,,bundle,piece,bundle,99
+296,Office Supplies,Stationary and Supplies,Type Writer Ribbon Refill,,,,,,OFSUP  99/B,#NAME?,,bundle,piece,bundle,99
+297,Office Supplies,Stationary and Supplies,Board Marker,,,wyte,,,OFSUP -WYT 999/B,#NAME?,,bundle,piece,bundle,999
+298,Office Supplies,Stationary and Supplies,Tape,3M,,Red,,,OFSUP 3M-RED 999/B,#NAME?,,bundle,piece,bundle,999
+299,Office Supplies,Stationary and Supplies,Glue,,,White,,,OFSUP -WHI 999/B,#NAME?,,bundle,piece,bundle,999
+300,Office Supplies,Stationary and Supplies,CD,,,,,,OFSUP  999/B,#NAME?,,,piece,bundle,999
+301,Office Supplies,Stationary and Supplies,DVDR,,,,,,OFSUP  999/B,#NAME?,,bundle,piece,bundle,999
+302,Office Supplies,Stationary and Supplies,Logbook,,,,,,OFSUP  ,#NAME?,,,piece,,
+303,Office Supplies,Stationary and Supplies,PVC,,,,,30ml,OFSUP -30ml 999/B,#NAME?,,bundle,piece,bundle,999
+304,Consumables,Ink,,Imperial,,Green,,2kg,COINK Imperial-GRE-2kg ,#NAME?,,can,can,,
+305,Paper,Special Paper,,Catalina,,Orange,75gsm,,PASPL Catalina-ORA-75gsm 9999/R,#NAME?,,ream,sheet,ream,9999
+306,Paper,Special Paper,,Burano,,Light Green,90gsm,27x39,PASPL Burano-LIG-90gsm-27x39 9999/R,#NAME?,,ream,sheet,ream,9999
+307,Paper,Special Paper,,Burano,,Violet,90gsm,27x39,PASPL Burano-VIO-90gsm-27x39 9999/R,#NAME?,,ream,sheet,ream,9999
+308,Paper,Special Paper,,Burano,,Bright Yellow,90gsm,27x39,PASPL Burano-BRI-90gsm-27x39 9999/R,#NAME?,,ream,sheet,ream,9999
+309,Paper,Special Paper,Photopaper,Fortune Sources,Glossy,,,50x30,PASPL Fortune Sources-50x30 ,#NAME?,,,roll,,
+310,Paper,Special Paper,,Athenea ,Laid,Blanco Diamante,90gsm,27.5x39.3,PASPL Athenea -L1-BLA-90gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+311,Paper,Special Paper,,Galacia,Parchment,White,,27.5x39.3,PASPL Galacia-WHI-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+312,Paper,Newsprint Paper,,Triplex newsprint,,White,,34x32.5,PANWS Triplex newsprint-WHI-34x32.5 480/R,#NAME?,,ream,sheet,ream,480
+313,Paper,Special Paper,burano salmon,Versa Fine,,Colored Salmon,90gsm,27.5x39.3,PASPL Versa Fine-COL-90gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+314,Paper,Special Paper,catalina cyber green,versa fine,75gsm,cyber green,,22.5x35.4,PASPL versa fine-CYB-22.5x35.4 9999/P,#NAME?,,pack,sheet,pack,9999
+315,Paper,Special Paper,matte coated #160,triplex,,,,25x38,PASPL triplex-25x38 9999/P,#NAME?,,pack,sheet,pack,9999
+316,Paper,Sticker,satin W/B,yunitrade,,white,glossy,24x36,PASTK yunitrade-WHI-glossy-24x36 9999/P,#NAME?,,pack,sheet,pack,9999
+317,Paper,Envelope,kraft envelope,trojan,,brown,#150,10x15,PAENV trojan-BRO-#150-10x15 500/B,#NAME?,,box,pcs,box,500
+318,Paper,Special Paper,Bevania splendorgel ,prestige,,white,270gsm,28x39.3,PASPL prestige-WHI-270gsm-28x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+319,Paper,Special Paper,burano colored,,,fire red,250gsm,27.5x39.3,PASPL -FIR-250gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+320,Consumables,Maintenance Materials,zonrox bleach,,,,,,COMNT  ,#NAME?,,bottle,bottle,,
+321,Paper,Special Paper,athenea laid,,,natural white,90gsm,27.5x39.3,PASPL -NAT-90gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+322,Paper,Special Paper,,burano,,gold,200gsm,27.5x39.3,PASPL burano-GOL-200gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+323,Paper,Special Paper,,burano,,sky blue,200gsm,27.5x39.3,PASPL burano-SKY-200gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+324,Paper,Special Paper,,burano,,spring green,200gsm,27.5x39.3,PASPL burano-SPR-200gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+325,Paper,Special Paper,,burano,,yellow,200gsm,27.5x39.3,PASPL burano-YEL-200gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+326,Paper,Special Paper,,burano,,lila,200gsm,27.5x39.3,PASPL burano-LIL-200gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+327,Paper,Special Paper,,burano,,green,200gsm,27.5x39.3,PASPL burano-GRE-200gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+328,Paper,Special Paper,,burano,,orange,200gsm,27.5x39.3,PASPL burano-ORA-200gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+329,Paper,Special Paper,,burano,,pink,200gsm,27.5x39.3,PASPL burano-PIN-200gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+330,Paper,Special Paper,,burano,,light green,200gsm,27.5x39.3,PASPL burano-LIG-200gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+331,Paper,Special Paper,,burano,,shocking pink,200gsm,27.5x39.3,PASPL burano-SHO-200gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+332,Paper,Special Paper,,burano,,blue,200gsm,27.5x39.3,PASPL burano-BLU-200gsm-27.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+333,Paper,Newsprint Paper,,Papermart Newsprint,,white,,22x35.5,PANWS Papermart Newsprint-WHI-22x35.5 480/R,#NAME?,,ream,sheet,ream,480
+334,Consumables,Maintenance Materials,Floor Cleaner,,,,,,COMNT  ,#NAME?,,pieces,pieces,,
+335,Consumables,Maintenance Materials,Liquid Handsoap,,,,,,COMNT  ,#NAME?,,piece,piece,,
+336,Office Supplies,Stationary and Supplies,clip binder,,,,,,OFSUP  ,#NAME?,,piece,piece,,
+337,Office Supplies,Stationary and Supplies,Stabilo marker,,,,,,OFSUP  ,#NAME?,,piece,piece,,
+338,Paper,Sticker,Vinyl sticker,,glossy,white,80microns,50x50mm,PASTK -WHI-80microns-50x50mm ,#NAME?,,roll,roll,,
+339,Office Supplies,Stationary and Supplies,Plastic Cover,,,,,,OFSUP  ,#NAME?,,piece,piece,,
+340,Consumables,Finishing Materials,white foam tape,,,,,,COFIN  ,#NAME?,,pieces,pieces,,
+341,Paper,Sticker,reflective sticker,,,,225microns,,PASTK -225microns ,#NAME?,,roll,roll,,
+342,Paper,Special Paper,burano,,,light blue,200gsm,37.5x39.3,PASPL -LIG-200gsm-37.5x39.3 9999/P,#NAME?,,pack,sheet,pack,9999
+343,Paper,Special Paper,Color Plus,,,Amarillio Medio,80gsm,25.59x35.43,PASPL -AMA-80gsm-25.59x35.43 9999/P,#NAME?,,pack,sheet,pack,9999
+344,Paper,Special Paper,Color Plus,,,Rosa,80gsm,25.59x35.43,PASPL -ROS-80gsm-25.59x35.43 9999/P,#NAME?,,pack,sheet,pack,9999
+345,Paper,Special Paper,Color Plus,,,Azul,80gsm,25.59x35.43,PASPL -AZU-80gsm-25.59x35.43 9999/P,#NAME?,,pack,sheet,pack,9999
+346,Paper,Newsprint Paper,,Newsprint,,Triplex white,,36x18,PANWS Newsprint-TRI-36x18 480/R,#NAME?,,ream,sheet,ream,480
+347,Consumables,Films and Plates,CTP Plate,GTO,,,,400x510,COFLM GTO-400x510 50/B,#NAME?,,box,piece,box,50
+348,Consumables,Maintenance Materials,Dishwashing Liquid,,,,,,COMNT  ,#NAME?,,bottle,bottle,,
+349,Consumables,Chemicals,wipe out Cleaner,,,,,,COCHM  ,#NAME?,,can,can,,
+350,Consumables,Ink,HP toner,831B CZ689A,,CYAN,,,COINK 831B CZ689A-CYA 1/B,#NAME?,,box,piece,box,1
+351,Consumables,Ink,HP TONER,831B CZ691A,,YELLOW,,,COINK 831B CZ691A-YEL 1/B,#NAME?,,box,piece,box,1
+352,Consumables,Ink,HP Toner,831B CZ690A,,MAgenta,,,COINK 831B CZ690A-MAG 1/B,#NAME?,,box,piece,box,1
+353,Consumables,Ink,HP Toner,831B CZ688A  ,,Black,,,COINK 831B CZ688A  -BLA 1/B,#NAME?,,box,piece,box,1
+354,Paper,Special Paper,venus linen ,,,white,220gsm,31x43,PASPL -WHI-220gsm-31x43 9999/P,#NAME?,,pack,sheet,pack,9999
+355,Consumables,Chemicals,Gear oil,SAE-90,,,,Liter,COCHM SAE-90-Liter ,#NAME?,,bottle ,bottle ,,
+356,Consumables,Films and Plates,CTP Plate,Korse,,,,620x745,COFLM Korse-620x745 50/B,#NAME?,,box,pieces,box,50
+357,Consumables,Films and Plates,acetate,,,,,,COFLM  ,#NAME?,,roll,roll,,
+358,Machine and Parts,SORMZ Machine/Parts,wheel bearing SORMZ,NSK,,,,,MPSRM NSK 1/1,#NAME?,,1,Pieces,1,1
+359,Office Supplies,Stationary and Supplies,image pen remover,,,,,,OFSUP  ,#NAME?,,piece,piece,,
+360,Paper,Board,eska board,,,,1195gsm,26x38,PABRD -1195gsm-26x38 100/R,#NAME?,,ream,sheet,ream,100
+361,Paper,Envelope,kraft,envelope trojan,,brown,#150,7x10,PAENVKRF envelope trojan-BRO-#150-7x10 500/B,#NAME?,,box,pcs,box,500
+362,Paper,Board,chip,triplex,,gray,#50,26x38,PABRDCHP triplex-GRA-#50-26x38 250/B,#NAME?,,bale,sheet,bale,250
+363,Paper,Special Paper,Econotext,Fancy,,soft white,#100gsm,,PASPL Fancy-SOF-#100gsm 1000/R,#NAME?,,ream,sheet,ream,1000
+364,Paper,Envelope,kraft,envelope,,brown,,10x13,PAENVKRF envelope-BRO-10x13 500/B,#NAME?,,box,piece,box,500
+365,Paper,Special Paper,Color plus,,,Rojo,80gsm,25.59x35.43,PASPL -ROJ-80gsm-25.59x35.43 999/P,#NAME?,,pack,sheet,pack,999
+366,Paper,Special Paper,Edicion,,,Natural white,240gsm,26x40,PASPL -NAT-240gsm-26x40 999/P,#NAME?,,pack,sheet,pack,999
+367,Paper,Special Paper,Bevania splendorgel ivory,,,white,170gsm,28x39.3,PASPL -WHI-170gsm-28x39.3 999/P,#NAME?,,pack,sheet,pack,999
+368,Paper,Special Paper,Century Cotton wove,,,premium white,220gsm,28x39.75,PASPL -PRE-220gsm-28x39.75 999/P,#NAME?,,pack,sheet,pack,999
+369,Consumables,Maintenance Materials,kanebo,chamois towel,,,,,COMNT chamois towel 1/P,#NAME?,,pack,pieces,pack,1
+370,Paper,Special Paper,matt coated,triplexx,,white,#100,25x38,PASPL triplexx-WHI-#100-25x38 500/R,#NAME?,,ream,sheet,ream,500
+371,Consumables,Chemicals,Hydraulic oil,S2MX 68 Tellus,,,,,COCHM S2MX 68 Tellus 1/P,#NAME?,,pail,pieces,pail,1
+372,Office Supplies,Stationary and Supplies,Clearbook,,,,,long,OFSUP -long ,#NAME?,,piece,piece,,
+373,Paper,Sticker,hexis ecotac matte sticker,,,dark gray,,,PASTK -DAR ,#NAME?,,roll,roll,,
+374,Paper,Sticker,hexis ecotac matte sticker,,,light green,,,PASTK -LIG ,#NAME?,,roll,roll,,
+375,Paper,Sticker,exceed blackboard sticker,,,black,,50x30mm,PASTK -BLA-50x30mm ,#NAME?,,roll,roll,,
+376,Others,Miscellaneous,sako,,,,,big,OTMSC -big ,#NAME?,,piece,piece,,
+377,Office Supplies,Stationary and Supplies,expandable folder,,,,,long,OFSUP -long ,#NAME?,,piece,piece,,
+378,Consumables,Chemicals,Grasa,,,,,,COCHM  ,#NAME?,,can,can,,
+379,Consumables,Finishing Materials,,Duct tape cloth,,,,,COFIN Duct tape cloth ,#NAME?,,roll,roll,,
+380,Paper,Sticker,Exceed vinyl ,,,glossy,,54x30,PASTK -GLO-54x30 1/B,#NAME?,,box,roll,box,1
+381,Paper,Envelope,kraft,trojan documentary,,golden brown,#200,9x12,PAENVKRF trojan documentary-GOL-#200-9x12 500/B,#NAME?,,box,piece,box,500
+382,Paper,Envelope,kraft,trojan catalog,,golden brown,#150,9x12,PAENVKRF trojan catalog-GOL-#150-9x12 500/B,#NAME?,,box,piece,box,500
+383,Consumables,Maintenance Materials,sponge ,scotch brite,,,,,COMNT scotch brite 1/P,#NAME?,,pack,piece,pack,1
+384,Paper,Special Paper,Parchment Paper,,,,#60,25x38,PASPL -#60-25x38 1000/P,#NAME?,,pack,sheet,pack,1000
+385,Office Supplies,Stationary and Supplies,Ring binder,,,,,Medium,OFSUP -Medium 5/P,#NAME?,,pack,piece,pack,5
+386,Paper,Special Paper,imitlin ,,,blu notte,125gsm,40x28.3,PASPL -BLU-125gsm-40x28.3 999/P,#NAME?,,pack,sheet,pack,999
+387,Consumables,Maintenance Materials,Mop with Handle,,,,,,COMNT  ,#NAME?,,piece,piece,,
+388,Consumables,Maintenance Materials,lighter gas refill,butane,,,,,COMNT butane ,#NAME?,,piece,piece,,
+389,Consumables,Maintenance Materials,empty bottle sprayer,,,,,500ml,COMNT -500ml ,#NAME?,,piece,piece,,
+390,Consumables,Ink,HP Print head 831,,,light cyan and light magenta,,,COINK -LIG 1/B,#NAME?,,bottle,piece,bottle,1
+391,Consumables,Ink,HP Print head 831,hp 831 CZ677A,,cyan and black,,,COINK hp 831 CZ677A-CYA 1/B,#NAME?,,bottle,piece ,bottle,1
+392,Consumables,Ink,HP Maintenance Cartridge ,CZ681A,,,,,COINK CZ681A 1/B,#NAME?,,box,piece,box,1
+393,Consumables,Maintenance Materials,walis tingting,,,,,,COMNT  ,#NAME?,,piece,piece,,
+394,Consumables,Ink,latex optimizer,hp831 CZ706A,,,,,COINK hp831 CZ706A ,#NAME?,,PIECE,PIECE,,
+395,Office Supplies,Stationary and Supplies,stamp pad ,,,,,,OFSUP  ,#NAME?,,piece,piece,,
+396,Office Supplies,Stationary and Supplies,stamp pad refill,ink,,red,,,OFSUP ink-RED ,#NAME?,,piece,piece,,
+397,Machine and Parts,SORMZ Machine/Parts,P.U. Hose,,,blue,,,MPSRM -BLU 99/S,#NAME?,,strip,meter,strip,99
+398,Consumables,Chemicals,oil,WD-40,,,,,COCHM WD-40 ,#NAME?,,bottle,bottle,,
+399,Consumables,Chemicals,oil,Gear oil SAE 140,,,,LITER,COCHM Gear oil SAE 140-LITER ,#NAME?,,BOTTLE,BOTTLE,,
+400,Consumables,Maintenance Materials,sand paper #1000,,,,,,COMNT  ,#NAME?,,piece,piece,,
+401,Consumables,Films and Plates,PLATE KORS,SWORD MAX,,,,745X620,COFLM SWORD MAX-745X620 50/B,#NAME?,,BOX,PIECE ,BOX,50
+402,Consumables,Chemicals,Alcohol IPA,S-100,,,,LITERS,COCHM S-100-LITERS ,#NAME?,,CONTAINER,CONTAINER,,
+403,Consumables,Ink,HP 831 latex optimizer,CZ680A,,,,,COINK CZ680A 1/B,#NAME?,,BOX,PIECE,BOX,1
+404,Paper,Envelope,documentary,trojan,,Golden kraft,#200,10x15,PAENV trojan-GOL-#200-10x15 500/B,#NAME?,,box,piece,box,500
+405,Consumables,Maintenance Materials,sand paper,,,,#220,,COMNT -#220 ,#NAME?,,piece,piece,,
+406,Office Supplies,Stationary and Supplies,Arch file,,,,,,OFSUP  ,#NAME?,,piece,piece,,
+407,Machine and Parts,SORMZ Machine/Parts,HK 1210 needle bearing,,,,,,MPSRM  1/B,#NAME?,,box,Piece,box,1
+,,,,,,,,,,#NAME?,,,,,
+,,,,,,,,,,#NAME?,,,,,
+,,,,,,,,,,#NAME?,,,,,
+,,,,,,,,,,#NAME?,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,, ,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
