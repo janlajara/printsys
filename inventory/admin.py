@@ -302,7 +302,7 @@ class ItemAdmin(ModelAdmin):
                     
                     messages.success(request, f"'{item.name}' withdrawn successfully")
                     return redirect(
-                        f"{reverse_lazy("admin:inventory_item_change", args=[object_id])}#movements"
+                        f"{reverse_lazy('admin:inventory_item_change', args=[object_id])}#movements"
                     )
                 except ValidationError as e:
                     messages.error(request, f"{e}")
