@@ -77,19 +77,34 @@ WSGI_APPLICATION = 'printsys.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
+from urllib.parse import urlparse
+DATABASE_URL = os.getenv('DATABASE_URL', None)
 
-DATABASES = {
-     'default': {
-         'ENGINE': 'django.db.backends.{}'.format(
-             os.getenv('DATABASE_ENGINE', 'sqlite3')
-         ),
-         'NAME': os.getenv('DATABASE_NAME', 'postgres'),
-         'USER': os.getenv('DATABASE_USERNAME', 'dbuser'),
-         'PASSWORD': os.getenv('DATABASE_PASSWORD', 'dbpassword'),
-         'HOST': os.getenv('DATABASE_HOST', '127.0.0.1'),
-         'PORT': os.getenv('DATABASE_PORT', 5432),
-     }
- }  
+if DATABASE_URL:
+    db_url = urlparse(DATABASE_URL)
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",  # Assuming PostgreSQL
+            "NAME": db_url.path[1:],  # The first character is a '/', so we skip it
+            "USER": db_url.username,
+            "PASSWORD": db_url.password,
+            "HOST": db_url.hostname,
+            "PORT": db_url.port,
+        }
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.{}'.format(
+                os.getenv('DATABASE_ENGINE', 'sqlite3')
+            ),
+            'NAME': os.getenv('DATABASE_NAME', 'postgres'),
+            'USER': os.getenv('DATABASE_USERNAME', 'dbuser'),
+            'PASSWORD': os.getenv('DATABASE_PASSWORD', 'dbpassword'),
+            'HOST': os.getenv('DATABASE_HOST', '127.0.0.1'),
+            'PORT': os.getenv('DATABASE_PORT', 5432),
+        }
+    }  
 
 
 # Password validation
