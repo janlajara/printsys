@@ -160,7 +160,7 @@ AUTH_USER_MODEL = 'core.User'
 APP_NAME = "Printsys"
 
 UNFOLD = {
-    "SITE_TITLE": "BJ Lajara Printing Press",
+    "SITE_TITLE": APP_NAME,
     "SITE_HEADER": APP_NAME,
     "SITE_URL": "/",
     "SITE_SYMBOL": "graph_5",  # symbol from icon set

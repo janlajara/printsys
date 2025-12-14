@@ -26,6 +26,7 @@ urlpatterns = [
     path('admin/dashboard/set-date-range/', dashboard_set_date_range, name='dashboard_set_date_range'),
     path('admin/inventory/', lambda request: redirect('/admin', permanent=True)),
     path('admin/', admin.site.urls),
+    path('', lambda request: redirect('/admin', permanent=True)),
 ]
 
 if settings.DEBUG:
