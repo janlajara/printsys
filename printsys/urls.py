@@ -18,11 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
+from django.shortcuts import redirect
 
 from core.views import dashboard_set_date_range
 
 urlpatterns = [
     path('admin/dashboard/set-date-range/', dashboard_set_date_range, name='dashboard_set_date_range'),
+    path('admin/inventory/', lambda request: redirect('/admin', permanent=True)),
     path('admin/', admin.site.urls),
 ]
 

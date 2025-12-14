@@ -14,7 +14,6 @@ from django.utils.html import format_html
 from core.utils import format_currency, to_link, pluralize_uom
 
 from unfold.decorators import action
-from unfold.admin import ModelAdmin
 from unfold.admin import StackedInline, TabularInline
 from unfold.contrib.inlines.admin import NonrelatedTabularInline
 from unfold.widgets import (
@@ -27,7 +26,7 @@ from unfold.contrib.forms.widgets import ArrayWidget
 from unfold.components import BaseComponent, register_component
 
 
-from core.admin import KeyValueFieldWidget
+from core.admin import KeyValueFieldWidget, BaseAdminForm
 from .models import Item, ItemCategory, StockMovement, Supplier, StockMovementPurpose
 
 p = inflect.engine()
@@ -87,6 +86,9 @@ class StockMovementInline(TabularInline):
     min_num = 0
     max_num = 0
 
+    def has_view_permission(self, request, obj=None):
+        return request.user.is_active
+
     def unit_price_display(self, obj):
         return format_currency(obj.unit_price) if obj.unit_price else ""
     unit_price_display.short_description = "Unit Price"
@@ -113,6 +115,9 @@ class ItemSupplierInline(NonrelatedTabularInline):
     model = Supplier
     tab = True
     template = 'item/suppliers_inline.html'
+
+    def has_view_permission(self, request, obj=None):
+        return request.user.is_active
     
     def get_form_queryset(self, obj):
         return Supplier.objects.none()
@@ -146,21 +151,21 @@ class ItemAdminForm(forms.ModelForm):
         instance = kwargs.get('instance')
 
         # We dont want to allow these actions in this form
-        self.fields['category'].widget.can_add_related = False
-        self.fields['category'].widget.can_change_related = False
-        self.fields['category'].widget.can_delete_related = False
-        self.fields['category'].widget.can_view_related = False
-        
-        self.fields['category'].required = True
+        if 'category' in self.fields:
+            self.fields['category'].widget.can_add_related = False
+            self.fields['category'].widget.can_change_related = False
+            self.fields['category'].widget.can_delete_related = False
+            self.fields['category'].widget.can_view_related = False
+            
+            self.fields['category'].required = True
 
         # Populate the attributes based on the selected category
         category_pk = instance.category.pk if instance and instance.category else None
         self.attribute_keys = {x['pk']: x['attributes'] for x in list(ItemCategory.objects.all().values("pk", "attributes"))}
         default_keys = self.attribute_keys.get(category_pk, [])
-        self.fields['attributes'].widget = KeyValueFieldWidget(default_keys=default_keys)
 
-    def _create_kv_widget(self, default_keys):
-        return KeyValueFieldWidget(default_keys=default_keys)
+        if 'attributes' in self.fields:
+            self.fields['attributes'].widget = KeyValueFieldWidget(default_keys=default_keys)
 
     def clean_attributes(self):
         category = self.cleaned_data.get('category', None)
@@ -182,9 +187,8 @@ class ItemAdminForm(forms.ModelForm):
 
 
 @admin.register(Item)
-class ItemAdmin(ModelAdmin):
+class ItemAdmin(BaseAdminForm):
     form = ItemAdminForm
-    change_form_template = "item/change_form.html"
 
     actions_detail = ["deposit", "withdraw"]
     list_display_links = ["category", "description_display"]
@@ -238,7 +242,7 @@ class ItemAdmin(ModelAdmin):
         description="Deposit",
         url_path="deposit",
         attrs={"target": "_self", "style": "color: var(--color-green-400)"},
-        #permissions=["deposit_stock"]
+        permissions=["change"]
     )
     def deposit(self, request, object_id):
         user = request.user
@@ -282,7 +286,7 @@ class ItemAdmin(ModelAdmin):
         description="Withdraw",
         url_path="withdraw",
         attrs={"target": "_self", "style": "color: var(--color-red-400)"},
-        #permissions=["withdraw_stock"]
+        permissions=["change"]
     )
     def withdraw(self, request, object_id):
         user = request.user
@@ -322,17 +326,14 @@ class ItemAdmin(ModelAdmin):
             },
         )
 
-    def has_withdraw_stock_permission(self, request, object_id):
-        True
-
 
 @admin.register(Supplier)
-class SupplierAdmin(ModelAdmin):
+class SupplierAdmin(BaseAdminForm):
     list_display = ["name", "contact_person", "email"]
 
 
 @admin.register(ItemCategory)
-class ItemCategoryAdmin(ModelAdmin):
+class ItemCategoryAdmin(BaseAdminForm):
     formfield_overrides = {
         ArrayField: {
             "widget": ArrayWidget,
@@ -343,7 +344,7 @@ class ItemCategoryAdmin(ModelAdmin):
 
 
 @admin.register(StockMovementPurpose)
-class StockMovementPurposeAdmin(ModelAdmin):
+class StockMovementPurposeAdmin(BaseAdminForm):
     list_display = ["name", "description", "is_active"]
 
 

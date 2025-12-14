@@ -58,4 +58,7 @@ class User(AbstractUser):
             return True
         return perm in self.get_all_permissions(obj)
 
+    def save(self, *args, **kwargs):
+        self.is_staff = True
+        super().save(*args, **kwargs)
 

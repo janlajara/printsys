@@ -157,15 +157,17 @@ MEDIA_URL = os.getenv("MEDIA_PATH", "/media/")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'core.User'
 
+APP_NAME = "Printsys"
+
 UNFOLD = {
-    "SITE_TITLE": "PrintSys",
-    "SITE_HEADER": "PrintSys",
+    "SITE_TITLE": "BJ Lajara Printing Press",
+    "SITE_HEADER": APP_NAME,
     "SITE_URL": "/",
     "SITE_SYMBOL": "graph_5",  # symbol from icon set
     "SIDEBAR": {
         "show_search": False,  # Search in applications and models names
         "command_search": False,  # Replace the sidebar search with the command search
-        "show_all_applications": True,  # Dropdown with all applications and models
+        "show_all_applications": False,  # Dropdown with all applications and models
         "navigation": [
             {
                 "title": "Navigation",
@@ -176,7 +178,7 @@ UNFOLD = {
                         "title": "Dashboard",
                         "icon": "dashboard",  # Supported icon set: https://fonts.google.com/icons
                         "link": reverse_lazy("admin:index"),
-                        "permission": lambda request: request.user.is_superuser,
+                        #"permission": lambda request: request.user.is_superuser,
                     },
                     {
                         "title": "Users",
@@ -188,6 +190,7 @@ UNFOLD = {
                         "title": "Inventory",
                         "icon": "inventory",
                         "link": reverse_lazy("admin:inventory_item_changelist"),
+                        "permission": lambda request: request.user.is_active,
                     },
                 ],
             },
@@ -232,12 +235,12 @@ UNFOLD = {
                 {
                     "title": "Items",
                     "link": reverse_lazy("admin:inventory_item_changelist"),
-                    "permission": lambda request: request.user.is_superuser,
+                    "permission": lambda request: request.user.has_module_perms('inventory'),
                 },
                 {
                     "title": "Suppliers",
                     "link": reverse_lazy("admin:inventory_supplier_changelist"),
-                    "permission": lambda request: request.user.is_superuser,
+                    "permission": lambda request: request.user.has_module_perms('inventory'),
                 },
                 {
                     "title": "Item Categories",
