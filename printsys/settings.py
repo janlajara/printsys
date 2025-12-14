@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
-    'inventory.apps.InventoryConfig'
+    'inventory.apps.InventoryConfig',
+    "django_microsoft_sso",  # Add django_microsoft_sso
 ]
 
 MIDDLEWARE = [
@@ -269,3 +270,10 @@ LOGGING = {
 
 WHITENOISE_USE_FINDERS = True
 WHITENOISE_AUTOREFRESH = DEBUG
+
+
+# Microsoft SSO Settings
+MICROSOFT_SSO_APPLICATION_ID = os.getenv("MICROSOFT_SSO_APPLICATION_ID", None)
+MICROSOFT_SSO_CLIENT_SECRET = os.getenv("MICROSOFT_SSO_CLIENT_SECRET", None)
+MICROSOFT_SSO_SCOPES = ["User.Read.All"]
+MICROSOFT_SSO_ALLOWABLE_DOMAINS = os.environ.get("MICROSOFT_SSO_ALLOWABLE_DOMAINS","").split(",")

@@ -1,0 +1,28 @@
+{% load sso_tags %}
+{% load show_form %}
+
+{% define_sso_providers as sso_providers %}
+
+<div class="login-box pt-2">
+    <div class="rounded-default border border-base-200">
+        {% for provider in sso_providers %}
+            <div class="py-3">
+                <a class="flex justify-center" href="{{ provider.login_url }}" role="button">
+                    <div>
+                        <img width="20px" alt="{{ provider.name }} sign-in"
+                             src="{{ provider.logo_url }}" style="margin-right: 12px;"/>
+                    </div>
+                    <div class="font-medium">{{ provider.text }}</div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(".btn-content").click(function (event) {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        event.originalEvent.currentTarget.href = event.originalEvent.currentTarget.href + "?next=" + urlParams.get('next');
+    });
+</script>

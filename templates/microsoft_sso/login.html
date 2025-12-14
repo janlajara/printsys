@@ -1,0 +1,28 @@
+{% extends "admin/login.html" %}
+{% load static %}
+{% load sso_tags %}
+{% load show_form %}
+{% load i18n %}
+
+{% block extrastyle %}
+    {{ block.super }}
+{% endblock %}
+
+{# Django Unfold Admin Block #}
+{% block base %}
+    {{ block.super }}  {# Process HTML login elements from Django Unfold #}
+	{% include 'microsoft_sso/login_sso.html' %} {# Add Microsoft SSO HTML elements #}
+    <script>
+        {% define_show_form as show_form %}
+        {% if show_form %}
+            $(document).ready(function() {
+                $(".login-box").insertAfter("#login-form");
+            });
+        {% else %}
+            $("#login-form").remove();
+            $(document).ready(function() {
+                $(".login-box").insertAfter(".font-semibold.mb-10");
+            });
+        {% endif %}
+    </script>
+{% endblock %}

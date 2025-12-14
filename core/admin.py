@@ -111,7 +111,7 @@ class RoleForm(forms.ModelForm):
 @admin.register(Role)
 class RoleAdmin(BaseAdminForm):
     form = RoleForm
-    list_display = ['name']
+    list_display = ['name', 'description']
     filter_horizontal = ('permissions',)
 
 
