@@ -111,6 +111,35 @@ class StockMovementInline(TabularInline):
         return obj.purpose.name
 
 
+class SupplierItemInline(NonrelatedTabularInline):
+    model = Item
+    tab = True
+    template = 'supplier/items_inline.html'
+
+    def has_view_permission(self, request, obj=None):
+        return request.user.is_active
+    
+    def get_form_queryset(self, obj):
+        return Item.objects.none()
+    
+    def save_new_instance(self, parent, instance):
+        pass
+
+    def get_formset(self, request, obj=None, **kwargs):
+        formset = super().get_formset(request, obj, **kwargs)
+
+        # Attach extra context as a property of the formset class
+        formset.custom_context_data = {
+            'item_summary': {
+                "headers": ["Item", f"Total Quantity Supplied (individual UoM)", f"Latest price per individual UoM"],
+                "rows": [
+                    [to_link('admin:inventory_item_change', x['item__id'], x["item__name"]), x["total"], format_currency(x['latest_price']) if x['latest_price'] else ""] for x in obj.items_summary()
+                ]
+            },
+        } if obj else {}
+        return formset
+
+
 class ItemSupplierInline(NonrelatedTabularInline):
     model = Supplier
     tab = True
@@ -330,6 +359,11 @@ class ItemAdmin(BaseAdminForm):
 @admin.register(Supplier)
 class SupplierAdmin(BaseAdminForm):
     list_display = ["name", "contact_person", "email"]
+
+    def get_inlines(self, request, obj):
+        if obj:
+            return [SupplierItemInline]
+        return []
 
 
 @admin.register(ItemCategory)

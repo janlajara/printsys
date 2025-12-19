@@ -36,7 +36,7 @@ class Supplier(models.Model):
             .values('item__name', 'item__individual_uom')
             .annotate(total=Sum(
                 Case(
-                    When(is_packed=True, then=F('quantity') * F('item__pack_quantity')),
+                    When(is_packed=True, then=F('quantity') * F('pack_quantity')),
                     default=F('quantity'),
                     output_field=IntegerField(),
                 )
@@ -54,7 +54,7 @@ class Supplier(models.Model):
             .filter(movement_type='DEPOSIT', item=item)
             .aggregate(total=Sum(
                 Case(
-                    When(is_packed=True, then=F('quantity') * F('item__pack_quantity')),
+                    When(is_packed=True, then=F('quantity') * F('pack_quantity')),
                     default=F('quantity'),
                     output_field=IntegerField(),
                 )
@@ -70,6 +70,27 @@ class Supplier(models.Model):
             movement_type='DEPOSIT',
             timestamp__range=(start_date, end_date),
         )
+    
+    def items_summary(self):
+        """
+        Returns all items provided by the supplier
+        """        
+        summary = (
+            self.movements.filter(movement_type='DEPOSIT', supplier__id=self.pk)
+            .values('item__name', 'item__id')
+            .annotate(
+                total=Sum(
+                    Case(
+                        When(is_packed=True, then=F('quantity') * F('pack_quantity')),
+                        default=F('quantity'),
+                        output_field=IntegerField(),
+                    )
+                ),
+                latest_price=Subquery(StockMovement.Query.latest_price(self.movements))
+            )
+            .order_by('item__name')
+        )
+        return summary
     
 
 class ItemCategory(models.Model):
@@ -130,7 +151,7 @@ class Item(models.Model):
                         movement_type='DEPOSIT',
                         then=F('quantity')
                         * Case(
-                            When(is_packed=True, then=F('item__pack_quantity')),
+                            When(is_packed=True, then=F('pack_quantity')),
                             default=1,
                             output_field=IntegerField(),
                         ),
@@ -140,7 +161,7 @@ class Item(models.Model):
                         then=-1
                         * F('quantity')
                         * Case(
-                            When(is_packed=True, then=F('item__pack_quantity')),
+                            When(is_packed=True, then=F('pack_quantity')),
                             default=1,
                             output_field=IntegerField(),
                         ),
@@ -155,30 +176,19 @@ class Item(models.Model):
     def suppliers_summary(self):
         """
         Returns a breakdown of how much each supplier has provided for this item.
-        """
-        latest_price_sq = (
-            self.movements
-            .filter(
-                movement_type='DEPOSIT',
-                supplier=OuterRef('supplier__id'), # match the supplier of the group
-                unit_price__isnull=False,          # ensure price exists
-            )
-            .order_by('-timestamp')                # newest record first
-            .values('unit_price')[:1]
-        )
-        
+        """        
         summary = (
             self.movements.filter(movement_type='DEPOSIT', supplier__isnull=False)
             .values('supplier__name', 'supplier__id')
             .annotate(
                 total=Sum(
                     Case(
-                        When(is_packed=True, then=F('quantity') * F('item__pack_quantity')),
+                        When(is_packed=True, then=F('quantity') * F('pack_quantity')),
                         default=F('quantity'),
                         output_field=IntegerField(),
                     )
                 ),
-                latest_price=Subquery(latest_price_sq)
+                latest_price=Subquery(StockMovement.Query.latest_price(self.movements))
             )
             .order_by('-total')
         )
@@ -197,6 +207,7 @@ class Item(models.Model):
             movement_type=StockMovement.DEPOSIT,
             quantity=quantity,
             is_packed=is_packed,
+            pack_quantity=self.pack_quantity if is_packed else 1,
             supplier=supplier,
             remarks=remarks,
             purpose=purpose,
@@ -220,6 +231,7 @@ class Item(models.Model):
             movement_type=StockMovement.WITHDRAW,
             quantity=quantity,
             is_packed=is_packed,
+            pack_quantity=self.pack_quantity if is_packed else 1,
             remarks=remarks,
             purpose=purpose
         )
@@ -241,42 +253,67 @@ class StockMovementPurpose(models.Model):
 class StockMovement(models.Model):
 
     class Query:
-        TOTAL_WITHDRAW = Count("id", filter=Q(movement_type="WITHDRAW"))
-        """
-        Sum(
-            Case(
-                When(
-                    movement_type="WITHDRAW",
-                    then=F('quantity')
-                    * Case(
-                        When(is_packed=True, then=F('item__pack_quantity')),
-                        default=1,
-                        output_field=IntegerField(),
+        TOTAL_WITHDRAW_MOVEMENT = Count("id", filter=Q(movement_type="WITHDRAW"))
+        TOTAL_WITHDRAW_UNITS =(
+            Sum(
+                Case(
+                    When(
+                        movement_type="WITHDRAW",
+                        then=F('quantity')
+                        * Case(
+                            When(is_packed=True, then=F('pack_quantity')),
+                            default=1,
+                            output_field=IntegerField(),
+                        ),
                     ),
-                ),
-                default=0,
-                output_field=IntegerField(),
+                    default=0,
+                    output_field=IntegerField(),
+                )
             )
         )
-        """
-        TOTAL_DEPOSIT = Count("id", filter=Q(movement_type="DEPOSIT"))
-        """
-        Sum(
-            Case(
-                When(
+        TOTAL_DEPOSIT_MOVEMENT = Count("id", filter=Q(movement_type="DEPOSIT"))
+        TOTAL_DEPOSIT_UNITS = (
+            Sum(
+                Case(
+                    When(
+                        movement_type='DEPOSIT',
+                        then=F('quantity')
+                        * Case(
+                            When(is_packed=True, then=F('pack_quantity')),
+                            default=1,
+                            output_field=IntegerField(),
+                        ),
+                    ),
+                    default=0,
+                    output_field=IntegerField(),
+                )
+            )
+        )
+
+        def latest_price(movements):
+            return (
+                movements
+                .filter(
                     movement_type='DEPOSIT',
-                    then=F('quantity')
-                    * Case(
-                        When(is_packed=True, then=F('item__pack_quantity')),
-                        default=1,
-                        output_field=IntegerField(),
-                    ),
-                ),
-                default=0,
-                output_field=IntegerField(),
+                    supplier=OuterRef('supplier__id'), # match the supplier of the group
+                    unit_price__isnull=False,          # ensure price exists
+                )
+                .annotate(
+                    computed_unit_price=(
+                        Case(
+                            When(
+                                is_packed=True,
+                                then=F('unit_price') / F('pack_quantity')
+                            ),
+                            default=F('unit_price'),
+                            output_field=DecimalField(),
+                        )
+                    )
+                )
+                .order_by('-timestamp')                # newest record first
+                .values('computed_unit_price')[:1]
             )
-        )
-        """
+            
 
     DEPOSIT = 'DEPOSIT'
     WITHDRAW = 'WITHDRAW'
@@ -289,6 +326,7 @@ class StockMovement(models.Model):
     movement_type = models.CharField(max_length=10, choices=MOVEMENT_TYPES)
     quantity = models.PositiveIntegerField()
     is_packed = models.BooleanField(default=False)
+    pack_quantity = models.PositiveIntegerField(default=1)
     timestamp = models.DateTimeField(default=timezone.now)
     remarks = models.TextField(blank=True)
     purpose = models.ForeignKey(
@@ -331,7 +369,7 @@ class StockMovement(models.Model):
         Converts to base (individual) units for stock calculations.
         """
         if self.is_packed:
-            return self.quantity * self.item.pack_quantity
+            return self.quantity * self.pack_quantity
         return self.quantity
     
     @classmethod
@@ -360,8 +398,8 @@ class StockMovement(models.Model):
                 )
                 .values('day')
                 .annotate(
-                    total_deposit=StockMovement.Query.TOTAL_DEPOSIT,
-                    total_withdraw=StockMovement.Query.TOTAL_WITHDRAW,)
+                    total_deposit=StockMovement.Query.TOTAL_DEPOSIT_MOVEMENT,
+                    total_withdraw=StockMovement.Query.TOTAL_WITHDRAW_MOVEMENT,)
                 .order_by('day'),  # sort by day ascending
         )[0]
         return movement_by_day
@@ -377,8 +415,8 @@ class StockMovement(models.Model):
             .filter(timestamp__date__range=[start_date, end_date])
             .values('item__id', 'item__name', 'item__individual_uom')
             .annotate(
-                total_deposit=StockMovement.Query.TOTAL_DEPOSIT,
-                total_withdraw=StockMovement.Query.TOTAL_WITHDRAW,
+                total_deposit=StockMovement.Query.TOTAL_DEPOSIT_UNITS,
+                total_withdraw=StockMovement.Query.TOTAL_WITHDRAW_UNITS,
             )
             .annotate(
                 net_quantity=F('total_deposit') - F('total_withdraw')
