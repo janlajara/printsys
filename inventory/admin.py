@@ -77,14 +77,24 @@ class StockMovementInline(TabularInline):
     model = StockMovement
     tab = True
     hide_title = True
-    fields = ('timestamp', 'movement_type_display', 'quantity_display', 'unit_price_display', 'user', 'supplier', 'purpose_display', 'remarks')
-    readonly_fields = ('movement_type_display', 'quantity_display', 'unit_price_display', 'timestamp', 'user', 'supplier', 'purpose_display', 'remarks')
     can_delete = False
     ordering = ('-timestamp',)
     per_page = 10
     extra = 0
     min_num = 0
     max_num = 0
+
+    def get_fields(self, request, obj=None):
+        if request.user.is_superuser:
+            return ('timestamp', 'movement_type', 'quantity', 'unit_price', 'user', 'supplier', 'purpose_display', 'remarks')
+        else:
+            return ('timestamp', 'movement_type_display', 'quantity_display', 'unit_price_display', 'user', 'supplier', 'purpose_display', 'remarks')
+    
+    def get_readonly_fields(self, request, obj=None):
+        if request.user.is_superuser:
+            return ('timestamp', 'user', 'purpose_display', 'remarks')
+        else:
+            return ('movement_type_display', 'quantity_display', 'unit_price_display', 'timestamp', 'user', 'supplier', 'purpose_display', 'remarks')
 
     def has_view_permission(self, request, obj=None):
         return request.user.is_active
