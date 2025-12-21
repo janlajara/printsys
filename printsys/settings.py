@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 import os
 from pathlib import Path
 from django.urls import reverse_lazy
+from django.templatetags.static import static
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -165,6 +166,45 @@ UNFOLD = {
     "SITE_HEADER": APP_NAME,
     "SITE_URL": "/",
     "SITE_SYMBOL": "graph_5",  # symbol from icon set
+    "COLORS": {
+        "base": {
+            "50": "oklch(98.5% .001 106.423)",
+            "100": "oklch(97% .001 106.424)",
+            "200": "oklch(92.3% .003 48.717)",
+            "300": "oklch(86.9% .005 56.366)",
+            "400": "oklch(70.9% .01 56.259)",
+            "500": "oklch(55.3% .013 58.071)",
+            "600": "oklch(44.4% .011 73.639)",
+            "700": "oklch(37.4% .01 67.558)",
+            "800": "oklch(26.8% .007 34.298)",
+            "900": "oklch(21.6% .006 56.043)",
+            "950": "oklch(14.7% .004 49.25)",
+        },
+        "primary": {
+            "50": "oklch(97% .014 254.604)",
+            "100": "oklch(93.2% .032 255.585)",
+            "200": "oklch(88.2% .059 254.128)",
+            "300": "oklch(80.9% .105 251.813)",
+            "400": "oklch(70.7% .165 254.624)",
+            "500": "oklch(62.3% .214 259.815)",
+            "600": "oklch(54.6% .245 262.881)",
+            "700": "oklch(48.8% .243 264.376)",
+            "800": "oklch(26.8% .007 34.298)",
+            "900": "oklch(21.6% .006 56.043)",
+            "950": "oklch(14.7% .004 49.25)",
+        },
+        "font": {
+            "subtle-light": "var(--color-base-500)",  # text-base-500
+            "subtle-dark": "var(--color-base-400)",  # text-base-400
+            "default-light": "var(--color-base-600)",  # text-base-600
+            "default-dark": "var(--color-base-300)",  # text-base-300
+            "important-light": "var(--color-base-900)",  # text-base-900
+            "important-dark": "var(--color-base-100)",  # text-base-100
+        },
+    },
+    "LOGIN": {
+        "image": lambda request: static("admin/img/login-bg.png"),
+    },
     "SIDEBAR": {
         "show_search": False,  # Search in applications and models names
         "command_search": False,  # Replace the sidebar search with the command search
