@@ -18,9 +18,9 @@ User = get_user_model()
 
 # Customize the default AdminSite instance
 app_name = settings.APP_NAME
-admin.site.site_header = f"{app_name}"
-admin.site.site_title = f"{app_name}"
-admin.site.index_title = f"{app_name}"
+#admin.site.site_header = f"{app_name}"
+#admin.site.site_title = f"{app_name}"
+admin.site.index_title = f"Welcome to {app_name}"
 
 
 class BaseAdminForm(ModelAdmin):

@@ -164,7 +164,7 @@ APP_NAME = "Printsys"
 UNFOLD = {
     "SITE_TITLE": APP_NAME,
     "SITE_HEADER": APP_NAME,
-    "SITE_URL": "/",
+    "SITE_URL": None,
     "SITE_SYMBOL": "graph_5",  # symbol from icon set
     "COLORS": {
         "base": {
