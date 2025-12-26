@@ -23,7 +23,7 @@ app_name = settings.APP_NAME
 admin.site.index_title = f"Welcome to {app_name}"
 
 
-class BaseAdminForm(ModelAdmin):
+class BaseAdmin(ModelAdmin):
 
     def has_view_permission(self, request, obj=None):
         return request.user.is_active
@@ -109,7 +109,7 @@ class RoleForm(forms.ModelForm):
 
 
 @admin.register(Role)
-class RoleAdmin(BaseAdminForm):
+class RoleAdmin(BaseAdmin):
     form = RoleForm
     list_display = ['name', 'description']
     filter_horizontal = ('permissions',)

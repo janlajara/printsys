@@ -26,7 +26,7 @@ from unfold.contrib.forms.widgets import ArrayWidget
 from unfold.components import BaseComponent, register_component
 
 
-from core.admin import KeyValueFieldWidget, BaseAdminForm
+from core.admin import KeyValueFieldWidget, BaseAdmin
 from .models import Item, ItemCategory, StockMovement, Supplier, StockMovementPurpose
 
 p = inflect.engine()
@@ -226,7 +226,7 @@ class ItemAdminForm(forms.ModelForm):
 
 
 @admin.register(Item)
-class ItemAdmin(BaseAdminForm):
+class ItemAdmin(BaseAdmin):
     form = ItemAdminForm
 
     actions_detail = ["deposit", "withdraw"]
@@ -243,9 +243,13 @@ class ItemAdmin(BaseAdminForm):
         return []
 
     def get_fieldsets(self, request, obj=None):
+        attribute_field = "attributes"
+        if not self.has_change_permission(request, obj):
+            attribute_field = "attributes_display"
+    
         fieldsets = [
             (
-                None, { "fields": ["name", "category", "attributes", "individual_uom", "pack_uom", "pack_quantity"] }
+                None, { "fields": ["name", "category", attribute_field, "individual_uom", "pack_uom", "pack_quantity"] }
             )
         ]
         if obj:
@@ -253,6 +257,14 @@ class ItemAdmin(BaseAdminForm):
                 None, { "fields": ["current_stock"] },
             ))
         return fieldsets
+ 
+    def attributes_display(self, obj):
+        attrs = ""
+        for key, value in obj.attributes.items():
+            if key and value:
+                attrs += f"{key}: {value} \n"
+        return attrs
+    attributes_display.short_description = "Attributes"
 
     def description_display(self, obj):
         return obj.description or obj.name
@@ -367,7 +379,7 @@ class ItemAdmin(BaseAdminForm):
 
 
 @admin.register(Supplier)
-class SupplierAdmin(BaseAdminForm):
+class SupplierAdmin(BaseAdmin):
     list_display = ["name", "contact_person", "email"]
 
     def get_inlines(self, request, obj):
@@ -377,7 +389,7 @@ class SupplierAdmin(BaseAdminForm):
 
 
 @admin.register(ItemCategory)
-class ItemCategoryAdmin(BaseAdminForm):
+class ItemCategoryAdmin(BaseAdmin):
     formfield_overrides = {
         ArrayField: {
             "widget": ArrayWidget,
@@ -388,7 +400,7 @@ class ItemCategoryAdmin(BaseAdminForm):
 
 
 @admin.register(StockMovementPurpose)
-class StockMovementPurposeAdmin(BaseAdminForm):
+class StockMovementPurposeAdmin(BaseAdmin):
     list_display = ["name", "description", "is_active"]
 
 
