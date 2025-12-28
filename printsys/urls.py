@@ -28,6 +28,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', lambda request: redirect('/admin', permanent=True)),
 
+    # Estimation
+    path('api/estimation/', include('estimation.urls')),
+
     # Microsoft SSO
     path(
         "microsoft_sso/", include("django_microsoft_sso.urls", namespace="django_microsoft_sso")

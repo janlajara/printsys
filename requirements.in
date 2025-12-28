@@ -4,4 +4,6 @@ psycopg2-binary==2.9.10
 django-unfold==0.69.0
 inflect==7.5.0
 whitenoise==6.11.0
-django-microsoft-sso
+django-microsoft-sso==4.1.0
+rectpack==0.2.2
+djangorestframework==3.16.1
