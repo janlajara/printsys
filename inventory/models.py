@@ -132,7 +132,8 @@ class Item(models.Model):
     pack_quantity = models.PositiveIntegerField(default=1, help_text="Number of individual units per pack")
 
     def __str__(self):
-        return self.name
+        attributes = " ".join(list(self.attributes.values()))
+        return " ".join([self.name, attributes])
 
     def save(self, *args, **kwargs):
         self.description = " ".join([f"{self.name}", *self.attributes.values()])
