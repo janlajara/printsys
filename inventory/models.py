@@ -1,3 +1,7 @@
+import inflect
+
+from core.utils import pluralize_uom
+
 from django.db import models
 from django.db.models import (
     Sum, F, Case, When, IntegerField, DecimalField, 
@@ -173,6 +177,24 @@ class Item(models.Model):
             )
         )['total']
         return total or 0
+
+    @property
+    def current_stock_display(self):
+        """
+        Returns a human-readable string of the current stock, showing both individual and pack quantities if applicable.
+        """
+        total_individual = self.current_quantity
+        if self.pack_quantity > 1:
+            packs = total_individual // self.pack_quantity
+            individuals = total_individual % self.pack_quantity
+            parts = []
+            if packs:
+                parts.append(f"{pluralize_uom(packs, self.pack_uom)}")
+            if individuals:
+                parts.append(f"{pluralize_uom(individuals, self.individual_uom)}")
+            return ", ".join(parts) if parts else pluralize_uom(0, self.individual_uom)
+        else:
+            return pluralize_uom(total_individual, self.individual_uom)
     
     def suppliers_summary(self):
         """
@@ -385,7 +407,7 @@ class StockMovement(models.Model):
                         output_field=CharField(),
                     )
                 )
-                .values( 'timestamp', 'item__id', 'item__name', 'quantity', 'uom', 'purpose__name', 'remarks')
+                .values( 'timestamp', 'item__id', 'item__name', 'item__attributes', 'quantity', 'uom', 'purpose__name', 'remarks')
         )
         return movement_history
     
@@ -414,7 +436,7 @@ class StockMovement(models.Model):
         return (
             cls.objects
             .filter(timestamp__date__range=[start_date, end_date])
-            .values('item__id', 'item__name', 'item__individual_uom')
+            .values('item__id', 'item__name', 'item__individual_uom', 'item__attributes')
             .annotate(
                 total_deposit=StockMovement.Query.TOTAL_DEPOSIT_UNITS,
                 total_withdraw=StockMovement.Query.TOTAL_WITHDRAW_UNITS,

@@ -1,4 +1,4 @@
-import inflect, json
+import inflect, json, math
 from datetime import date, timedelta, datetime
 
 from django.contrib import admin
@@ -32,26 +32,35 @@ from .models import Item, ItemCategory, StockMovement, Supplier, StockMovementPu
 p = inflect.engine()
 
 class WithdrawForm(forms.Form):
-    timestamp = forms.SplitDateTimeField(required=False, initial=timezone.now, widget=UnfoldAdminSplitDateTimeWidget)
-    quantity = forms.IntegerField(min_value=1, widget=UnfoldAdminIntegerFieldWidget)
     current_quantity = forms.CharField(disabled=True, required=False)
-    unit_of_measure = forms.ChoiceField(widget=UnfoldAdminSelectWidget)
+    timestamp = forms.SplitDateTimeField(required=False, initial=timezone.now, widget=UnfoldAdminSplitDateTimeWidget)
+    individual_quantity = forms.IntegerField(min_value=1, required=False, 
+                                             widget=UnfoldAdminTextInputWidget)
+    pack_quantity = forms.IntegerField(min_value=1, required=False, 
+                                       widget=UnfoldAdminTextInputWidget)
     purpose = forms.ModelChoiceField(
         queryset=StockMovementPurpose.objects.filter(is_active=True),
         required=False, widget=UnfoldAdminSelectWidget
     )
     remarks = forms.CharField(required=False, widget=UnfoldAdminTextareaWidget)
 
+    def clean(self):
+        cleaned_data = super().clean()
+        individual_quantity = cleaned_data.get("individual_quantity")
+        pack_quantity = cleaned_data.get("pack_quantity")
+        if not individual_quantity and not pack_quantity:
+            self.add_error("individual_quantity", "Please enter a value to either individual quantity or pack quantity.")
+        return cleaned_data
+
     def __init__(self, *args, item=None, **kwargs):
         super().__init__(*args, **kwargs)
         if item:
-            uom_choices = [
-                (item.individual_uom, item.individual_uom),
-            ]
-            if item.pack_uom:
-                uom_choices.append((item.pack_uom, item.pack_uom))
-            self.fields['unit_of_measure'].choices = uom_choices
-            self.fields['current_quantity'].initial = pluralize_uom(item.current_quantity or 0, item.individual_uom)
+            self.fields['individual_quantity'].widget.attrs['suffix'] = item.individual_uom
+            if item.pack_quantity > 1 and item.pack_uom:
+                self.fields['pack_quantity'].widget.attrs['suffix'] = item.pack_uom
+            else:
+                self.fields['pack_quantity'].disabled = True
+            self.fields['current_quantity'].initial = item.current_stock_display
 
 class DepositForm(WithdrawForm):
     supplier = forms.ModelChoiceField(
@@ -86,13 +95,13 @@ class StockMovementInline(TabularInline):
 
     def get_fields(self, request, obj=None):
         if request.user.is_superuser:
-            return ('timestamp', 'movement_type', 'quantity', 'unit_price', 'user', 'supplier', 'purpose_display', 'remarks')
+            return ('timestamp', 'movement_type', 'quantity', 'uom_display', 'unit_price', 'user', 'supplier', 'purpose_display', 'remarks')
         else:
             return ('timestamp', 'movement_type_display', 'quantity_display', 'unit_price_display', 'user', 'supplier', 'purpose_display', 'remarks')
     
     def get_readonly_fields(self, request, obj=None):
         if request.user.is_superuser:
-            return ('timestamp', 'user', 'purpose_display', 'remarks')
+            return ('timestamp', 'uom_display', 'user', 'purpose_display', 'remarks')
         else:
             return ('movement_type_display', 'quantity_display', 'unit_price_display', 'timestamp', 'user', 'supplier', 'purpose_display', 'remarks')
 
@@ -112,10 +121,16 @@ class StockMovementInline(TabularInline):
         unit_of_measure = obj.item.pack_uom if obj.is_packed else obj.item.individual_uom
         if obj.quantity:
             quantity = pluralize_uom(obj.quantity, unit_of_measure)
+            if obj.is_packed:
+                quantity += f" ( x {pluralize_uom(obj.pack_quantity, obj.item.individual_uom)} )"
             return format_html('<span style="{};">{}</span>', style, quantity)
         else:
             return "-"
     quantity_display.short_description = "Quantity"
+
+    def uom_display(self, obj):
+        return obj.item.pack_uom if obj.is_packed else obj.item.individual_uom
+    uom_display.short_description = "Unit of Measure"
 
     def purpose_display(self, obj):
         return obj.purpose.name
@@ -280,8 +295,8 @@ class ItemAdmin(BaseAdmin):
 
     def current_stock(self, obj):
         if obj and obj.pk:
-            current_quantity = obj.current_quantity
-            return f"{current_quantity} {p.plural(obj.individual_uom, current_quantity)}"
+            #current_quantity = obj.current_quantity
+            return obj.current_stock_display #f"{current_quantity} {p.plural(obj.individual_uom, current_quantity)}"
 
     def get_readonly_fields(self, request, obj=None):
         if obj:
@@ -303,15 +318,18 @@ class ItemAdmin(BaseAdmin):
         if request.method == "POST":
             if form.is_valid():
                 try:
-                    quantity = form.cleaned_data.get("quantity")
-                    unit_of_measure = form.cleaned_data.get("unit_of_measure")
-                    is_packed = unit_of_measure == item.pack_uom
+                    individual_quantity = form.cleaned_data.get("individual_quantity")
+                    pack_quantity = form.cleaned_data.get("pack_quantity", None)
+
                     unit_price = form.cleaned_data.get("unit_price", None)
                     purpose = form.cleaned_data.get("purpose", None)
                     supplier = form.cleaned_data.get("supplier", None)
                     remarks = form.cleaned_data.get("remarks", None)
 
-                    item.deposit(quantity, user, is_packed, supplier, remarks, purpose, unit_price)
+                    if individual_quantity:
+                        item.deposit(individual_quantity, user, False, supplier, remarks, purpose, unit_price)
+                    if pack_quantity:
+                        item.deposit(pack_quantity, user, True, supplier, remarks, purpose, unit_price)
                     
                     messages.success(request, f"'{item.name}' deposited successfully")
                     return redirect(
@@ -347,13 +365,21 @@ class ItemAdmin(BaseAdmin):
         if request.method == "POST":
             if form.is_valid():
                 try:
-                    quantity = form.cleaned_data.get("quantity")
-                    unit_of_measure = form.cleaned_data.get("unit_of_measure")
-                    is_packed = unit_of_measure == item.pack_uom
                     purpose = form.cleaned_data.get("purpose", None)
                     remarks = form.cleaned_data.get("remarks", None)
+                
+                    individual_quantity = form.cleaned_data.get("individual_quantity")
+                    pack_quantity = form.cleaned_data.get("pack_quantity", None)
+                    
+                    if individual_quantity and pack_quantity:
+                        total_individual = individual_quantity + (pack_quantity * item.pack_quantity)
+                        if total_individual > item.current_quantity:
+                            raise ValidationError(f"Total quantity to withdraw exceeds current stock.")
 
-                    item.withdraw(quantity, user, is_packed, remarks, purpose)
+                    if individual_quantity:
+                        item.withdraw(individual_quantity, user, False, remarks, purpose)
+                    if pack_quantity:
+                        item.withdraw(pack_quantity, user, True, remarks, purpose)
                     
                     messages.success(request, f"'{item.name}' withdrawn successfully")
                     return redirect(
@@ -433,6 +459,12 @@ class InventoryDashboard(BaseComponent):
             "labels": labels,
             "datasets": [withdrawal_dataset, deposit_dataset]
         }
+    
+    def _generate_item_name(self, item_name, attributes):
+        if attributes:
+            attributes = " ".join(list(attributes.values()))
+            return " ".join([item_name, attributes])
+        return item_name
 
     def get_stock_movement_summary_table(self, start_date, end_date):
         stock_movement_summary = StockMovement.objects.none()
@@ -442,7 +474,8 @@ class InventoryDashboard(BaseComponent):
         table_data = {
             "headers": ["Item", "Total Deposited", "Total Withdrawn", "Net Quantity"],
             "rows": [
-                [to_link("admin:inventory_item_change", x["item__id"], x["item__name"]), 
+                [to_link("admin:inventory_item_change", x["item__id"], 
+                         self._generate_item_name(x["item__name"], x["item__attributes"])), 
                  pluralize_uom(x['total_deposit'], x['item__individual_uom']), 
                  pluralize_uom(x['total_withdraw'], x['item__individual_uom']), 
                  pluralize_uom(x['net_quantity'], x['item__individual_uom'])] for x in stock_movement_summary
@@ -460,7 +493,8 @@ class InventoryDashboard(BaseComponent):
             "rows": [
                 [
                     x['timestamp'],
-                    to_link("admin:inventory_item_change", x["item__id"], x["item__name"]),
+                    to_link("admin:inventory_item_change", x["item__id"], 
+                            self._generate_item_name(x["item__name"], x["item__attributes"])),
                     pluralize_uom(x['quantity'], x['uom'] or "pack"),
                     x['purpose__name'] or "",
                     x['remarks']
