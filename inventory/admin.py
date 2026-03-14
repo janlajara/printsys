@@ -9,6 +9,8 @@ from django.shortcuts import render
 from django.contrib import messages
 from django.contrib.postgres.fields import ArrayField
 from django.core.exceptions import ValidationError
+from django.core.paginator import Paginator
+from django.template.loader import render_to_string
 from django.utils import timezone
 from django.utils.html import format_html
 from core.utils import format_currency, to_link, pluralize_uom
@@ -86,7 +88,7 @@ class StockMovementInline(TabularInline):
     model = StockMovement
     tab = True
     hide_title = True
-    can_delete = False
+    can_delete = True
     ordering = ('-timestamp',)
     per_page = 10
     extra = 0
@@ -433,6 +435,8 @@ class StockMovementPurposeAdmin(BaseAdmin):
 @register_component
 class InventoryDashboard(BaseComponent):
 
+    PAGE_SIZE = 10
+
     def get_stock_movement_per_day_bar_chart(self, start_date, end_date):
         stock_movement_per_day = StockMovement.get_movement_by_day(start_date, end_date)
         current = start_date
@@ -466,10 +470,14 @@ class InventoryDashboard(BaseComponent):
             return " ".join([item_name, attributes])
         return item_name
 
-    def get_stock_movement_summary_table(self, start_date, end_date):
+    def get_stock_movement_summary_table(self, start_date, end_date, page_number=1):
         stock_movement_summary = StockMovement.objects.none()
+        page_obj_results = []
         if start_date and end_date:
             stock_movement_summary = StockMovement.get_summary(start_date, end_date)
+            paginator = Paginator(stock_movement_summary, self.PAGE_SIZE)
+            page_obj = paginator.get_page(page_number)
+            page_obj_results = list(page_obj)
 
         table_data = {
             "headers": ["Item", "Total Deposited", "Total Withdrawn", "Net Quantity"],
@@ -478,15 +486,20 @@ class InventoryDashboard(BaseComponent):
                          self._generate_item_name(x["item__name"], x["item__attributes"])), 
                  pluralize_uom(x['total_deposit'], x['item__individual_uom']), 
                  pluralize_uom(x['total_withdraw'], x['item__individual_uom']), 
-                 pluralize_uom(x['net_quantity'], x['item__individual_uom'])] for x in stock_movement_summary
-            ]
+                 pluralize_uom(x['net_quantity'], x['item__individual_uom'])] for x in page_obj_results
+            ],
+            "page_size": paginator.num_pages,
+            "page_obj": page_obj
         } 
         return table_data
     
-    def get_stock_movement_history_table(self, start_date, end_date):
+    def get_stock_movement_history_table(self, start_date, end_date, page_number=1):
         stock_movement_history = StockMovement.objects.none()
         if start_date and end_date:
             stock_movement_history = StockMovement.get_movement_history(start_date, end_date)
+            paginator = Paginator(stock_movement_history, 20)
+            page_obj = paginator.get_page(page_number)
+            page_obj_results = list(page_obj)
         
         table_data = {
             "headers": ["Timestamp", "Item", "Quantity", "Purpose", "Remarks"],
@@ -498,8 +511,10 @@ class InventoryDashboard(BaseComponent):
                     pluralize_uom(x['quantity'], x['uom'] or "pack"),
                     x['purpose__name'] or "",
                     x['remarks']
-                ] for x in stock_movement_history
-            ]
+                ] for x in page_obj_results
+            ],
+            "page_size": paginator.num_pages,
+            "page_obj": page_obj
         }
         return table_data
 
@@ -507,18 +522,44 @@ class InventoryDashboard(BaseComponent):
         request = self.request
         start_date = request.session.get('dashboard_start_date', None)
         end_date = request.session.get('dashboard_end_date', None)
+        stock_movement_summary_table_page = request.session.get('stock_movement_summary_table_page', 1)
+        stock_movement_history_table_page = request.session.get('stock_movement_history_table_page', 1)
 
         d1 = datetime.fromisoformat(start_date).date() if start_date else date.today() - timedelta(days=30)
         d2 = datetime.fromisoformat(end_date).date() if end_date else date.today()
 
         stock_movement_per_day_bar_chart_data = self.get_stock_movement_per_day_bar_chart(d1, d2)
-        stock_movement_summary_table_data = self.get_stock_movement_summary_table(d1, d2)
-        stock_movement_history_table_data = self.get_stock_movement_history_table(d1, d2)
+        stock_movement_summary_table_data = self.get_stock_movement_summary_table(d1, d2, stock_movement_summary_table_page)
+        stock_movement_history_table_data = self.get_stock_movement_history_table(d1, d2, stock_movement_history_table_page)
+
+        stock_movement_summary_table_page_size = stock_movement_summary_table_data.pop('page_size')
+        stock_movement_summary_table_page_obj = stock_movement_summary_table_data.pop('page_obj')
+
+        stock_movement_history_table_page_size = stock_movement_history_table_data.pop('page_size')
+        stock_movement_history_table_page_obj = stock_movement_history_table_data.pop('page_obj')
 
         context = super().get_context_data(**kwargs)
         context.update({
             "stock_movement_summary_table_data": stock_movement_summary_table_data,
+            "stock_movement_summary_table_paginator": self._get_table_paginator(
+                "stock_movement_summary_table_page",
+                range(1, stock_movement_summary_table_page_size + 1),
+                stock_movement_summary_table_page_obj),
             "stock_movement_history_table_data": stock_movement_history_table_data,
+            "stock_movement_history_table_paginator": self._get_table_paginator(
+                "stock_movement_history_table_page",
+                range(1, stock_movement_history_table_page_size + 1),
+                stock_movement_history_table_page_obj),
             "stock_movement_per_day_bar_chart_data": json.dumps(stock_movement_per_day_bar_chart_data)
         })
         return context
+    
+    def _get_table_paginator(self, page_name, page_range, page_obj):
+        return render_to_string(
+            "unfold/components/component_table_paginator.html",
+            {
+                "page_name": page_name,
+                "page_range": page_range,
+                "page_obj": page_obj,
+            },
+        )

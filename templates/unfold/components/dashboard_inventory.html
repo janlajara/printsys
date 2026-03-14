@@ -1,4 +1,4 @@
-{% load unfold %}
+{% load unfold unfold_list %}
 
 
 
@@ -14,11 +14,17 @@
 {% component "unfold/components/flex.html" with class="my-4 gap-4 grid md:grid-cols-1" %}
 
     {% component "unfold/components/card.html" with title="Stock Movement Summary" %}
-        {% component "unfold/components/table.html" with table=stock_movement_summary_table_data card_included=1 striped=1 %}{% endcomponent %}
+        <div class="pb-4">
+            {% component "unfold/components/table.html" with table=stock_movement_summary_table_data card_included=1 striped=1 %}{% endcomponent %}
+        </div>
+        {{stock_movement_summary_table_paginator|safe}}
     {% endcomponent %}
 
     {% component "unfold/components/card.html" with title="Stock Movement History" %}
-        {% component "unfold/components/table.html" with table=stock_movement_history_table_data card_included=1 striped=1 %}{% endcomponent %}
+        <div class="pb-4">
+            {% component "unfold/components/table.html" with table=stock_movement_history_table_data card_included=1 striped=1 %}{% endcomponent %}
+        </div>
+        {{stock_movement_history_table_paginator|safe}}
     {% endcomponent %}
 
 {% endcomponent %}

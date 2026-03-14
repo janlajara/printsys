@@ -20,10 +20,11 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.shortcuts import redirect
 
-from core.views import dashboard_set_date_range
+from core.views import dashboard_set_date_range, dashboard_set_page
 
 urlpatterns = [
     path('admin/dashboard/set-date-range/', dashboard_set_date_range, name='dashboard_set_date_range'),
+    path('admin/dashboard/set-page/', dashboard_set_page, name='dashboard_set_page'),
     path('admin/inventory/', lambda request: redirect('/admin', permanent=True)),
     path('admin/', admin.site.urls),
     path('', lambda request: redirect('/admin', permanent=True)),

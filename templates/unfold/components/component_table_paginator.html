@@ -1,0 +1,69 @@
+{% block extrahead %}
+    <script>
+        async function setPage(page_name, page_number) {
+            const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+
+            await fetch("{% url 'dashboard_set_page' %}", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-CSRFToken": csrfToken
+                },
+                credentials: "same-origin",
+                body: JSON.stringify({ page_name, page_number })
+            });
+            window.location.reload();
+        }
+    </script>
+{% endblock %}
+
+<div class="pt-4 flex">
+    {# Previous button #}
+    {% if page_obj.has_previous %}
+        <div class="pr-4">
+            <a href="#"
+                data-page-name="{{ page_name }}"
+                data-page-number="{{ page_obj.previous_page_number }}"
+                onclick="setPage(this.dataset.pageName, this.dataset.pageNumber); return false;">
+                Previous
+            </a>
+        </div>
+    {% else %}
+        <div class="pr-4">
+            <span>Previous</span>
+        </div>
+    {% endif %}
+
+    {# Page numbers #}
+    {% for i in page_range %}
+        <div class="{% if forloop.last %}pr-2{% else %}pr-4{% endif %}">
+            {% if i == page_obj.number %}
+                <span style="text-decoration: underline;">{{ i }}</span>
+            {% else %}
+            <a href="#"
+                data-page-name="{{ page_name }}"
+                data-page-number="{{ i }}"
+                onclick="setPage(this.dataset.pageName, this.dataset.pageNumber); return false;">
+                    {{ i }}
+                </a>
+            {% endif %}
+        </div>
+    {% endfor %}
+
+    {# Next button #}
+    {% if page_obj.has_next %}
+        <div class="pl-4">
+            <a href="#"
+                data-page-name="{{ page_name }}"
+                data-page-number="{{ page_obj.next_page_number }}"
+                onclick="setPage(this.dataset.pageName, this.dataset.pageNumber); return false;">
+                Next
+            </a>
+        </div>
+    {% else %}
+        <div class="pl-4">
+            <span>Next</span>
+        </div>
+    {% endif %}
+
+</div>

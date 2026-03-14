@@ -34,6 +34,9 @@ def dashboard_callback(request, context):
     # Get the date period filters
     start_date = request.session.get('dashboard_start_date', None)
     end_date = request.session.get('dashboard_end_date', None)
+    stock_movement_summary_table_page = request.session.get('stock_movement_summary_table_page', 1)
+    stock_movement_history_table_page = request.session.get('stock_movement_history_table_page', 1)
+
     d1 = datetime.fromisoformat(start_date).date() if start_date else date.today() - timedelta(days=30)
     d2 = datetime.fromisoformat(end_date).date() if end_date else date.today()
     if d1 > d2:
@@ -43,8 +46,10 @@ def dashboard_callback(request, context):
         request.session['dashboard_start_date'] = str(d1)
     if not end_date:
         request.session['dashboard_end_date'] = str(d2)
-    start_date = d1
-    end_date = d2
+    if not stock_movement_summary_table_page:
+        request.sessions['stock_movement_summary_table_page'] = int(stock_movement_summary_table_page)
+    if not stock_movement_history_table_page:
+        request.sessions['stock_movement_history_table_page'] = int(stock_movement_history_table_page)
 
     return context
 
@@ -63,4 +68,17 @@ def dashboard_set_date_range(request):
 
         return JsonResponse({"message": "Filter applied."})
 
+    return JsonResponse({"error": "Invalid request method."}, status=400)
+
+
+def dashboard_set_page(request):
+    if request.method == "POST":
+        data = json.loads(request.body)
+        page_name = data.get('page_name', None)
+        page_value = data.get('page_number', None)
+        if page_name and page_value:
+            request.session[page_name] = int(page_value)
+        else:
+            return JsonResponse({"error": "page_name and page are required"}, status=400)
+        return JsonResponse({"message": "Page number set"})
     return JsonResponse({"error": "Invalid request method."}, status=400)
