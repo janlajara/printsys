@@ -81,7 +81,7 @@ class Supplier(models.Model):
         """        
         summary = (
             self.movements.filter(movement_type='DEPOSIT', supplier__id=self.pk)
-            .values('item__name', 'item__id')
+            .values('item__name', 'item__attributes', 'item__id')
             .annotate(
                 total=Sum(
                     Case(
@@ -134,6 +134,13 @@ class Item(models.Model):
 
     # Conversion rate: number of individual units per pack
     pack_quantity = models.PositiveIntegerField(default=1, help_text="Number of individual units per pack")
+
+    @classmethod
+    def generate_name(cls, name, attributes):
+        if attributes:
+            attributes = " ".join(list(attributes.values()))
+            return " ".join([name, attributes])
+        return name
 
     def __str__(self):
         attributes = " ".join(list(self.attributes.values()))
@@ -407,7 +414,8 @@ class StockMovement(models.Model):
                         output_field=CharField(),
                     )
                 )
-                .values( 'timestamp', 'item__id', 'item__name', 'item__attributes', 'quantity', 'uom', 'purpose__name', 'remarks')
+                .values( 'timestamp', 'movement_type', 'item__id', 'item__name', 'item__attributes', 
+                        'quantity', 'uom', 'purpose__name', 'remarks')
         )
         return movement_history
     

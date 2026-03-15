@@ -42,7 +42,7 @@ class WithdrawForm(forms.Form):
                                        widget=UnfoldAdminTextInputWidget)
     purpose = forms.ModelChoiceField(
         queryset=StockMovementPurpose.objects.filter(is_active=True),
-        required=False, widget=UnfoldAdminSelectWidget
+        required=True, widget=UnfoldAdminSelectWidget
     )
     remarks = forms.CharField(required=False, widget=UnfoldAdminTextareaWidget)
 
@@ -160,7 +160,9 @@ class SupplierItemInline(NonrelatedTabularInline):
             'item_summary': {
                 "headers": ["Item", f"Total Quantity Supplied (individual UoM)", f"Latest price per individual UoM"],
                 "rows": [
-                    [to_link('admin:inventory_item_change', x['item__id'], x["item__name"]), x["total"], format_currency(x['latest_price']) if x['latest_price'] else ""] for x in obj.items_summary()
+                    [to_link("admin:inventory_item_change", x["item__id"], 
+                            Item.generate_name(x["item__name"], x["item__attributes"])),
+                     x["total"], format_currency(x['latest_price']) if x['latest_price'] else ""] for x in obj.items_summary()
                 ]
             },
         } if obj else {}
@@ -463,12 +465,6 @@ class InventoryDashboard(BaseComponent):
             "labels": labels,
             "datasets": [withdrawal_dataset, deposit_dataset]
         }
-    
-    def _generate_item_name(self, item_name, attributes):
-        if attributes:
-            attributes = " ".join(list(attributes.values()))
-            return " ".join([item_name, attributes])
-        return item_name
 
     def get_stock_movement_summary_table(self, start_date, end_date, page_number=1):
         stock_movement_summary = StockMovement.objects.none()
@@ -483,7 +479,7 @@ class InventoryDashboard(BaseComponent):
             "headers": ["Item", "Total Deposited", "Total Withdrawn", "Net Quantity"],
             "rows": [
                 [to_link("admin:inventory_item_change", x["item__id"], 
-                         self._generate_item_name(x["item__name"], x["item__attributes"])), 
+                         Item.generate_name(x["item__name"], x["item__attributes"])), 
                  pluralize_uom(x['total_deposit'], x['item__individual_uom']), 
                  pluralize_uom(x['total_withdraw'], x['item__individual_uom']), 
                  pluralize_uom(x['net_quantity'], x['item__individual_uom'])] for x in page_obj_results
@@ -501,13 +497,18 @@ class InventoryDashboard(BaseComponent):
             page_obj = paginator.get_page(page_number)
             page_obj_results = list(page_obj)
         
+        def _render_movement_type(movement_type):
+            style = "color: var(--color-green-400)" if movement_type == StockMovement.DEPOSIT else "color: var(--color-red-400)"
+            return format_html('<span style="{};">{}</span>', style, movement_type)
+
         table_data = {
-            "headers": ["Timestamp", "Item", "Quantity", "Purpose", "Remarks"],
+            "headers": ["Timestamp", "Action", "Item", "Quantity", "Purpose", "Remarks"],
             "rows": [
                 [
                     x['timestamp'],
+                    _render_movement_type(x['movement_type']),
                     to_link("admin:inventory_item_change", x["item__id"], 
-                            self._generate_item_name(x["item__name"], x["item__attributes"])),
+                            Item.generate_name(x["item__name"], x["item__attributes"])),
                     pluralize_uom(x['quantity'], x['uom'] or "pack"),
                     x['purpose__name'] or "",
                     x['remarks']
